@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-BPD4JUV</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAACr+5x3xsYzWlLY/0bMiW+vxnMYIIX6DaIhkHpTQNPr0gAAAAAOgAAAAAIAACAAAADxChNbtowwIMR80Q1vT5wQMKuKIvonC2AL0OwQQfzTq5AAAABimujOjQyxeNYmITJjJZcPrQMWs8Ck4N9ICAZCs66EL4YDfpY/PY0b5fjvTCj3iYg1xFTp/vrPOsPyihSiMjSpXxwJDhUskMkwEjAPh22D+aZiTvU3/66BGO92Vqg5TxtJU+x3sXAj5sLvfX5Rp7NWlMJsCBiuLoVoUolpqzv8g1QiDNrxp56+r/JtY0NyETVAAAAABzV2uJ2TWoP9tgsKpGY13TaFBsjEwJdUU3595vrDzdbNWltc4OG86jqRc/RnYZSxpZ8Wwk0nqcnqkhOPbwQkEQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAABs6RoIGJbumLs5TgKiaXNjHNse15j6x83Grcp+PuONBgAAAAAOgAAAAAIAACAAAABAWPfmFjXmhsIrrAMSuSrbLpGtb8+e/GiVYGTHLZOcU5AAAACxOhfcuJApad5TYz9PA2g4hwvdtyytiuZ17O8MVCbIa7SEsoh/ZvlfMUCFQUQyncdiQk58XeTomiUFb0HH0cYu8aVzGewnVGbw+IVZI/bB7Kw8R/2RphCIcoL11zvKmbucc+gtzWgz42ItQ5O3m7FyoVZebNMFz0bNDsYaQAHriZZhbmBDFcEyKosedVhI7gRAAAAA2VoZHNwT951TD2Mja6XRkdu6iD5tygoICknHZtiufCoJ1gZ2jglTqk0Ur+H4YeWFP4qSU5G1WxvwIDJopjVsFA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -37,21 +37,6 @@
         </SSIS:ConnectionManagers>
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters>
-            <SSIS:Parameter SSIS:Name="CM.OData Source.AuthType">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">4</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
             <SSIS:Parameter SSIS:Name="CM.OData Source.ConnectByProxy">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
@@ -78,7 +63,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie="SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0Mjk0Nzk1MjAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQzMDM0MzUyMjg5ODk4MywwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsYmNlYTczOWYtMzBlNy0wMDAwLTU0YmYtN2U0YzI4NWJkMjE1LGJjZWE3MzlmLTMwZTctMDAwMC01NGJmLTdlNGMyODViZDIxNSwsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxhQXpiK3dqcGVka2pFTVAycFpxQkFaN2IxaHZIVG1DTVpFb1hQTEdvYS9wUmZvY1phSERFR0dCaVJWdlhPTWRXdkgya3RJaGN6ZHY3MnhqWDExQkJkY1VNR1J1THMzNTVUNzNTUTZ4UndGVi9rMmd6VUZxa3F3cmJuK3kvaXpHd1ZLa0tUZG4zdmIvN29uemhucm1CWnJRV2JQME1FZmNpenNkS2MzUEhzcEN0dFZpb3BHUldSQ3BpVXJTOUdSbVBtNXBwVXM1QnVCblVuQithbEcyRG1zdWYvNzZYeWF1ZzduZXNYaDNJaWJaanFuRFRBRkg4YnU3WUQ4RUcwcTliYWNGb3lpenpySE9DVDZYYnZZK3ZVSW05RVU4cUpBV0UydTFzYUpBMnZwbXdEZXNHbE9DVXd1SUp6L0Q2NVNIT3JXYy9vcWZRL1J1SThWTFYrMFZDMVE9PTwvU1A+";User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie="SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0Mjk2MTU5OTAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQzMDQ3OTk5MzMwOTYwNCwwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsYzBmNzczOWYtNDBiMi0wMDAwLTQ5MDAtODljYTU1NjMxOTQ2LGMwZjc3MzlmLTQwYjItMDAwMC00OTAwLTg5Y2E1NTYzMTk0NiwsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxFTnZaY0c1dWJldG9mNVRkM2RVOVVUS09HdDhiMGxmbldHT2FZOU9ONk9xSVJvZEtQYW5XdzdzdGUwVVdVaGhzdlVkeURWSWtnRFNrRDBzUjk0Y0xrYU43eXFhWDh3WDF2ZVhZTHRXK0hPdDdaQTZ4ZThOamFaUm1JNk9pc1gwT21taGttTDg5Mit4SE9LSjlUeGdWU3YxdnRmRnUvNWpGMUpoYWpZa1d1TVB6Q2JSQk1hbmVEZXJ3cHhVWE1rM3VaN202dk5NaXQ4MUpZNzN4MGtCSkRmdHh4b2R0S1hzWVRkc0VOL2E1elFyenZVcEZWc2dQSGxLYmplSzFadzNzQUJJOFVid1pxdmRqYjU1UWl4TkJuRzBSSTVOWkxaaWVGYkx1bVN1dlg3b29PYkdSZUkwUVRNZTZ2MkdJTlJtOG44MXVteVFwWE4xY01HSUw2NjEwMUE9PTwvU1A+";User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -149,10 +134,10 @@
                 <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{8EDF2D39-8A9B-4760-AECB-3B4F2A053E35}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{D4953650-029E-4EF5-9872-7151F0A0E777}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
