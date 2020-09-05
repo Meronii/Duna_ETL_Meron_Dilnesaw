@@ -2,13 +2,23 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Meron_Dilnesaw_SSIS_Packages</Name>
-    <LastWriteTime>2020-08-26T20:40:25.3889665Z</LastWriteTime>
+    <LastWriteTime>2020-09-05T02:51:09.5134672Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>Package1.dtsx</Name>
-      <LastWriteTime>2020-08-26T20:39:07.4131604Z</LastWriteTime>
+      <Name>Pkg_Meron_Dilnesaw_Lending_QB.dtsx</Name>
+      <LastWriteTime>2020-09-05T18:40:14.4586582Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>PKG_Meron_Dilnesaw_Quiken_Loans_Master.dtsx</Name>
+      <LastWriteTime>2020-09-05T02:51:09.4933772Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Pkg_Meron_Dilnesaw_Lending_LendingWise.dtsx</Name>
+      <LastWriteTime>2020-09-05T03:10:17.992352Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
