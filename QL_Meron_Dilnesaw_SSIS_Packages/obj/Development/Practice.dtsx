@@ -188,7 +188,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varLoaddate">
       <DTS:VariableValue
-        DTS:DataType="7">9/7/2020 8:40:13 PM</DTS:VariableValue>
+        DTS:DataType="7">9/9/2020 5:00:42 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -237,7 +237,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/7/2020 8:40:13 PM</DTS:VariableValue>
+        DTS:DataType="7">9/9/2020 5:00:42 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -284,7 +284,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/7/2020 8:40:13 PM</DTS:VariableValue>
+        DTS:DataType="7">9/9/2020 5:00:42 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -3227,7 +3227,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">#{Package\Data Flow Task\1539:invalid} &gt; 680 ? 3 : (#{Package\Data Flow Task\1539:invalid} &gt; 620 &amp;&amp; #{Package\Data Flow Task\1539:invalid} &lt;= 680) ? 4 : 5</property>
+                          name="Expression">#{Package\Data Flow Task\1548:invalid} &gt; 680 ? 3 : (#{Package\Data Flow Task\1548:invalid} &gt; 620 &amp;&amp; #{Package\Data Flow Task\1548:invalid} &lt;= 680) ? 4 : 5</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -3250,7 +3250,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[SUBSTRING](#{Package\Data Flow Task\1540:invalid},1,[FINDSTRING](#{Package\Data Flow Task\1540:invalid}," ",1) - 1)</property>
+                          name="Expression">[SUBSTRING](#{Package\Data Flow Task\1549:invalid},1,[FINDSTRING](#{Package\Data Flow Task\1549:invalid}," ",1) - 1)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -3273,7 +3273,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[SUBSTRING](#{Package\Data Flow Task\1540:invalid},[FINDSTRING](#{Package\Data Flow Task\1540:invalid}," ",1) + 1,[LEN](#{Package\Data Flow Task\1540:invalid}) - [FINDSTRING](#{Package\Data Flow Task\1540:invalid}," ",1))</property>
+                          name="Expression">[SUBSTRING](#{Package\Data Flow Task\1549:invalid},[FINDSTRING](#{Package\Data Flow Task\1549:invalid}," ",1) + 1,[LEN](#{Package\Data Flow Task\1549:invalid}) - [FINDSTRING](#{Package\Data Flow Task\1549:invalid}," ",1))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -3297,7 +3297,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1541:invalid},1,[FINDSTRING](#{Package\Data Flow Task\1542:invalid}," ",1) - 1)</property>
+                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1550:invalid},1,[FINDSTRING](#{Package\Data Flow Task\1551:invalid}," ",1) - 1)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -3321,7 +3321,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1541:invalid},[FINDSTRING](#{Package\Data Flow Task\1542:invalid}," ",1) + 1,[LEN](#{Package\Data Flow Task\1542:invalid}) - [FINDSTRING](#{Package\Data Flow Task\1542:invalid}," ",1))</property>
+                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1550:invalid},[FINDSTRING](#{Package\Data Flow Task\1551:invalid}," ",1) + 1,[LEN](#{Package\Data Flow Task\1551:invalid}) - [FINDSTRING](#{Package\Data Flow Task\1551:invalid}," ",1))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -3345,7 +3345,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1543:invalid},1,[FINDSTRING](#{Package\Data Flow Task\1543:invalid}," ",1) - 1)</property>
+                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1552:invalid},1,[FINDSTRING](#{Package\Data Flow Task\1552:invalid}," ",1) - 1)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -3369,7 +3369,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1543:invalid},[FINDSTRING](#{Package\Data Flow Task\1543:invalid}," ",1) + 1,[LEN](#{Package\Data Flow Task\1543:invalid}) - [FINDSTRING](#{Package\Data Flow Task\1543:invalid}," ",1))</property>
+                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1552:invalid},[FINDSTRING](#{Package\Data Flow Task\1552:invalid}," ",1) + 1,[LEN](#{Package\Data Flow Task\1552:invalid}) - [FINDSTRING](#{Package\Data Flow Task\1552:invalid}," ",1))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -3393,7 +3393,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1544:invalid},1,[FINDSTRING](#{Package\Data Flow Task\1544:invalid}," ",1) - 1)</property>
+                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1553:invalid},1,[FINDSTRING](#{Package\Data Flow Task\1553:invalid}," ",1) - 1)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -3417,7 +3417,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1544:invalid},[FINDSTRING](#{Package\Data Flow Task\1544:invalid}," ",1) + 1,[LEN](#{Package\Data Flow Task\1544:invalid}) - [FINDSTRING](#{Package\Data Flow Task\1544:invalid}," ",1))</property>
+                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1553:invalid},[FINDSTRING](#{Package\Data Flow Task\1553:invalid}," ",1) + 1,[LEN](#{Package\Data Flow Task\1553:invalid}) - [FINDSTRING](#{Package\Data Flow Task\1553:invalid}," ",1))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -3581,7 +3581,7 @@ where [refTable].[LeadSource] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\1545:invalid};</property>
+                  name="ParameterMap">#{Package\Data Flow Task\1554:invalid};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3722,7 +3722,7 @@ where [refTable].[OfficeID] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\1546:invalid};</property>
+                  name="ParameterMap">#{Package\Data Flow Task\1555:invalid};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -4006,7 +4006,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\1546:invalid};</property>
+                  name="ParameterMap">#{Package\Data Flow Task\1555:invalid};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -4156,7 +4156,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\1547:invalid};</property>
+                  name="ParameterMap">#{Package\Data Flow Task\1556:invalid};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
