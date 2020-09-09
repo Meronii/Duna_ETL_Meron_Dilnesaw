@@ -26,14 +26,14 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-BPD4JUV</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAAD/dwQDWZAR1uQ7JSNv4zocX+wbmfBIFv7zFirKQ6NhVAAAAAAOgAAAAAIAACAAAABxKkOGMgIe9txFNLD5r0ADLRkcgFGGjiWWZVWJlYUhNZAAAABD3g0Ut3MBJSsyXU07FO8N1K80rLJt8mUXlSJtvVUQXtLkEoeATa9PpIjWjQSn8L3MLtwzRRnulykm84b6PcIsbRJtq28Shtqpv0jBsgkUUlN1hXl1xmIPgG8V7jcAPbTrEPK6lcCosfQoIll9eJCfCwPTSLSpNXgqEHLOTYuRcrEFRJqCLBbcGm/6A5hB4ypAAAAAon7vb88dfzYHPGjQ+8MMbyx4QGxX6+UJKw/cZaxfCxWCMzhzFE9tOsASE5Wd3uNlgpWGukpzfwzTPUQnAAaRPQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAAAl0+mjt7Qk82x54eiqOrt8j/WUyjX8Dc7ape3WDhZdPQAAAAAOgAAAAAIAACAAAACWUgkx+qluHbk2OxEb2Y7Pxmt9He/SKFTBDFjWELHMHpAAAAAHM4n20pY71Mmz364jDTysQqmIn8o38RFIgMYOo1+0q1ui3fdA3VyaPNG2q30Fu1vs4hV8lkiO2ukUDJzDdfOYVBM4thxTfXG7Aomvv/APOz3ebzdJCQT/X2Wdwt2KGVgVcSq7AlMu3ctAeLrER7d/3pufgrDhYot1eGKwPj1PtmLTyOy8HpdmOR3+mcv0A9VAAAAAZTl9OxfSRHpmUsd9yfFYYNQwjF4EfgzMV+C48vouB+GH7qYEJWVbosDqwM0XmbpmYvmf3paZXzCbvRftCX7omw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="Pkg_Meron_Dilnesaw_Lending_QB.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="PKG_Meron_Dilnesaw_Quiken_Loans_Master.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Practice.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Pkg_Meron_Dilnesaw_QuickenLoan 1.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Pkg_Meron_Dilnesaw_Quicken_Loans.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="OData Source.conmgr" />
@@ -1708,16 +1708,16 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Pkg_Meron_Dilnesaw_QuickenLoan 1.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="Pkg_Meron_Dilnesaw_Quicken_Loans.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{CB186DB9-4F4B-4F4A-81CD-FF563565F6B1}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Pkg_Meron_Dilnesaw_QuickenLoan</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{323A1F82-0ACA-40F6-A206-F09353D210C5}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Pkg_Meron_Dilnesaw_Quicken_Loans</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionBuild">92</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{20000BF6-79D9-4158-83C8-D227E6B80922}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{2E27AC17-2F07-47E6-B87E-F890779CEAB4}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1726,7 +1726,7 @@
               <SSIS:Parameters>
                 <SSIS:Parameter SSIS:Name="DESKTOPBPD4JUVDUNAPROD2014Meron_ConnectByProxy">
                   <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{496CFBA4-A064-432B-830C-EA46F0A4B39B}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="ID">{B8B2DDED-626F-4816-BC43-3D450D00B6BB}</SSIS:Property>
                     <SSIS:Property SSIS:Name="CreationName">
                     </SSIS:Property>
                     <SSIS:Property SSIS:Name="Description">
@@ -1740,7 +1740,7 @@
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="DESKTOPBPD4JUVDUNAPROD2014QLSSISLOG_ConnectByProxy">
                   <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{1C33C580-5652-440F-884E-7769C470C5C4}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="ID">{2BCA29CF-6C69-4763-AD5B-15D63C3B07B4}</SSIS:Property>
                     <SSIS:Property SSIS:Name="CreationName">
                     </SSIS:Property>
                     <SSIS:Property SSIS:Name="Description">
@@ -1754,7 +1754,7 @@
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="DESKTOPBPD4JUVDUNAPROD2014STGQL_ConnectByProxy">
                   <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{31A65B31-CB37-43EA-AA81-099DD57722B2}</SSIS:Property>
+                    <SSIS:Property SSIS:Name="ID">{479B6036-6C31-4ED9-83B4-25F2D741F64F}</SSIS:Property>
                     <SSIS:Property SSIS:Name="CreationName">
                     </SSIS:Property>
                     <SSIS:Property SSIS:Name="Description">

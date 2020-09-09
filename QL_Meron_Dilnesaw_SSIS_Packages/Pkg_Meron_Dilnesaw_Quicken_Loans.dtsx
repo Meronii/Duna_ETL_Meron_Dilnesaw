@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-BPD4JUV"
   DTS:CreatorName="DESKTOP-BPD4JUV\meron"
-  DTS:DTSID="{CB186DB9-4F4B-4F4A-81CD-FF563565F6B1}"
+  DTS:DTSID="{323A1F82-0ACA-40F6-A206-F09353D210C5}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.128"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Pkg_Meron_Dilnesaw_QuickenLoan"
+  DTS:ObjectName="Pkg_Meron_Dilnesaw_Quicken_Loans"
   DTS:PackageType="5"
   DTS:VersionBuild="92"
-  DTS:VersionGUID="{20000BF6-79D9-4158-83C8-D227E6B80922}">
+  DTS:VersionGUID="{2E27AC17-2F07-47E6-B87E-F890779CEAB4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-BPD4JUV\DUNAPROD2014.Meron]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{E07266F0-D64E-4644-BAFE-7FDCDBE8E142}"
+      DTS:DTSID="{51155527-9EB4-4521-AB72-B41C992353AB}"
       DTS:ObjectName="DESKTOP-BPD4JUV\DUNAPROD2014.Meron">
       <DTS:PropertyExpression
         DTS:Name="ConnectByProxy">@[$Package::DESKTOPBPD4JUVDUNAPROD2014Meron_ConnectByProxy]</DTS:PropertyExpression>
@@ -31,7 +31,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-BPD4JUV\DUNAPROD2014.QLSSISLOG]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{40098CD7-75E6-4F2D-8E09-49F62DCFD03F}"
+      DTS:DTSID="{48E3340F-1E6F-45E6-AA17-08C2F39A45EE}"
       DTS:ObjectName="DESKTOP-BPD4JUV\DUNAPROD2014.QLSSISLOG">
       <DTS:PropertyExpression
         DTS:Name="ConnectByProxy">@[$Package::DESKTOPBPD4JUVDUNAPROD2014QLSSISLOG_ConnectByProxy]</DTS:PropertyExpression>
@@ -43,7 +43,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-BPD4JUV\DUNAPROD2014.STGQL]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{DEF43B7B-E4C4-4133-BC04-63898391A44E}"
+      DTS:DTSID="{41CD3745-BEBC-4F3C-87CD-A57A050CD517}"
       DTS:ObjectName="DESKTOP-BPD4JUV\DUNAPROD2014.STGQL">
       <DTS:PropertyExpression
         DTS:Name="ConnectByProxy">@[$Package::DESKTOPBPD4JUVDUNAPROD2014STGQL_ConnectByProxy]</DTS:PropertyExpression>
@@ -57,7 +57,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="11"
-      DTS:DTSID="{496CFBA4-A064-432B-830C-EA46F0A4B39B}"
+      DTS:DTSID="{B8B2DDED-626F-4816-BC43-3D450D00B6BB}"
       DTS:ObjectName="DESKTOPBPD4JUVDUNAPROD2014Meron_ConnectByProxy">
       <DTS:Property
         DTS:DataType="11"
@@ -66,7 +66,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="11"
-      DTS:DTSID="{1C33C580-5652-440F-884E-7769C470C5C4}"
+      DTS:DTSID="{2BCA29CF-6C69-4763-AD5B-15D63C3B07B4}"
       DTS:ObjectName="DESKTOPBPD4JUVDUNAPROD2014QLSSISLOG_ConnectByProxy">
       <DTS:Property
         DTS:DataType="11"
@@ -75,7 +75,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="11"
-      DTS:DTSID="{31A65B31-CB37-43EA-AA81-099DD57722B2}"
+      DTS:DTSID="{479B6036-6C31-4ED9-83B4-25F2D741F64F}"
       DTS:ObjectName="DESKTOPBPD4JUVDUNAPROD2014STGQL_ConnectByProxy">
       <DTS:Property
         DTS:DataType="11"
@@ -85,7 +85,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{9239E2CA-2ABE-4884-A8C6-739CEF22138A}"
+      DTS:DTSID="{D10F9E90-B9B4-40AD-81A1-81A35CBE62D3}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="RowCount">
@@ -94,7 +94,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{82C52D50-7964-430A-A142-BAF8D4BEBEE0}"
+      DTS:DTSID="{A3FEF5C7-41A4-45E8-BDA4-9E15B6D65D1C}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="Var">
@@ -103,7 +103,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{71B11274-D75D-48A1-89F8-9682ED553F5E}"
+      DTS:DTSID="{8DF7235F-75CD-4207-B76C-1D34BA6C7D51}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varBody">
@@ -112,7 +112,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{37B36151-410C-42C8-99EC-B6F4194CA696}"
+      DTS:DTSID="{5E0115CE-3C0C-40BB-87D1-407061FE74FE}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="varErrorCode">
@@ -121,7 +121,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{35315D3A-995C-4543-9559-949F3E31D5C8}"
+      DTS:DTSID="{F28ECE1B-CECE-4E1F-B447-CC666258F358}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varFromEmail">
@@ -130,7 +130,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{4EAF848C-3BFE-4C6C-8FB1-450CA3AAFA74}"
+      DTS:DTSID="{A942EBA3-C509-48AB-87CD-87A2F7FFCC97}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="&quot;IF EXISTS (   SELECT [SourceName]&#xA;                    , MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;                      FROM    &#x9;[dbo].[Stg_Meron_Dilnesaw_QL]&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;GROUP BY [SourceName]   )&#xA;&#x9;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT [SourceName]&#xA;&#x9;&#x9;, MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;&#x9;&#x9;FROM [dbo].[Stg_Meron_Dilnesaw_QL]&#xA;&#x9;&#x9;GROUP BY [SourceName]&#xA;&#x9;&#x9;END&#xA;&#x9;&#x9;ELSE&#xA;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT ? AS [SourceName],DATEADD(YYYY,-4,GETDATE()) AS MaxLastModifiedDate&#xA;&#x9;&#x9;END&quot;"
       DTS:IncludeInDebugDump="2345"
@@ -154,7 +154,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{0977545F-7E6A-4FFA-A8A7-993264E41A22}"
+      DTS:DTSID="{41F04457-21E1-4C86-8B44-B77BD97B12B4}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="Variable">
@@ -163,7 +163,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{39E0DC02-1ABB-4260-855B-5F82999A07F4}"
+      DTS:DTSID="{8BD20B9A-BB48-40E1-99D5-8F0FFAB90D7C}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="Variable1">
@@ -172,7 +172,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{9281797B-0D35-4AF8-95AC-DE5A085347BA}"
+      DTS:DTSID="{7EA86C84-4227-4845-B7A2-ACFBDC242C22}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="Variable2">
@@ -181,18 +181,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{590E57A9-E43E-4E07-A995-50C65A8E857B}"
+      DTS:DTSID="{72DFCF38-F723-4587-8159-52BF6E795F28}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="GETDATE()"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varLoaddate">
       <DTS:VariableValue
-        DTS:DataType="7">9/9/2020 5:47:31 PM</DTS:VariableValue>
+        DTS:DataType="7">9/9/2020 5:52:54 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{824703E8-D1E1-4B7B-B905-6B0997ACC3C5}"
+      DTS:DTSID="{E31AFD30-EBD1-4EC5-A9F3-6778F47EF7B6}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="varMaxModifiedDate">
@@ -201,7 +201,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{1DA55E6A-255D-4C32-8B69-B8C76B496B7C}"
+      DTS:DTSID="{89ACE744-FC59-4F98-B92B-FCBCEF4C7CD5}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varPassward">
@@ -210,7 +210,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{FD58D5BC-177E-469F-98C4-AC73C35F24DF}"
+      DTS:DTSID="{0A47B3B1-A441-4869-94EA-7D03EE2BFA0B}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="varRowsInserted">
@@ -219,7 +219,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{05EC4BFF-23F5-45D4-9049-45236165ABD8}"
+      DTS:DTSID="{1617B13C-8C72-4015-BF6F-596B8DDDEC9D}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[System::UserName]"
       DTS:IncludeInDebugDump="2345"
@@ -230,18 +230,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{031EA0B4-371E-4527-985E-3E6ABD429D29}"
+      DTS:DTSID="{6638CD6E-8EFE-4173-86F3-DFD934290CF7}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="GETDATE()"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/9/2020 5:47:31 PM</DTS:VariableValue>
+        DTS:DataType="7">9/9/2020 5:52:54 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{70F096B6-A543-4A96-B35F-E66D90A2CABA}"
+      DTS:DTSID="{D03C017A-9305-4F86-AB8F-4BF9CFE4ECD7}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSmtpClient">
@@ -250,7 +250,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{9F5F174F-7884-4DD8-BA83-0FCBAD79937A}"
+      DTS:DTSID="{60E3E460-74E6-45D1-B6DC-50C04C687E98}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSmtpServerPort">
@@ -259,7 +259,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{DE2EF7A7-5EA3-491A-BBD9-0E89D0829EBA}"
+      DTS:DTSID="{C33599B8-4471-4DF7-950C-ACDD1EB53578}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSourceName">
@@ -268,7 +268,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{04F65264-7EB0-4139-8BF5-5E145F558C14}"
+      DTS:DTSID="{E45F720F-D35C-4967-882B-249D3ADD54B2}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSubject">
@@ -277,18 +277,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{C71E2310-566C-4A22-BE47-512FB45AF40F}"
+      DTS:DTSID="{15A75CC6-FB8B-4AEB-8457-ECF6097E6AF1}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="GETDATE()"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/9/2020 5:47:31 PM</DTS:VariableValue>
+        DTS:DataType="7">9/9/2020 5:52:54 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{B2A402BF-195D-4591-B43E-3A89A48CABB3}"
+      DTS:DTSID="{FF06C6A4-E5DF-4648-A23E-3CC41585F2EC}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varToEmail">
@@ -301,7 +301,7 @@
       DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{98F2B56F-7321-4B27-8AF3-8DE819ADFAD5}"
+      DTS:DTSID="{9E90BFBF-4D94-4A61-B6C2-4C585E443060}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task"
@@ -311,7 +311,7 @@
         <DTS:EventHandler
           DTS:refId="Package\Data Flow Task.EventHandlers[OnError]"
           DTS:CreationName="OnError"
-          DTS:DTSID="{33E13A52-6F7D-469A-BCBC-4DB82BD57FD5}"
+          DTS:DTSID="{1BCFE8CF-0768-4C29-8A85-BFBC1F2543A0}"
           DTS:EventID="7798881"
           DTS:EventName="OnError"
           DTS:LocaleID="-1">
@@ -319,7 +319,7 @@
             <DTS:Variable
               DTS:CreationName=""
               DTS:Description="The propagate property of the event"
-              DTS:DTSID="{513467A0-87F0-463A-89B5-01B0997A0CC9}"
+              DTS:DTSID="{38EC9315-D676-45E5-B05C-82208DE9A4F3}"
               DTS:IncludeInDebugDump="6789"
               DTS:Namespace="System"
               DTS:ObjectName="Propagate">
@@ -548,7 +548,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">#{Package\Data Flow Task\1539:invalid} &gt; 680 ? 3 : (#{Package\Data Flow Task\1539:invalid} &gt; 620 &amp;&amp; #{Package\Data Flow Task\1539:invalid} &lt;= 680) ? 4 : 5</property>
+                          name="Expression">#{Package\Data Flow Task\1548:invalid} &gt; 680 ? 3 : (#{Package\Data Flow Task\1548:invalid} &gt; 620 &amp;&amp; #{Package\Data Flow Task\1548:invalid} &lt;= 680) ? 4 : 5</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -571,7 +571,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[SUBSTRING](#{Package\Data Flow Task\1540:invalid},1,[FINDSTRING](#{Package\Data Flow Task\1540:invalid}," ",1) - 1)</property>
+                          name="Expression">[SUBSTRING](#{Package\Data Flow Task\1549:invalid},1,[FINDSTRING](#{Package\Data Flow Task\1549:invalid}," ",1) - 1)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -594,7 +594,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[SUBSTRING](#{Package\Data Flow Task\1540:invalid},[FINDSTRING](#{Package\Data Flow Task\1540:invalid}," ",1) + 1,[LEN](#{Package\Data Flow Task\1540:invalid}) - [FINDSTRING](#{Package\Data Flow Task\1540:invalid}," ",1))</property>
+                          name="Expression">[SUBSTRING](#{Package\Data Flow Task\1549:invalid},[FINDSTRING](#{Package\Data Flow Task\1549:invalid}," ",1) + 1,[LEN](#{Package\Data Flow Task\1549:invalid}) - [FINDSTRING](#{Package\Data Flow Task\1549:invalid}," ",1))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -618,7 +618,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1541:invalid},1,[FINDSTRING](#{Package\Data Flow Task\1542:invalid}," ",1) - 1)</property>
+                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1550:invalid},1,[FINDSTRING](#{Package\Data Flow Task\1551:invalid}," ",1) - 1)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -642,7 +642,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1541:invalid},[FINDSTRING](#{Package\Data Flow Task\1542:invalid}," ",1) + 1,[LEN](#{Package\Data Flow Task\1542:invalid}) - [FINDSTRING](#{Package\Data Flow Task\1542:invalid}," ",1))</property>
+                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1550:invalid},[FINDSTRING](#{Package\Data Flow Task\1551:invalid}," ",1) + 1,[LEN](#{Package\Data Flow Task\1551:invalid}) - [FINDSTRING](#{Package\Data Flow Task\1551:invalid}," ",1))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -666,7 +666,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1543:invalid},1,[FINDSTRING](#{Package\Data Flow Task\1543:invalid}," ",1) - 1)</property>
+                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1552:invalid},1,[FINDSTRING](#{Package\Data Flow Task\1552:invalid}," ",1) - 1)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -690,7 +690,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1543:invalid},[FINDSTRING](#{Package\Data Flow Task\1543:invalid}," ",1) + 1,[LEN](#{Package\Data Flow Task\1543:invalid}) - [FINDSTRING](#{Package\Data Flow Task\1543:invalid}," ",1))</property>
+                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1552:invalid},[FINDSTRING](#{Package\Data Flow Task\1552:invalid}," ",1) + 1,[LEN](#{Package\Data Flow Task\1552:invalid}) - [FINDSTRING](#{Package\Data Flow Task\1552:invalid}," ",1))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -714,7 +714,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1544:invalid},1,[FINDSTRING](#{Package\Data Flow Task\1544:invalid}," ",1) - 1)</property>
+                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1553:invalid},1,[FINDSTRING](#{Package\Data Flow Task\1553:invalid}," ",1) - 1)</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -738,7 +738,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1544:invalid},[FINDSTRING](#{Package\Data Flow Task\1544:invalid}," ",1) + 1,[LEN](#{Package\Data Flow Task\1544:invalid}) - [FINDSTRING](#{Package\Data Flow Task\1544:invalid}," ",1))</property>
+                          name="Expression">(DT_STR,128,1252)[SUBSTRING](#{Package\Data Flow Task\1553:invalid},[FINDSTRING](#{Package\Data Flow Task\1553:invalid}," ",1) + 1,[LEN](#{Package\Data Flow Task\1553:invalid}) - [FINDSTRING](#{Package\Data Flow Task\1553:invalid}," ",1))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -1244,7 +1244,7 @@ where [refTable].[LeadSource] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\1545:invalid};</property>
+                  name="ParameterMap">#{Package\Data Flow Task\1554:invalid};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1525,7 +1525,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\1546:invalid};</property>
+                  name="ParameterMap">#{Package\Data Flow Task\1555:invalid};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1674,7 +1674,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\1547:invalid};</property>
+                  name="ParameterMap">#{Package\Data Flow Task\1556:invalid};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5341,7 +5341,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
       DTS:refId="Package\Execute SQL Task 1_DeletingLending_QB"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{EF285D9B-28F7-4452-B6C0-C4D812DC1F47}"
+      DTS:DTSID="{12E8B181-D523-421A-B7E9-50A7600C1526}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task 1_DeletingLending_QB"
@@ -5350,7 +5350,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{DEF43B7B-E4C4-4133-BC04-63898391A44E}"
+          SQLTask:Connection="{41CD3745-BEBC-4F3C-87CD-A57A050CD517}"
           SQLTask:SqlStatementSource="delete from Stg_Meron_Dilnesaw_QL&#xA;where SourceName= 'Sharepoint'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -5358,7 +5358,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
       DTS:refId="Package\Execute SQL Task_MaxLastModifieddate"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{EE487EC1-BC71-4941-B058-4640FC8C482B}"
+      DTS:DTSID="{3FF1EF2C-C323-4AFA-BCAE-EF12DCE96F6F}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task_MaxLastModifieddate"
@@ -5367,7 +5367,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{DEF43B7B-E4C4-4133-BC04-63898391A44E}"
+          SQLTask:Connection="{41CD3745-BEBC-4F3C-87CD-A57A050CD517}"
           SQLTask:SqlStmtSourceType="Variable"
           SQLTask:SqlStatementSource="User::varGetMaxModifiedDate"
           SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
@@ -5391,7 +5391,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{C99E75DA-E44F-44FC-A7E6-A3A3615B09C9}"
+      DTS:DTSID="{CB4003DF-0CD5-43F2-A7CC-8CC5B8A1EBB7}"
       DTS:From="Package\Execute SQL Task_MaxLastModifieddate"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -5399,7 +5399,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{41446CED-D738-4B64-A570-50353DE8A05D}"
+      DTS:DTSID="{874B2E96-01E4-454B-9A82-D99AE1C6DBC6}"
       DTS:From="Package\Execute SQL Task 1_DeletingLending_QB"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -5409,7 +5409,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnError]"
       DTS:CreationName="OnError"
-      DTS:DTSID="{20B86494-AD9A-4A5D-B55D-04A414F34F48}"
+      DTS:DTSID="{3786BDE4-AEF0-4265-BD8C-DE51F4D2331D}"
       DTS:EventID="7798881"
       DTS:EventName="OnError"
       DTS:LocaleID="-1">
@@ -5417,7 +5417,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{55D7B0E9-CC45-4171-8B53-D247A07B7BDD}"
+          DTS:DTSID="{63FE54E3-74D7-4BAC-B65D-6CC2E5699863}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -5430,7 +5430,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\Execute SQL Task_ErrorLog"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{3CE650AC-0243-4B03-A840-C09B8406B082}"
+          DTS:DTSID="{EC7053CF-D246-44CE-B953-A14AC9BD28CF}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task_ErrorLog"
@@ -5440,7 +5440,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
             <DTS:EventHandler
               DTS:refId="Package.EventHandlers[OnError]\Execute SQL Task_ErrorLog.EventHandlers[OnError]"
               DTS:CreationName="OnError"
-              DTS:DTSID="{BE377C21-637D-462D-BE3F-6945D8A39A92}"
+              DTS:DTSID="{C6347D24-02AB-4D0E-BF8C-3B8B4609F9E1}"
               DTS:EventID="1996513536"
               DTS:EventName="OnError"
               DTS:LocaleID="-1">
@@ -5448,7 +5448,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
                 <DTS:Variable
                   DTS:CreationName=""
                   DTS:Description="The propagate property of the event"
-                  DTS:DTSID="{F2F4D2AD-D768-4436-A2C8-973C63C92587}"
+                  DTS:DTSID="{B9F987E8-0E6E-4668-A48F-C8F287FB2A0A}"
                   DTS:IncludeInDebugDump="6789"
                   DTS:Namespace="System"
                   DTS:ObjectName="Propagate">
@@ -5461,7 +5461,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
           </DTS:EventHandlers>
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{40098CD7-75E6-4F2D-8E09-49F62DCFD03F}"
+              SQLTask:Connection="{48E3340F-1E6F-45E6-AA17-08C2F39A45EE}"
               SQLTask:SqlStatementSource="INSERT INTO [dbo].[Quicken_Loans_ETL_Error_Log]&#xA;(&#xA;PackageID &#xA;,PackageName  &#xA;,SourceName&#xA;,LoadDate&#xA;,RunBy  &#xA;,ErrorCode&#xA;,ErrorDescription&#xA;)&#xA;Values&#xA;       (?, ?, ?, ?, ?, ?, ? )&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -5512,7 +5512,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\Script Task"
           DTS:CreationName="Microsoft.ScriptTask"
           DTS:Description="Script Task"
-          DTS:DTSID="{EFCC9B6F-70A1-4A75-85FC-298D54DC31F1}"
+          DTS:DTSID="{D8F5D080-4E24-42BA-928F-F5954FE4BFCF}"
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Script Task">
@@ -5532,7 +5532,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package.EventHandlers[OnError].PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{B4626215-BCA3-420A-947B-F9BD07104D1F}"
+          DTS:DTSID="{CCC53F9D-E64F-4CBE-B81C-548CC7999A1D}"
           DTS:From="Package.EventHandlers[OnError]\Execute SQL Task_ErrorLog"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -5542,7 +5542,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnPostExecute]"
       DTS:CreationName="OnPostExecute"
-      DTS:DTSID="{2F24599E-F4AC-4D46-825C-7556EBDFB10A}"
+      DTS:DTSID="{AEF952F2-6E3C-40B0-B138-771166E5CAEA}"
       DTS:EventID="1996513536"
       DTS:EventName="OnPostExecute"
       DTS:LocaleID="-1">
@@ -5550,7 +5550,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{5F5FA5FC-305C-423F-98AA-41742A214689}"
+          DTS:DTSID="{E5239359-C7C3-42E0-AAE5-5D178403E638}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -5563,7 +5563,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
           DTS:refId="Package.EventHandlers[OnPostExecute]\Execute SQL Task 1_ETLLOG"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{31C75984-2C4B-4108-A5F2-BC99565DA693}"
+          DTS:DTSID="{69D96622-0D71-43D9-9963-48C144458F5E}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task 1_ETLLOG"
@@ -5571,7 +5571,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{40098CD7-75E6-4F2D-8E09-49F62DCFD03F}"
+              SQLTask:Connection="{48E3340F-1E6F-45E6-AA17-08C2F39A45EE}"
               SQLTask:SqlStatementSource="insert into  [dbo].[QL_FirstName_LastName_ETL_Log](&#xA; PackageID &#xA; ,PackageName&#xA; ,SourceName&#xA; ,Runtime&#xA; ,RunBy&#xA; ,NumberOfRowsInserted&#xA; ,MaxLastModifiedDate)&#xA;values(?,?,?,?,?,?,?)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -5622,7 +5622,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
           DTS:refId="Package.EventHandlers[OnPostExecute]\Script Task"
           DTS:CreationName="Microsoft.ScriptTask"
           DTS:Description="Script Task"
-          DTS:DTSID="{ED466499-248A-402E-9DF4-9C6197F475F5}"
+          DTS:DTSID="{E02D4E77-FEF9-41F8-A000-BDE48D96F4C0}"
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Script Task">
@@ -6289,7 +6289,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:PrecedenceConstraint
           DTS:refId="Package.EventHandlers[OnPostExecute].PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{8629D710-3CCC-46F8-91ED-9B2D0072D8D7}"
+          DTS:DTSID="{32D9AC24-5AD2-4E97-8E59-A978FDBC3FA7}"
           DTS:From="Package.EventHandlers[OnPostExecute]\Execute SQL Task 1_ETLLOG"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -6490,26 +6490,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="174.666666666667,42.6666666666667"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="116.071426841829,240.842109796413" />
-        <NodeLayout
-          Size="165.333333333334,42.6666666666667"
-          Id="Package\Data Flow Task\Derived Column 1"
-          TopLeft="194.791663764045,134.561406041557" />
-        <NodeLayout
-          Size="166.666666666667,42.6666666666667"
-          Id="Package\Data Flow Task\Salesforce Source"
-          TopLeft="338.541661622003,26.725146241759" />
-        <NodeLayout
-          Size="156,42.6666666666667"
-          Id="Package\Data Flow Task\Derived Column"
-          TopLeft="640.773799975536,308.220557179933" />
-        <NodeLayout
-          Size="141.333333333334,42.6666666666667"
-          Id="Package\Data Flow Task\Row Count 1"
-          TopLeft="133.035712303328,320.075193618096" />
-        <NodeLayout
           Size="162.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\Not Match Output"
           TopLeft="183.035711558269,648.412709132571" />
@@ -6517,6 +6497,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Size="160,42.6666666666667"
           Id="Package\Data Flow Task\Lookup_Channel"
           TopLeft="714.015140875498,444.813172936617" />
+        <NodeLayout
+          Size="156,42.6666666666667"
+          Id="Package\Data Flow Task\Derived Column"
+          TopLeft="640.773799975536,308.220557179933" />
+        <NodeLayout
+          Size="186.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task\Lookup_MarketSource"
+          TopLeft="360.20832796581,415.320806446891" />
         <NodeLayout
           Size="256,42.6666666666667"
           Id="Package\Data Flow Task\Conditional Split_BorrowerFirstName"
@@ -6527,180 +6515,20 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           TopLeft="98.4821413896448,525.756897132405" />
         <NodeLayout
           Size="186.666666666667,42.6666666666667"
-          Id="Package\Data Flow Task\Lookup_MarketSource"
-          TopLeft="360.20832796581,415.320806446891" />
-        <NodeLayout
-          Size="186.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\Lookup 1_LeadSource"
           TopLeft="449.066551749946,519.050358947625" />
+        <NodeLayout
+          Size="141.333333333334,42.6666666666667"
+          Id="Package\Data Flow Task\Row Count 1"
+          TopLeft="133.035712303328,320.075193618096" />
         <NodeLayout
           Size="157.333333333334,42.6666666666667"
           Id="Package\Data Flow Task\Conditional Split"
           TopLeft="126.78571239646,399.674191516585" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Match Output]"
-          TopLeft="453.541661299144,457.987473113558">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="88.8582237841351,61.0628858340679"
-              Start="0,0"
-              End="88.8582237841351,53.5628858340679">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.5314429170339" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.5314429170339"
-                    Point2="0,30.5314429170339"
-                    Point3="4,30.5314429170339" />
-                  <mssgle:LineSegment
-                    End="84.8582237841351,30.5314429170339" />
-                  <mssgle:CubicBezierSegment
-                    Point1="84.8582237841351,30.5314429170339"
-                    Point2="88.8582237841351,30.5314429170339"
-                    Point3="88.8582237841351,34.5314429170339" />
-                  <mssgle:LineSegment
-                    End="88.8582237841351,53.5628858340679" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-3.76227482668244,35.5314429170339,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Keep1]"
-          TopLeft="708.219147198217,138.600366240512">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="10.5546527773189,169.620190939421"
-              Start="0,0"
-              End="10.5546527773189,162.120190939421">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,80.8100954697106" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,80.8100954697106"
-                    Point2="0,84.8100954697106"
-                    Point3="4,84.8100954697106" />
-                  <mssgle:LineSegment
-                    End="6.55465277731889,84.8100954697106" />
-                  <mssgle:CubicBezierSegment
-                    Point1="6.55465277731889,84.8100954697106"
-                    Point2="10.5546527773189,84.8100954697106"
-                    Point3="10.5546527773189,88.8100954697106" />
-                  <mssgle:LineSegment
-                    End="10.5546527773189,162.120190939421" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-6.17365017384055,89.8100954697106,22.901953125,11.2822265625"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Keep]"
-          TopLeft="204.57737901656,399.674191516585">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,-36.9323312318226"
-              Start="0,0"
-              End="0,-29.4323312318226">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-29.4323312318226" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-11.4509765625,-20.3572788971613,22.901953125,11.2822265625"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="718.773799975536,350.8872238466">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="75.2413408999621,93.9259490900171"
-              Start="0,0"
-              End="75.2413408999621,86.4259490900171">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,42.9629745450085" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,42.9629745450085"
-                    Point2="0,46.9629745450085"
-                    Point3="4,46.9629745450085" />
-                  <mssgle:LineSegment
-                    End="71.2413408999621,46.9629745450085" />
-                  <mssgle:CubicBezierSegment
-                    Point1="71.2413408999621,46.9629745450085"
-                    Point2="75.2413408999621,46.9629745450085"
-                    Point3="75.2413408999621,50.9629745450085" />
-                  <mssgle:LineSegment
-                    End="75.2413408999621,86.4259490900171" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Salesforce Source Output]"
-          TopLeft="421.874994955336,69.3918129084256">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-144.416664524625,65.1695931331309"
-              Start="0,0"
-              End="-144.416664524625,57.6695931331309">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.5847965665655" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.5847965665655"
-                    Point2="0,32.5847965665655"
-                    Point3="-4,32.5847965665655" />
-                  <mssgle:LineSegment
-                    End="-140.416664524625,32.5847965665655" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-140.416664524625,32.5847965665655"
-                    Point2="-144.416664524625,32.5847965665655"
-                    Point3="-144.416664524625,36.5847965665655" />
-                  <mssgle:LineSegment
-                    End="-144.416664524625,57.6695931331309" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="116.071426841829,240.842109796413" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Row Count Output 1]"
           TopLeft="203.553569572579,320.075193618096">
@@ -6841,6 +6669,178 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <mssgm:EdgeLabel
               BoundingBox="-113.7335918989,5,96.3827734375,11.609375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Lookup Match Output]"
+          TopLeft="453.541661299144,457.987473113558">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="88.8582237841351,61.0628858340679"
+              Start="0,0"
+              End="88.8582237841351,53.5628858340679">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5314429170339" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.5314429170339"
+                    Point2="0,30.5314429170339"
+                    Point3="4,30.5314429170339" />
+                  <mssgle:LineSegment
+                    End="84.8582237841351,30.5314429170339" />
+                  <mssgle:CubicBezierSegment
+                    Point1="84.8582237841351,30.5314429170339"
+                    Point2="88.8582237841351,30.5314429170339"
+                    Point3="88.8582237841351,34.5314429170339" />
+                  <mssgle:LineSegment
+                    End="88.8582237841351,53.5628858340679" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-3.76227482668244,35.5314429170339,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Keep]"
+          TopLeft="204.57737901656,399.674191516585">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-36.9323312318226"
+              Start="0,0"
+              End="0,-29.4323312318226">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-29.4323312318226" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-11.4509765625,-20.3572788971613,22.901953125,11.2822265625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          TopLeft="718.773799975536,350.8872238466">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="75.2413408999621,93.9259490900171"
+              Start="0,0"
+              End="75.2413408999621,86.4259490900171">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.9629745450085" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,42.9629745450085"
+                    Point2="0,46.9629745450085"
+                    Point3="4,46.9629745450085" />
+                  <mssgle:LineSegment
+                    End="71.2413408999621,46.9629745450085" />
+                  <mssgle:CubicBezierSegment
+                    Point1="71.2413408999621,46.9629745450085"
+                    Point2="75.2413408999621,46.9629745450085"
+                    Point3="75.2413408999621,50.9629745450085" />
+                  <mssgle:LineSegment
+                    End="75.2413408999621,86.4259490900171" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="166.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task\Salesforce Source"
+          TopLeft="338.541661622003,26.725146241759" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Keep1]"
+          TopLeft="708.219147198217,138.600366240512">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="10.5546527773189,169.620190939421"
+              Start="0,0"
+              End="10.5546527773189,162.120190939421">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,80.8100954697106" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,80.8100954697106"
+                    Point2="0,84.8100954697106"
+                    Point3="4,84.8100954697106" />
+                  <mssgle:LineSegment
+                    End="6.55465277731889,84.8100954697106" />
+                  <mssgle:CubicBezierSegment
+                    Point1="6.55465277731889,84.8100954697106"
+                    Point2="10.5546527773189,84.8100954697106"
+                    Point3="10.5546527773189,88.8100954697106" />
+                  <mssgle:LineSegment
+                    End="10.5546527773189,162.120190939421" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-6.17365017384055,89.8100954697106,22.901953125,11.2822265625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="165.333333333334,42.6666666666667"
+          Id="Package\Data Flow Task\Derived Column 1"
+          TopLeft="194.791663764045,134.561406041557" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Salesforce Source Output]"
+          TopLeft="421.874994955336,69.3918129084256">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-144.416664524625,65.1695931331309"
+              Start="0,0"
+              End="-144.416664524625,57.6695931331309">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.5847965665655" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.5847965665655"
+                    Point2="0,32.5847965665655"
+                    Point3="-4,32.5847965665655" />
+                  <mssgle:LineSegment
+                    End="-140.416664524625,32.5847965665655" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-140.416664524625,32.5847965665655"
+                    Point2="-144.416664524625,32.5847965665655"
+                    Point3="-144.416664524625,36.5847965665655" />
+                  <mssgle:LineSegment
+                    End="-144.416664524625,57.6695931331309" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
