@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-BPD4JUV"
   DTS:CreatorName="DESKTOP-BPD4JUV\meron"
-  DTS:DTSID="{AFA90632-BEDF-4271-8B02-AF6EB8716AD2}"
+  DTS:DTSID="{8014001B-CE71-4BDA-81AC-D94729CA77FB}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.128"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Pkg_Meron_Dilnesaw_Lending_LendingWise"
+  DTS:ObjectName="Practice"
   DTS:PackageType="5"
-  DTS:VersionBuild="66"
-  DTS:VersionGUID="{C6A83D09-DD88-4933-8E89-B57EC8B20FD6}">
+  DTS:VersionBuild="68"
+  DTS:VersionGUID="{8F3578C0-A98C-4F83-A4A7-9E4825D86697}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -188,7 +188,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varLoaddate">
       <DTS:VariableValue
-        DTS:DataType="7">9/4/2020 11:10:18 PM</DTS:VariableValue>
+        DTS:DataType="7">9/5/2020 3:44:54 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -237,7 +237,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/4/2020 11:10:18 PM</DTS:VariableValue>
+        DTS:DataType="7">9/5/2020 3:44:54 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -284,7 +284,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/4/2020 11:10:18 PM</DTS:VariableValue>
+        DTS:DataType="7">9/5/2020 3:44:54 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -3859,12 +3859,12 @@ where [refTable].[LastModifiedDate] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="ActualClosingDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AmortizationType" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="AnnualPercentageRate" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="ApplicationDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ApplicationReturnedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ApplicationStartedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AppraisedValue" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="ApprovalDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ApprovalStatus" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="BorrAddress" dataType="DT_STR" length="159" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="BorrBirthDate" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BorrCity" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="BorrEmailAddress" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BorrFirstName" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BorrGender" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BorrLastName" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BorrNoYearsOnJob" dataType="DT_NUMERIC" length="0" precision="24" scale="10" codePage="0"/&gt;&lt;referenceColumn name="BorrState" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="BorrTotalIncome" dataType="DT_NUMERIC" length="0" precision="26" scale="10" codePage="0"/&gt;&lt;referenceColumn name="BorrZip" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="BottomQualificationRatios" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="Channel" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CloserFirstName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CloserFullName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CloserLastName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="ClosingDisclosureRecievedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CombinedLoanToValueRatio" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="ConditionalApprovalDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ConditionsReceivedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CreditPullDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CurrentMilestone" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CurrentMilestoneTrackingDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DenialDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DisbursementDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DocumentPreparedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DocumentResubmittedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DocumentReviewedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DocumentShippingDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DocumentSigningDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DocumentSubmittalDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EstimatedLoanClosingDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FinalDocumentDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FundedTier" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FinallCreditScore" dataType="DT_NUMERIC" length="0" precision="24" scale="10" codePage="0"/&gt;&lt;referenceColumn name="FundedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="HouseOnSaleState" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="HouseOnSaleStreet" dataType="DT_STR" length="159" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="HouseOnSaleZip" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="InitialClosingDisclosureSentDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="InitialDisclosureProvidedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="InitialLoanEstimateDueDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="InitialLoanEstimateSentDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="InterestRate" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="IntialLoanAmount" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="IsBorrSelfEmployeedFlag" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="IsConstructionLoan" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LastLoadDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastModifiedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LeadDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LeadId" dataType="DT_STR" length="132" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LeadSource" dataType="DT_STR" length="255" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LeadSourceType" dataType="DT_STR" length="255" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LoadBy" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LoadDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanExpirationDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanID" dataType="DT_STR" length="72" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LoanInformationDocumentDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanOfficerEmail" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanOfficerFirstName" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanOfficerFullName" dataType="DT_WSTR" length="101" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanOfficerLastName" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanProgram" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LoanPurpose" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LoanSetupDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanStatus" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LoanStatusActionDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanTerm" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="LoanToValueRatio" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="LoanType" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LockDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LockExpireDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="MarketSource" dataType="DT_STR" length="7" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MilestoneStatus" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MortgageInsuranceCompany" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Net_Buy_Price" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="OfficeID" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="OriginationFee" dataType="DT_NUMERIC" length="0" precision="27" scale="13" codePage="0"/&gt;&lt;referenceColumn name="ProcessingDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ProcessorFirstName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="ProcessorFullName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="ProcessorLastName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="PropertyOccupancyType" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="QAFailDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="QAStatus" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="SourceName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="TopQualificationRatios" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="TotalFees" dataType="DT_NUMERIC" length="0" precision="27" scale="13" codePage="0"/&gt;&lt;referenceColumn name="TotalLoanAmt" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="UnderwriterFirstName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="UnderwriterFullName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="UnderwriterLastName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="UnderwriterRiskAssess" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="UnderwritingReceivedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="ActualClosingDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AmortizationType" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="AnnualPercentageRate" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="ApplicationDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ApplicationReturnedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ApplicationStartedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AppraisedValue" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="ApprovalDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ApprovalStatus" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="BorrAddress" dataType="DT_STR" length="159" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="BorrBirthDate" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BorrCity" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="BorrEmailAddress" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BorrFirstName" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BorrGender" dataType="DT_WSTR" length="1" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BorrLastName" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="BorrNoYearsOnJob" dataType="DT_NUMERIC" length="0" precision="24" scale="10" codePage="0"/&gt;&lt;referenceColumn name="BorrState" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="BorrTotalIncome" dataType="DT_NUMERIC" length="0" precision="26" scale="10" codePage="0"/&gt;&lt;referenceColumn name="BorrZip" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="BottomQualificationRatios" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="Channel" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CloserFirstName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CloserFullName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CloserLastName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="ClosingDisclosureRecievedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CombinedLoanToValueRatio" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="ConditionalApprovalDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ConditionsReceivedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CreditPullDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CurrentMilestone" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CurrentMilestoneTrackingDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DenialDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DisbursementDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DocumentPreparedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DocumentResubmittedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DocumentReviewedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DocumentShippingDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DocumentSigningDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DocumentSubmittalDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EstimatedLoanClosingDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FinalDocumentDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FundedTier" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FinallCreditScore" dataType="DT_NUMERIC" length="0" precision="24" scale="10" codePage="0"/&gt;&lt;referenceColumn name="FundedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="HouseOnSaleState" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="HouseOnSaleStreet" dataType="DT_STR" length="159" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="HouseOnSaleZip" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="InitialClosingDisclosureSentDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="InitialDisclosureProvidedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="InitialLoanEstimateDueDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="InitialLoanEstimateSentDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="InterestRate" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="IntialLoanAmount" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="IsBorrSelfEmployeedFlag" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="IsConstructionLoan" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LastLoadDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastModifiedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LeadDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LeadId" dataType="DT_STR" length="132" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LeadSource" dataType="DT_STR" length="255" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LeadSourceType" dataType="DT_STR" length="255" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LoadBy" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LoadDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanExpirationDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanID" dataType="DT_STR" length="72" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LoanInformationDocumentDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanOfficerEmail" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanOfficerFirstName" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanOfficerFullName" dataType="DT_WSTR" length="101" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanOfficerLastName" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanProgram" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LoanPurpose" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LoanSetupDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanStatus" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LoanStatusActionDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LoanTerm" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="LoanToValueRatio" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="LoanType" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="LockDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LockExpireDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="MarketSource" dataType="DT_STR" length="7" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MilestoneStatus" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="MortgageInsuranceCompany" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Net_Buy_Price" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="OfficeID" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="OriginationFee" dataType="DT_NUMERIC" length="0" precision="27" scale="13" codePage="0"/&gt;&lt;referenceColumn name="ProcessingDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ProcessorFirstName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="ProcessorFullName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="ProcessorLastName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="PropertyOccupancyType" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="QAFailDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="QAStatus" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="SourceName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="TopQualificationRatios" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="TotalFees" dataType="DT_NUMERIC" length="0" precision="27" scale="13" codePage="0"/&gt;&lt;referenceColumn name="TotalLoanAmt" dataType="DT_NUMERIC" length="0" precision="23" scale="10" codePage="0"/&gt;&lt;referenceColumn name="UnderwriterFirstName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="UnderwriterFullName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="UnderwriterLastName" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="UnderwriterRiskAssess" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="UnderwritingReceivedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="InsuranceCompany" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="MarketSourceName" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\620:invalid};</property>
+                  name="ParameterMap">#{Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedDate]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -7812,7 +7812,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="186.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\Lookup 1_LeadSource"
-          TopLeft="525.852264891463,494.41877953663" />
+          TopLeft="538.977264695885,519.734569486821" />
         <NodeLayout
           Size="186.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\Lookup_MarketSource"
@@ -7852,7 +7852,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="121.333333333334,42.6666666666667"
           Id="Package\Data Flow Task\Multicast"
-          TopLeft="349.107137655041,548.451137658774" />
+          TopLeft="320.357138083449,571.714295991382" />
         <NodeLayout
           Size="256,42.6666666666667"
           Id="Package\Data Flow Task\Conditional Split_BorrowerFirstName"
@@ -8029,37 +8029,37 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Lookup No Match Output]"
-          TopLeft="321.196426944275,511.782794437606">
+          TopLeft="215.196426944275,527.338349993162">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="27.9107107107659,58.0016765544999"
+              EndConnector="165.827377805841,44.3759459982194"
               Start="0,0"
-              End="20.4107107107659,58.0016765544999">
+              End="165.827377805841,36.8759459982194">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="7.76957680574466,0" />
+                    End="0,18.1879729991097" />
                   <mssgle:CubicBezierSegment
-                    Point1="7.76957680574466,0"
-                    Point2="11.7695768057447,0"
-                    Point3="11.7695768057447,4" />
+                    Point1="0,18.1879729991097"
+                    Point2="0,22.1879729991097"
+                    Point3="4,22.1879729991097" />
                   <mssgle:LineSegment
-                    End="11.7695768057447,54.0016765544999" />
+                    End="161.827377805841,22.1879729991097" />
                   <mssgle:CubicBezierSegment
-                    Point1="11.7695768057447,54.0016765544999"
-                    Point2="11.7695768057447,58.0016765544999"
-                    Point3="15.7695768057447,58.0016765544999" />
+                    Point1="161.827377805841,22.1879729991097"
+                    Point2="165.827377805841,22.1879729991097"
+                    Point3="165.827377805841,26.1879729991097" />
                   <mssgle:LineSegment
-                    End="20.4107107107659,58.0016765544999" />
+                    End="165.827377805841,36.8759459982194" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-44.0368099130053,-17.609375,111.6127734375,11.609375"
+              BoundingBox="27.1073021841705,27.1879729991097,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -8173,37 +8173,37 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Lookup Match Output1]"
-          TopLeft="525.852264891463,515.752112869963">
+          TopLeft="538.977264695885,541.067902820154">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-204.655837947188,-9.74709621013352"
+              EndConnector="-217.78083775161,-35.0628861603251"
               Start="0,0"
-              End="-197.155837947188,-9.74709621013352">
+              End="-210.28083775161,-35.0628861603251">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-98.327918973594,0" />
+                    End="-104.890418875805,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="-98.327918973594,0"
-                    Point2="-102.327918973594,0"
-                    Point3="-102.327918973594,-4" />
+                    Point1="-104.890418875805,0"
+                    Point2="-108.890418875805,0"
+                    Point3="-108.890418875805,-4" />
                   <mssgle:LineSegment
-                    End="-102.327918973594,-5.74709621013352" />
+                    End="-108.890418875805,-31.0628861603251" />
                   <mssgle:CubicBezierSegment
-                    Point1="-102.327918973594,-5.74709621013352"
-                    Point2="-102.327918973594,-9.74709621013352"
-                    Point3="-106.327918973594,-9.74709621013352" />
+                    Point1="-108.890418875805,-31.0628861603251"
+                    Point2="-108.890418875805,-35.0628861603251"
+                    Point3="-112.890418875805,-35.0628861603251" />
                   <mssgle:LineSegment
-                    End="-197.155837947188,-9.74709621013352" />
+                    End="-210.28083775161,-35.0628861603251" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-150.519305692344,1,96.3827734375,11.609375"
+              BoundingBox="-157.081805594555,1,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -8213,33 +8213,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="273.977268644693,45.2608805241031"
+              EndConnector="287.102268449115,70.5766704742944"
               Start="0,0"
-              End="273.977268644693,37.7608805241031">
+              End="287.102268449115,63.0766704742944">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.6304402620516" />
+                    End="0,31.2883352371472" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,18.6304402620516"
-                    Point2="0,22.6304402620516"
-                    Point3="4,22.6304402620516" />
+                    Point1="0,31.2883352371472"
+                    Point2="0,35.2883352371472"
+                    Point3="4,35.2883352371472" />
                   <mssgle:LineSegment
-                    End="269.977268644693,22.6304402620516" />
+                    End="283.102268449115,35.2883352371472" />
                   <mssgle:CubicBezierSegment
-                    Point1="269.977268644693,22.6304402620516"
-                    Point2="273.977268644693,22.6304402620516"
-                    Point3="273.977268644693,26.6304402620516" />
+                    Point1="283.102268449115,35.2883352371472"
+                    Point2="287.102268449115,35.2883352371472"
+                    Point3="287.102268449115,39.2883352371472" />
                   <mssgle:LineSegment
-                    End="273.977268644693,37.7608805241031" />
+                    End="287.102268449115,63.0766704742944" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="88.7972476035966,27.6304402620516,96.3827734375,11.609375"
+              BoundingBox="95.3597475058077,40.2883352371472,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -8443,7 +8443,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -8453,7 +8453,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
