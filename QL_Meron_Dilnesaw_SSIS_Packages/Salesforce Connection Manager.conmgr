@@ -3,14 +3,16 @@
   DTS:ObjectName="Salesforce Connection Manager"
   DTS:DTSID="{898FB7DF-CF1A-4E9A-AEA6-DEBCEB32A53E}"
   DTS:CreationName="Salesforce">
+  <DTS:PropertyExpression
+    DTS:Name="AllowFieldTruncation">@[$Project::SalesforceConnectionManager_AllowFieldTruncation]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <SalesforceConnectionManager
-      ConnectionString="InstanceType=Sandbox;AuthenticationType=AuthorizationCode;ServiceEndpoint=SOAP;ServiceUrl=https://test.salesforce.com/services/Soap/u/48.0;UserName=salesforce@dunallc.com.sandboxdev;ServiceTimeout=120;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;ProxyUsername=;RetryOnIntermittentErrors=True"
+      ConnectionString="InstanceType=Sandbox;AuthenticationType=AuthorizationCode;ServiceEndpoint=SOAP;ServiceUrl=https://test.salesforce.com/services/Soap/u/48.0;TokenPath=;ClientId=;RedirectUri=;CertificateThumbprint=;UserName=salesforce@dunallc.com.sandboxdev;ServiceTimeout=120;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;ProxyUsername=;RetryOnIntermittentErrors=True"
       ConnectByProxy="False">
       <Password
-        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAACDzpiEwoVQHVD4hcgYjilU/xLCfHlWSGs8P+gMAQardgAAAAAOgAAAAAIAACAAAADdik9xQQyZjMy+qerXKCi81V/xtxd7rf2OBIokPLyOqGAAAABOq/znO9DxHWO417zIMh0FkApEiXMiEwLwXz4S0BLFZvJ8ser193tfbjf4QvyeqFF082XKi4hg0MgO4TGGrxB4DWd8HT+H35AahVexmLUuUuhsws/x3kBAdvmgimAXd7RAAAAAhIZp0ZtmHtn2A0RB6uh3VfUWSvVCTRZ4RVOBVd+mgt3Zcp4ZkNLQvgDV/feTrfhH66mTJr5LPrprfkuH9xwCiA==</Password>
+        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAADr3iyEWUsl9P+wFzVO/rVv65StlkSDo3E+l0nPrdbeRgAAAAAOgAAAAAIAACAAAADZp6B7a1p0887IPtw2XMiskaLrMmojRauf0skrYpSHjWAAAACI+yD2C1JsRZUT/d740ebOHn4GoRYNGAUoo8uQR6FSgM91Hj73yKHogMfDWBo80V5CxHm96h7FsOp8DhXdV6tsgqgeYK4SfXBbVr4EKG/KCXoy5LK05Fww94Zgr9AKEDlAAAAACt1w5XHW6tGI3KHxqtJ4weuXsSPz9B07HmUzmVN5ZrdBsZg2IH56pBiKDvwXyJpLeTh7PJK9TiPhFEu9TxNLNQ==</Password>
       <SecurityToken
-        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAAANunVIJfUszIfXkMhGBvu83X9xoN0LfkA6OLXYIB3ALwAAAAAOgAAAAAIAACAAAABO/cGX847ywHW4y/qysdFWk90IPXd/o+GGedNWJnkxLHAAAAAJ96MwN7gQDtA0VN6z4lVzEr0Uv+jPtKtlZV+g+zLTcCOPSpKUUhSZ7rvWvn3mNUuF59ixhC38HYZhdMtX9LvPlSwhs2Th/NH3USEJLmQ7Tew5aXYHUfqKbxxUi8BCeizFzUe9BA4DRF7taIdsqISGQAAAAE5EIUDIKB7/KctNg6TZMgYNTstWqweKhS9Up00DNDUQPB+Epr4wkcVENF6fV7Y42B/kW6/cJUhvO3N8NhFzoU4=</SecurityToken>
+        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAABRCl5TnPSLU2edlSFbHO1mfCLMq34lsq5C1j0kYdosuQAAAAAOgAAAAAIAACAAAAANs2t9wrZ/5mzij/d0/qnCAZa/CF6K3jlYPv3KmYARC3AAAAAFUJLBEBn17WkNbA+e4t/taYWuYQ0ean3n4p/isYQxwUpPkhgQTnr6k+cHb/osWuniDM2RT+G59smOjN69us2O1BAAX46LiLATz4rXie5zQw6cOBg9Lx54BpNTR/huxAEdrDgLlEe18wlFe9+mHKChQAAAAA9e723aeoUWqh0og9WJ4W/AiQup48gKxwedykgZ0U5krvMkOS6RDXhyXV97u4IgGNLRIlHbchNlHLJ8oWDb1aw=</SecurityToken>
     </SalesforceConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
