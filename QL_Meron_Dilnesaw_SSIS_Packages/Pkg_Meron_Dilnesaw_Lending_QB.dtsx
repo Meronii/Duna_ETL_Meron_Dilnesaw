@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="P"
   DTS:PackageType="5"
-  DTS:VersionBuild="102"
-  DTS:VersionGUID="{676720CA-5220-49DC-A20E-ACBC735B11C7}">
+  DTS:VersionBuild="106"
+  DTS:VersionGUID="{C403DCD3-DE40-47C4-9D3A-C0F3C8449A8E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -61,13 +61,13 @@
         <ODataConnectionManager
           UserName="sharepoint@dunatk.com"
           Url="https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc"
-          ConnectionString="Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie=&quot;SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0NDI2NjEwMjAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQ0MzUyNTAyNzkwMTc0MiwwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsZDJkMzc4OWYtODBmYi0wMDAwLTQ5MDAtODhmMzJkZTRiNTU3LGQyZDM3ODlmLTgwZmItMDAwMC00OTAwLTg4ZjMyZGU0YjU1NywsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxKTmVvd3A0TlJUSVUyWmo2b0JrcmZqdFdnRTN5SXQ2MlBpRDdXV3ZudDFrQVVYR0hWamxtQW1DSFBnZDh3ZUdEWnZocnJQYm5GdXpuWjJwTm9ZQWkzWFZKSmRIUDlaVlc4M3haWlAxY1J5SnFpd0tXc3pDVXpRZHFuRS9GM1FZMC9qRUtPc2JhNmxkNWpqSmdVWEpjeHoyZHRXbk0vajBKcWhHMjh4R2ZEby80OWlta3E1dWh3UGZTclI1K3BhbmlFTzVGT3I3WFduZzFrVlliekROQUp5ZFhmM0UzdWZTbnZtK2E0S2Y1NXlRM1NiUk40bnpGRExXQmk2cDI4My9tM3A1UlpXclowR3FhM3FzWW85dGJXaGNtaEU2UENpL0M4YThJNzRmQ1JCYlJDd05XYWxtZHhyVnNUOFJpZ3Bvc2xrSElHcjBYUWlxNnVZcUVwVW1mb2c9PTwvU1A+&quot;;User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104"
+          ConnectionString="Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie=&quot;SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0NDMzNDY1NTAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQ0NDIxMDU1NjM5NTI5NiwwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsOWExYmFiZWUtYjVlMS00ZmRmLTg5MDctYmNmOTgwZTBkNDM0LDlhMWJhYmVlLWI1ZTEtNGZkZi04OTA3LWJjZjk4MGUwZDQzNCwsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxLU0RGcTBtSWxuT0dBWFJOQkx3cGFFaEVPYVdJNUxtempZVCtud28rV3pGNzJsMk92ZWVTcjVwdXgyeWRUUXhDaVZaVG83NkJ5dW05dmZRRnhrTmNqSGlNSVA4YzU2Z0xPdVF1MnRoU2VlT1QzTTRvaHQ3aGh5WGhaVHAxNGR3dUxRSCt0MjhQazBSdG4zaWhRQ2w2MkZpd0Y4WFJxQjA1RzMycmI2OUZhUzFJcXdjSnFNdmhzQzlsK3drWDdIOHRvd1dxRDJuR0VNLy9SMGxOcVVYMkxsT0M2cDBHTHBOelpReEdwSU1McVBYS0xzZVVZR2k0V0JjUDE1N1l6eHpySjJpQUFxd0xhcWFSUkVZd2lnVU1JeXNFelk3bTY4eFRnNWVpSDJMQ1BmMkZPMThLMDBHRllRbGQ0VWVTbUwvaS9qMk1IV1RVYXROTURMQkI3Nm5uZXc9PTwvU1A+&quot;;User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104"
           MicrosoftOnlineServicesAuth="True"
           AuthType="MicrosoftOnlineService"
           ConnectByProxy="False">
           <Password
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABIhoDwZIq2msor7jWyiMiW9B0yA4rGrrHoESgcsrKSmQAAAAAOgAAAAAIAACAAAAArTMcJf+EE9kqHnsozwZIBlW8RjRzjemRXc1W/TYmxITAAAADI+DZj3Tj0xRam7AsUTnI1kzqEhLUE1ahjfQUyWu8gyekARM97jQr2EFVMSWzRVRFAAAAARSj9mbHfxEwIeruzRUehB6/QFzyeE/iM0AysIBCihMGIlDLviBdRWywsoxSgaUhZZMbDfgmqrYaO0usU8t5qiA</Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA3McZUn5WApw5ALYOMOcITGdxGUQd6KKsruXUR9DYZ9QAAAAAOgAAAAAIAACAAAAAleRsl80vP0WW7vxB1tJdofG0N3AW+hmNrRlBKLto3mDAAAAD3IMuH3WbcKRmNKQhmC/gbFa+0LJ2Unr5BQ3pK1vPO2Y1MWpeWifJ6jBHNuZEvtsxAAAAAsW7ITdoe9ZQ5WvOIOpvrB6GNOY6bsTJBfcSjRTDaUNpTukjdFVg4SE+GHrhmcjmanODV7CfI97WAhc/3dYjhkg</Password>
         </ODataConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -151,7 +151,7 @@
       DTS:CreationName=""
       DTS:DTSID="{64E5DA77-151B-444C-824A-ACAD94EDFC53}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;IF EXISTS (   SELECT [SourceName]&#xA;                    , MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;                      FROM    &#x9;[dbo].[Stg_Meron_Dilnesaw_QL]&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;GROUP BY [SourceName]   )&#xA;&#x9;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT [SourceName]&#xA;&#x9;&#x9;, MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;&#x9;&#x9;FROM [dbo].[Stg_Meron_Dilnesaw_QL]&#xA;&#x9;&#x9;GROUP BY [SourceName]&#xA;&#x9;&#x9;END&#xA;&#x9;&#x9;ELSE&#xA;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT ? AS [SourceName],DATEADD(YYYY,-4,GETDATE()) AS MaxLastModifiedDate&#xA;&#x9;&#x9;END&quot;"
+      DTS:Expression="&quot;IF EXISTS (   SELECT [SourceName]&#xA;                    , MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;                      FROM    &#x9;[dbo].[Stg_Meron_Dilnesaw_QL]&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;GROUP BY [SourceName]   )&#xA;&#x9;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT [SourceName]&#xA;&#x9;&#x9;, MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;&#x9;&#x9;FROM [dbo].[Stg_Meron_Dilnesaw_QL]&#xA;&#x9;&#x9;GROUP BY [SourceName]&#xA;&#x9;&#x9;END&#xA;&#x9;&#x9;ELSE&#xA;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT ? AS [SourceName],DATEADD(YYYY,-120,GETDATE()) AS MaxLastModifiedDate&#xA;&#x9;&#x9;END&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varGetMaxModifiedDate">
@@ -168,7 +168,7 @@
 		END
 		ELSE
 		BEGIN
-		SELECT ? AS [SourceName],DATEADD(YYYY,-4,GETDATE()) AS MaxLastModifiedDate
+		SELECT ? AS [SourceName],DATEADD(YYYY,-120,GETDATE()) AS MaxLastModifiedDate
 		END</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
@@ -207,7 +207,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varLoaddate">
       <DTS:VariableValue
-        DTS:DataType="7">9/10/2020 10:48:46 PM</DTS:VariableValue>
+        DTS:DataType="7">9/11/2020 5:52:03 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -256,7 +256,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/10/2020 10:48:46 PM</DTS:VariableValue>
+        DTS:DataType="7">9/11/2020 5:52:03 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -303,7 +303,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/10/2020 10:48:46 PM</DTS:VariableValue>
+        DTS:DataType="7">9/11/2020 5:52:03 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -1821,12 +1821,6 @@
                       cachedDataType="r8"
                       cachedName="OriginationFee"
                       lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[OriginationFee]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Data Conversion_UniCode.Inputs[Data Conversion Input].Columns[DCMortgageInsuranceCompany]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="DCMortgageInsuranceCompany"
-                      lineageId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output].Columns[DCMortgageInsuranceCompany]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -2941,28 +2935,6 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Data Conversion_UniCode.Outputs[Data Conversion Output].Columns[Copy of DCMortgageInsuranceCompany]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      length="128"
-                      lineageId="Package\Data Flow Task\Data Conversion_UniCode.Outputs[Data Conversion Output].Columns[Copy of DCMortgageInsuranceCompany]"
-                      name="Copy of DCMortgageInsuranceCompany"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output].Columns[DCMortgageInsuranceCompany]}</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Data Flow Task\Data Conversion_UniCode.Outputs[Data Conversion Output].Columns[Copy of TotalFees]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
@@ -3085,6 +3057,11 @@
                       cachedLength="128"
                       cachedName="Copy of Closer_Name"
                       lineageId="Package\Data Flow Task\Data Conversion_UniCode.Outputs[Data Conversion Output].Columns[Copy of Closer_Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[MortgageInsuranceCompany]"
+                      cachedDataType="nText"
+                      cachedName="MortgageInsuranceCompany"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[MortgageInsuranceCompany]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -3379,6 +3356,30 @@
                           name="FriendlyExpression">GETDATE()</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[DC_MortgageInsuranceCompany]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="128"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[DC_MortgageInsuranceCompany]"
+                      name="DC_MortgageInsuranceCompany"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,128,1252)([ISNULL](((DT_WSTR,255)#{Package\Data Flow Task\OData Source.Outputs[Output].Columns[MortgageInsuranceCompany]})) ? "Dunatek" : ((DT_WSTR,255)#{Package\Data Flow Task\OData Source.Outputs[Output].Columns[MortgageInsuranceCompany]}))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,128,1252)(ISNULL(((DT_WSTR,255)MortgageInsuranceCompany)) ? "Dunatek" : ((DT_WSTR,255)MortgageInsuranceCompany))</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -3400,87 +3401,6 @@
                       refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Data Flow Task\Derived Column 1"
-              componentClassID="Microsoft.DerivedColumn"
-              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="Derived Column 1"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]"
-                  description="Input to the Derived Column Transformation"
-                  name="Derived Column Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input].Columns[MortgageInsuranceCompany]"
-                      cachedDataType="nText"
-                      cachedName="MortgageInsuranceCompany"
-                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[MortgageInsuranceCompany]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output]"
-                  description="Default Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  name="Derived Column Output"
-                  synchronousInputId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output].Columns[DCMortgageInsuranceCompany]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      length="255"
-                      lineageId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output].Columns[DCMortgageInsuranceCompany]"
-                      name="DCMortgageInsuranceCompany"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">[ISNULL](((DT_STR,255,1252)(DT_WSTR,255)#{Package\Data Flow Task\OData Source.Outputs[Output].Columns[MortgageInsuranceCompany]})) ? "Dunatek" : ((DT_STR,255,1252)(DT_WSTR,255)#{Package\Data Flow Task\OData Source.Outputs[Output].Columns[MortgageInsuranceCompany]})</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">ISNULL(((DT_STR,255,1252)(DT_WSTR,255)MortgageInsuranceCompany)) ? "Dunatek" : ((DT_STR,255,1252)(DT_WSTR,255)MortgageInsuranceCompany)</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output]"
-                  description="Error Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Derived Column Error Output"
-                  synchronousInputId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -4028,7 +3948,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\Data Conversion_UniCode.Outputs[Data Conversion Output].Columns[Copy of DCMortgageInsuranceCompany]};</property>
+                  name="ParameterMap">#{Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[DC_MortgageInsuranceCompany]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -4052,12 +3972,12 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Lookup_MortgageInsurance.Inputs[Lookup Input].Columns[Copy of DCMortgageInsuranceCompany]"
+                      refId="Package\Data Flow Task\Lookup_MortgageInsurance.Inputs[Lookup Input].Columns[DC_MortgageInsuranceCompany]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="128"
-                      cachedName="Copy of DCMortgageInsuranceCompany"
-                      lineageId="Package\Data Flow Task\Data Conversion_UniCode.Outputs[Data Conversion Output].Columns[Copy of DCMortgageInsuranceCompany]">
+                      cachedName="DC_MortgageInsuranceCompany"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[DC_MortgageInsuranceCompany]">
                       <properties>
                         <property
                           dataType="System.String"
@@ -9303,14 +9223,6 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InsuranceCompany]"
                       lineageId="Package\Data Flow Task\Lookup_MortgageInsurance.Outputs[Lookup Match Output].Columns[Insurance_Company]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of DCMortgageInsuranceCompany]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="Copy of DCMortgageInsuranceCompany"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MortgageInsuranceCompany]"
-                      lineageId="Package\Data Flow Task\Data Conversion_UniCode.Outputs[Data Conversion Output].Columns[Copy of DCMortgageInsuranceCompany]" />
-                    <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MarketSourceName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -9937,11 +9849,6 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
               name="Derived Column Output"
               startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Derived Column Output1]"
-              endId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
-              name="Derived Column Output"
-              startId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output]" />
-            <path
               refId="Package\Data Flow Task.Paths[keep]"
               endId="Package\Data Flow Task\Row Count 1.Inputs[Row Count Input 1]"
               name="keep"
@@ -9968,7 +9875,7 @@ where [refTable].[MortgageInsuranceCompany] = ?</property>
               startId="Package\Data Flow Task\Lookup_Channel.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Lookup Match Output3]"
-              endId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]"
+              endId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
               name="Lookup Match Output"
               startId="Package\Data Flow Task\Lookup_MortgageInsurance.Outputs[Lookup Match Output]" />
             <path
@@ -11080,9 +10987,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="165.333333333334,42.6666666666667"
-          Id="Package\Data Flow Task\Derived Column 1"
-          TopLeft="172.023807357819,407.98497008532" />
+          Size="186.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task\Lookup 1_LeadSource"
+          TopLeft="633.88797756732,604.08795453321" />
+        <NodeLayout
+          Size="206.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task\Data Conversion_UniCode"
+          TopLeft="724.196417780062,185.90977793538" />
+        <NodeLayout
+          Size="141.333333333334,42.6666666666667"
+          Id="Package\Data Flow Task\Row Count 1"
+          TopLeft="151.785712023931,237.774440189289" />
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="102.678569898541,67.8345877429829" />
         <NodeLayout
           Size="162.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\Not Match Output"
@@ -11092,49 +11011,101 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Id="Package\Data Flow Task\Lookup_Channel"
           TopLeft="956.574661070603,454.750516482058" />
         <NodeLayout
-          Size="290.666666666667,42.6666666666667"
-          Id="Package\Data Flow Task\Data Conversion_NonUnicode_NonUniCode"
-          TopLeft="832.767844733649,278.864666903072" />
-        <NodeLayout
           Size="156,42.6666666666667"
           Id="Package\Data Flow Task\Derived Column"
           TopLeft="985.267842461223,354.812036753644" />
         <NodeLayout
-          Size="186.666666666667,42.6666666666667"
-          Id="Package\Data Flow Task\Lookup_MarketSource"
-          TopLeft="938.482128872669,537.664167145692" />
-        <NodeLayout
-          Size="206.666666666667,42.6666666666667"
-          Id="Package\Data Flow Task\Data Conversion_UniCode"
-          TopLeft="724.196417780062,185.90977793538" />
-        <NodeLayout
-          Size="144,42.6666666666667"
-          Id="Package\Data Flow Task\OData Source"
-          TopLeft="548.303563258212,3.54811745691613" />
+          Size="290.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task\Data Conversion_NonUnicode_NonUniCode"
+          TopLeft="832.767844733649,278.864666903072" />
         <NodeLayout
           Size="256,42.6666666666667"
           Id="Package\Data Flow Task\Conditional Split_BorrowerFirstName"
           TopLeft="388.254864344421,187.813400551373" />
         <NodeLayout
-          Size="212,42.6666666666667"
-          Id="Package\Data Flow Task\Lookup_MortgageInsurance"
-          TopLeft="177.053568790268,530.807022540744" />
-        <NodeLayout
           Size="186.666666666667,42.6666666666667"
-          Id="Package\Data Flow Task\Lookup 1_LeadSource"
-          TopLeft="633.88797756732,604.08795453321" />
+          Id="Package\Data Flow Task\Lookup_MarketSource"
+          TopLeft="938.482128872669,537.664167145692" />
         <NodeLayout
-          Size="141.333333333334,42.6666666666667"
-          Id="Package\Data Flow Task\Row Count 1"
-          TopLeft="151.785712023931,237.774440189289" />
+          Size="144,42.6666666666667"
+          Id="Package\Data Flow Task\OData Source"
+          TopLeft="548.303563258212,3.54811745691613" />
         <NodeLayout
           Size="157.333333333334,42.6666666666667"
           Id="Package\Data Flow Task\Conditional Split"
           TopLeft="184.285711539643,341.614040047807" />
         <NodeLayout
-          Size="174.666666666667,42.6666666666667"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="102.678569898541,67.8345877429829" />
+          Size="212,42.6666666666667"
+          Id="Package\Data Flow Task\Lookup_MortgageInsurance"
+          TopLeft="177.053568790268,530.807022540744" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Data Conversion Output1]"
+          TopLeft="978.101178066982,321.531333569738">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="85.1666643942402,33.2807031839058"
+              Start="0,0"
+              End="85.1666643942402,25.7807031839058">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.6403515919529" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.6403515919529"
+                    Point2="0,16.6403515919529"
+                    Point3="4,16.6403515919529" />
+                  <mssgle:LineSegment
+                    End="81.1666643942402,16.6403515919529" />
+                  <mssgle:CubicBezierSegment
+                    Point1="81.1666643942402,16.6403515919529"
+                    Point2="85.1666643942402,16.6403515919529"
+                    Point3="85.1666643942402,20.6403515919529" />
+                  <mssgle:LineSegment
+                    End="85.1666643942402,25.7807031839058" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
+          TopLeft="827.529751113395,228.576444602047">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="150.571426953587,50.2882223010252"
+              Start="0,0"
+              End="150.571426953587,42.7882223010252">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.1441111505126" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.1441111505126"
+                    Point2="0,25.1441111505126"
+                    Point3="4,25.1441111505126" />
+                  <mssgle:LineSegment
+                    End="146.571426953587,25.1441111505126" />
+                  <mssgle:CubicBezierSegment
+                    Point1="146.571426953587,25.1441111505126"
+                    Point2="150.571426953587,25.1441111505126"
+                    Point3="150.571426953587,29.1441111505126" />
+                  <mssgle:LineSegment
+                    End="150.571426953587,42.7882223010252" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Row Count Output 1]"
           TopLeft="222.452378690598,237.774440189289">
@@ -11161,6 +11132,40 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     Point3="-32.4404754587231,-67.6365928898198" />
                   <mssgle:LineSegment
                     End="-32.4404754587231,-119.77318577964" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Output]"
+          TopLeft="620.303563258212,46.2147841235828">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-104.048698913791,141.59861642779"
+              Start="0,0"
+              End="-104.048698913791,134.09861642779">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66.7993082138951" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,66.7993082138951"
+                    Point2="0,70.7993082138951"
+                    Point3="-4,70.7993082138951" />
+                  <mssgle:LineSegment
+                    End="-100.048698913791,70.7993082138951" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-100.048698913791,70.7993082138951"
+                    Point2="-104.048698913791,70.7993082138951"
+                    Point3="-104.048698913791,74.7993082138951" />
+                  <mssgle:LineSegment
+                    End="-104.048698913791,134.09861642779" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11202,6 +11207,42 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="6.2799216961205,34.6541382305037,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Lookup Match Output3]"
+          TopLeft="283.053568790268,530.807022540744">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-20.1011905839583,-146.52631582627"
+              Start="0,0"
+              End="-20.1011905839583,-139.02631582627">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-69.2631579131352" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-69.2631579131352"
+                    Point2="0,-73.2631579131352"
+                    Point3="-4,-73.2631579131352" />
+                  <mssgle:LineSegment
+                    End="-16.1011905839583,-73.2631579131352" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-16.1011905839583,-73.2631579131352"
+                    Point2="-20.1011905839583,-73.2631579131352"
+                    Point3="-20.1011905839583,-77.2631579131352" />
+                  <mssgle:LineSegment
+                    End="-20.1011905839583,-139.02631582627" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-58.2419820107292,-68.2631579131352,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -11302,6 +11343,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Keep]"
+          TopLeft="644.254864344421,208.19492257671">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="79.9415534356406,0"
+              Start="0,0"
+              End="72.4415534356406,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="72.4415534356406,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="24.7698001553203,5,22.901953125,11.2822265625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Data Flow Task.Paths[keep]"
           TopLeft="262.952378206309,341.614040047807">
           <EdgeLayout.Curve>
@@ -11371,202 +11436,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
-          TopLeft="827.529751113395,228.576444602047">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="150.571426953587,50.2882223010252"
-              Start="0,0"
-              End="150.571426953587,42.7882223010252">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.1441111505126" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.1441111505126"
-                    Point2="0,25.1441111505126"
-                    Point3="4,25.1441111505126" />
-                  <mssgle:LineSegment
-                    End="146.571426953587,25.1441111505126" />
-                  <mssgle:CubicBezierSegment
-                    Point1="146.571426953587,25.1441111505126"
-                    Point2="150.571426953587,25.1441111505126"
-                    Point3="150.571426953587,29.1441111505126" />
-                  <mssgle:LineSegment
-                    End="150.571426953587,42.7882223010252" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Match Output3]"
-          TopLeft="283.053568790268,530.807022540744">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-28.363094765782,-80.1553857887572"
-              Start="0,0"
-              End="-28.363094765782,-72.6553857887572">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-36.0776928943786" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-36.0776928943786"
-                    Point2="0,-40.0776928943786"
-                    Point3="-4,-40.0776928943786" />
-                  <mssgle:LineSegment
-                    End="-24.363094765782,-40.0776928943786" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-24.363094765782,-40.0776928943786"
-                    Point2="-28.363094765782,-40.0776928943786"
-                    Point3="-28.363094765782,-44.0776928943786" />
-                  <mssgle:LineSegment
-                    End="-28.363094765782,-72.6553857887572" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-62.372934101641,-35.0776928943786,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output1]"
-          TopLeft="254.690474024486,407.98497008532">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="8.26190418182347,-23.704263370846"
-              Start="0,0"
-              End="8.26190418182347,-16.204263370846">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-7.85213168542299" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-7.85213168542299"
-                    Point2="0,-11.852131685423"
-                    Point3="4,-11.852131685423" />
-                  <mssgle:LineSegment
-                    End="4.26190418182347,-11.852131685423" />
-                  <mssgle:CubicBezierSegment
-                    Point1="4.26190418182347,-11.852131685423"
-                    Point2="8.26190418182347,-11.852131685423"
-                    Point3="8.26190418182347,-15.852131685423" />
-                  <mssgle:LineSegment
-                    End="8.26190418182347,-16.204263370846" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Output]"
-          TopLeft="620.303563258212,46.2147841235828">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-104.048698913791,141.59861642779"
-              Start="0,0"
-              End="-104.048698913791,134.09861642779">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,66.7993082138951" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,66.7993082138951"
-                    Point2="0,70.7993082138951"
-                    Point3="-4,70.7993082138951" />
-                  <mssgle:LineSegment
-                    End="-100.048698913791,70.7993082138951" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-100.048698913791,70.7993082138951"
-                    Point2="-104.048698913791,70.7993082138951"
-                    Point3="-104.048698913791,74.7993082138951" />
-                  <mssgle:LineSegment
-                    End="-104.048698913791,134.09861642779" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Data Conversion Output1]"
-          TopLeft="978.101178066982,321.531333569738">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="85.1666643942402,33.2807031839058"
-              Start="0,0"
-              End="85.1666643942402,25.7807031839058">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,12.6403515919529" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,12.6403515919529"
-                    Point2="0,16.6403515919529"
-                    Point3="4,16.6403515919529" />
-                  <mssgle:LineSegment
-                    End="81.1666643942402,16.6403515919529" />
-                  <mssgle:CubicBezierSegment
-                    Point1="81.1666643942402,16.6403515919529"
-                    Point2="85.1666643942402,16.6403515919529"
-                    Point3="85.1666643942402,20.6403515919529" />
-                  <mssgle:LineSegment
-                    End="85.1666643942402,25.7807031839058" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Keep]"
-          TopLeft="644.254864344421,208.19492257671">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="79.9415534356406,0"
-              Start="0,0"
-              End="72.4415534356406,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="72.4415534356406,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="15.9011478115703,5,40.6392578125,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -11582,6 +11451,42 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       </GraphLayout>
     </LayoutInfo>
   </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Lookup 1_LeadSource">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[LookupSource]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\Not Match Output">
     <Properties>
@@ -11647,7 +11552,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -11657,46 +11562,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Lookup 1_LeadSource">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[LookupSource]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
           type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
