@@ -9,12 +9,12 @@
     <ODataConnectionManager
       UserName="sharepoint@dunatk.com"
       Url="https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc"
-      ConnectionString="Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie=&quot;SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0MzM2OTQ4NzAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQzNDU1ODg3NTYzODU4NSwwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsYmU3Yzc1OWYtZDBjNy0wMDAwLTQxNzctNWRhNmI3OGJhNzk5LGJlN2M3NTlmLWQwYzctMDAwMC00MTc3LTVkYTZiNzhiYTc5OSwsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxKMEc3OTYra3RwUTJML0huaUtveHZjMVNpRGE0QVZVSDBVaFdWRXBJbWVQaXZuZmxySG9JbkYrbEd1NExFMzZ3M24wSnYrVG81dVU5Q2RGWTJOOU1XM3VGUldLa2gwNSs5U2VsSmJha2hFQW5FZjlmeWNPaHdQN011VW40akt5RzVqYzc5OGpZUVQvclpSekJyQ3pmNEgzc1QxalBvMHk0a2RKckp1b2xDV0dzdzdlZFhFNDl6dEx1NXE1dEF1Sk5aQTY5ekpMdzk4K3NON0xUSk5DbmJhTXZ0UFhPc2dwdVBlcStNS0tzVHlqN1lkMjVxN0JaYmIzRXMvZ200SXQ1VEw1Um5mRkY3YnlvZlhpV3NVSDB4ZjRTUExNZmRmNVNxWWdWMVdGRHpPajFVYTJ2QUVubFNyZWszTFJhSzBsL25oeFVZMkFHbkpNU3ptc1dpaHo2bVE9PTwvU1A+&quot;;User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104"
+      ConnectionString="Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104"
       MicrosoftOnlineServicesAuth="True"
       AuthType="MicrosoftOnlineService"
       ConnectByProxy="False">
       <Password
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAAANIHKNIdcXhop541zYzhwZVpmAFg1Z6fK5sNsIRL6hPAAAAAAOgAAAAAIAACAAAAAiXa0XxFNv4wb4tHdfjdLzF0wwi5hwqLvIwgrEQiQYAkAAAACo2EXYNZvn0g7hZrx26Puc/91D7eLAYXMqbPxuPVn3qsuz0gRMQ3S8vyRzDXO2EB/ix9eA8EuASHEJCFyBNI+WQAAAAMuAJC+svB/YOsMz1A3xe/UCQEOFqEnkXud/3EES5AVC0Ej4scSMueioOaQUyaHjAYVlxpI0aSfgef8y7lDsWDI=</Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAACPCUTV1XENMn2hIV7SxA5TyorazMCTZbCq8JP2lL/IZQAAAAAOgAAAAAIAACAAAABeSrrU+ShEXhNMGGDjIxdIlwbRB9J0S7RV7/Uv1sleikAAAADdtgJwl23M85VuDRJAsWCrsM0ff095a//7WqYTmh4r4l9wvkIDtMt14Gh8srFZrExQQkDvAD3OAGXgxrB4UsYfQAAAAFZyWpgaOQ3s6EedJw2h0W1ffUyn+IkPSxIq5C/s6w9bun01aU+w4S6omG0UzHOkQA9gueGmYsoPFeoIzNRO388=</Password>
     </ODataConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
