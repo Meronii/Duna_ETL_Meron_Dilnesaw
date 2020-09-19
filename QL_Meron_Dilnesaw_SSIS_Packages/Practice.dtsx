@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-BPD4JUV"
   DTS:CreatorName="DESKTOP-BPD4JUV\meron"
-  DTS:DTSID="{323A1F82-0ACA-40F6-A206-F09353D210C5}"
+  DTS:DTSID="{D166D9F1-26F4-4278-8E9A-57AE588E44D6}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.128"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Pkg_Meron_Dilnesaw_Quicken_Loans"
+  DTS:ObjectName="Practice"
   DTS:PackageType="5"
-  DTS:VersionBuild="148"
-  DTS:VersionGUID="{C355A50C-3A12-417E-899B-6A35B08E99BB}">
+  DTS:VersionBuild="150"
+  DTS:VersionGUID="{37DF41DD-32D9-4E40-90EB-DC4BF8554D70}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-BPD4JUV\DUNAPROD2014.Meron]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{51155527-9EB4-4521-AB72-B41C992353AB}"
+      DTS:DTSID="{EEE3993E-1A29-4B4E-8390-51603E04184B}"
       DTS:ObjectName="DESKTOP-BPD4JUV\DUNAPROD2014.Meron">
       <DTS:PropertyExpression
         DTS:Name="ConnectByProxy">@[$Package::DESKTOPBPD4JUVDUNAPROD2014Meron_ConnectByProxy]</DTS:PropertyExpression>
@@ -33,7 +33,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-BPD4JUV\DUNAPROD2014.QLSSISLOG]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{48E3340F-1E6F-45E6-AA17-08C2F39A45EE}"
+      DTS:DTSID="{82E71433-0E0E-4D39-BB43-73045B9170B9}"
       DTS:ObjectName="DESKTOP-BPD4JUV\DUNAPROD2014.QLSSISLOG">
       <DTS:PropertyExpression
         DTS:Name="ConnectByProxy">@[$Package::DESKTOPBPD4JUVDUNAPROD2014QLSSISLOG_ConnectByProxy]</DTS:PropertyExpression>
@@ -47,7 +47,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-BPD4JUV\DUNAPROD2014.STGQL]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{41CD3745-BEBC-4F3C-87CD-A57A050CD517}"
+      DTS:DTSID="{99D915B9-B277-469D-8B7B-7076EB2245E4}"
       DTS:ObjectName="DESKTOP-BPD4JUV\DUNAPROD2014.STGQL">
       <DTS:PropertyExpression
         DTS:Name="ConnectByProxy">@[$Package::DESKTOPBPD4JUVDUNAPROD2014STGQL_ConnectByProxy]</DTS:PropertyExpression>
@@ -63,7 +63,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="11"
-      DTS:DTSID="{B8B2DDED-626F-4816-BC43-3D450D00B6BB}"
+      DTS:DTSID="{17D8C629-AC93-4DB5-B725-1EA3AB8A12E1}"
       DTS:ObjectName="DESKTOPBPD4JUVDUNAPROD2014Meron_ConnectByProxy">
       <DTS:Property
         DTS:DataType="11"
@@ -72,7 +72,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{94B4FDEA-65CB-4CE3-AA85-F4FECCF99355}"
+      DTS:DTSID="{FC11703A-82F9-46E9-8F07-0B48527B053B}"
       DTS:ObjectName="DESKTOPBPD4JUVDUNAPROD2014Meron_ConnectionString">
       <DTS:Property
         DTS:DataType="8"
@@ -81,7 +81,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="11"
-      DTS:DTSID="{2BCA29CF-6C69-4763-AD5B-15D63C3B07B4}"
+      DTS:DTSID="{A71FA173-C4E3-495B-A0DB-C19B05D63C04}"
       DTS:ObjectName="DESKTOPBPD4JUVDUNAPROD2014QLSSISLOG_ConnectByProxy">
       <DTS:Property
         DTS:DataType="11"
@@ -90,7 +90,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{09A8F130-C269-4913-8D18-62A5C40C104F}"
+      DTS:DTSID="{4195D079-C9DE-498A-BA20-CAF58CB0AFCA}"
       DTS:ObjectName="DESKTOPBPD4JUVDUNAPROD2014QLSSISLOG_ConnectionString">
       <DTS:Property
         DTS:DataType="8"
@@ -99,7 +99,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="11"
-      DTS:DTSID="{479B6036-6C31-4ED9-83B4-25F2D741F64F}"
+      DTS:DTSID="{6ECE5F2C-6C6E-4CF6-82C9-8EA4100125C9}"
       DTS:ObjectName="DESKTOPBPD4JUVDUNAPROD2014STGQL_ConnectByProxy">
       <DTS:Property
         DTS:DataType="11"
@@ -108,7 +108,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="8"
-      DTS:DTSID="{9A483D61-C0C1-49BF-A29F-659285203F1C}"
+      DTS:DTSID="{10FEEC14-5915-4765-BABC-09FCC966F7D0}"
       DTS:ObjectName="DESKTOPBPD4JUVDUNAPROD2014STGQL_ConnectionString">
       <DTS:Property
         DTS:DataType="8"
@@ -118,7 +118,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{D10F9E90-B9B4-40AD-81A1-81A35CBE62D3}"
+      DTS:DTSID="{E077BFC0-EB9D-4ACF-9EFE-06289CE6C71F}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="RowCount">
@@ -127,7 +127,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A3FEF5C7-41A4-45E8-BDA4-9E15B6D65D1C}"
+      DTS:DTSID="{BFDB0C51-13CE-4DCF-96C3-0348EDB6BE7F}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="Var">
@@ -136,7 +136,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{8DF7235F-75CD-4207-B76C-1D34BA6C7D51}"
+      DTS:DTSID="{8096C7C2-2BBD-438F-93E8-9603C5D11CCB}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varBody">
@@ -145,7 +145,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{5E0115CE-3C0C-40BB-87D1-407061FE74FE}"
+      DTS:DTSID="{909D0B1D-E5AA-48A8-99AA-88F8B297B658}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="varErrorCode">
@@ -154,7 +154,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{F28ECE1B-CECE-4E1F-B447-CC666258F358}"
+      DTS:DTSID="{8D2B5FEE-D4C0-4CB0-BF1E-1615CC312821}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varFromEmail">
@@ -163,7 +163,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A942EBA3-C509-48AB-87CD-87A2F7FFCC97}"
+      DTS:DTSID="{1261BAA3-164D-418B-B2A6-01AEC0413659}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="&quot;IF EXISTS (   SELECT [SourceName]&#xA;                    , MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;                      FROM    &#x9;[dbo].[Stg_Meron_Dilnesaw_QL] where sourcename=' QuickenLoan'&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;GROUP BY [SourceName]   )&#xA;&#x9;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT [SourceName]&#xA;&#x9;&#x9;, MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;&#x9;&#x9;FROM [dbo].[Stg_Meron_Dilnesaw_QL]&#xA;&#x9;where sourcename= 'QuickenLoan'&#x9;GROUP BY [SourceName]&#xA;&#x9;&#x9;END&#xA;&#x9;&#x9;ELSE&#xA;&#x9;&#x9;BEGIN&#xA;&#x9;&#x9;SELECT ? AS [SourceName],DATEADD(YYYY, -120,GETDATE()) AS MaxLastModifiedDate&#xA;&#x9;&#x9;END&quot;"
       DTS:IncludeInDebugDump="2345"
@@ -187,7 +187,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{41F04457-21E1-4C86-8B44-B77BD97B12B4}"
+      DTS:DTSID="{539FF14B-7E02-4625-8008-A57532DAA911}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="Variable">
@@ -196,7 +196,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{8BD20B9A-BB48-40E1-99D5-8F0FFAB90D7C}"
+      DTS:DTSID="{3E10DBFA-EE0A-4683-9655-490DFDBCAC27}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="Variable1">
@@ -205,7 +205,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{7EA86C84-4227-4845-B7A2-ACFBDC242C22}"
+      DTS:DTSID="{BDCC3F8C-DA1D-47FC-8729-4FF3CEFDED10}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="Variable2">
@@ -214,18 +214,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{72DFCF38-F723-4587-8159-52BF6E795F28}"
+      DTS:DTSID="{37E83D36-39B5-403A-BF81-06C9DA653C36}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="GETDATE()"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varLoaddate">
       <DTS:VariableValue
-        DTS:DataType="7">9/18/2020 9:39:05 PM</DTS:VariableValue>
+        DTS:DataType="7">9/17/2020 6:18:58 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{E31AFD30-EBD1-4EC5-A9F3-6778F47EF7B6}"
+      DTS:DTSID="{424D8A6A-6E44-4335-BB4A-9CFF5BB8FD34}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="varMaxModifiedDate">
@@ -234,7 +234,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{89ACE744-FC59-4F98-B92B-FCBCEF4C7CD5}"
+      DTS:DTSID="{7C3B1921-E645-4017-87D9-AB6C6EC727BD}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varPassward">
@@ -243,7 +243,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{0A47B3B1-A441-4869-94EA-7D03EE2BFA0B}"
+      DTS:DTSID="{C59A68D8-0FFD-4DAD-8934-A1A0E8FA39BA}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="varRowsInserted">
@@ -252,7 +252,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{1617B13C-8C72-4015-BF6F-596B8DDDEC9D}"
+      DTS:DTSID="{DBA4A1AE-15DE-43C8-8F35-DA87EFF2D44B}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[System::UserName]"
       DTS:IncludeInDebugDump="2345"
@@ -263,18 +263,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{6638CD6E-8EFE-4173-86F3-DFD934290CF7}"
+      DTS:DTSID="{3F387D8A-1286-4553-A2A2-1ADEECD091FF}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="GETDATE()"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/18/2020 9:39:05 PM</DTS:VariableValue>
+        DTS:DataType="7">9/17/2020 6:18:58 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{D03C017A-9305-4F86-AB8F-4BF9CFE4ECD7}"
+      DTS:DTSID="{FD9BF1E8-0AEC-4E3C-9E05-728807E3E6B3}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSmtpClient">
@@ -283,7 +283,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{60E3E460-74E6-45D1-B6DC-50C04C687E98}"
+      DTS:DTSID="{AE94B2C7-0D78-4E74-8B65-52848BCA195D}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSmtpServerPort">
@@ -292,7 +292,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{C33599B8-4471-4DF7-950C-ACDD1EB53578}"
+      DTS:DTSID="{9162B020-A66F-458C-A530-E04A54B73819}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSourceName">
@@ -301,7 +301,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{E45F720F-D35C-4967-882B-249D3ADD54B2}"
+      DTS:DTSID="{F6152757-874C-492B-A343-E3E6812DE27F}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varSubject">
@@ -310,18 +310,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{15A75CC6-FB8B-4AEB-8457-ECF6097E6AF1}"
+      DTS:DTSID="{626F2710-2E28-4C49-A30D-A55DC760A87A}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="GETDATE()"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/18/2020 9:39:05 PM</DTS:VariableValue>
+        DTS:DataType="7">9/17/2020 6:18:58 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{FF06C6A4-E5DF-4648-A23E-3CC41585F2EC}"
+      DTS:DTSID="{8A1D3145-78E0-4BAE-B125-A635CED08491}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varToEmail">
@@ -334,7 +334,7 @@
       DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{9E90BFBF-4D94-4A61-B6C2-4C585E443060}"
+      DTS:DTSID="{1726F868-E9E1-4950-BE59-36928A82A0D9}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task"
@@ -344,7 +344,7 @@
         <DTS:EventHandler
           DTS:refId="Package\Data Flow Task.EventHandlers[OnError]"
           DTS:CreationName="OnError"
-          DTS:DTSID="{1BCFE8CF-0768-4C29-8A85-BFBC1F2543A0}"
+          DTS:DTSID="{FCCCFD4F-A5C9-4365-81E0-3815F56F723C}"
           DTS:EventID="7798881"
           DTS:EventName="OnError"
           DTS:LocaleID="-1">
@@ -352,7 +352,7 @@
             <DTS:Variable
               DTS:CreationName=""
               DTS:Description="The propagate property of the event"
-              DTS:DTSID="{38EC9315-D676-45E5-B05C-82208DE9A4F3}"
+              DTS:DTSID="{C6602C27-F0CF-43EA-B2A0-854FEB375C00}"
               DTS:IncludeInDebugDump="6789"
               DTS:Namespace="System"
               DTS:ObjectName="Propagate">
@@ -545,6 +545,55 @@
                       refId="Package\Data Flow Task\Conditional Split_BorrowerFirstName.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Data Flow Task\Conditional Split_BorrowerFirstName.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -6965,40 +7014,6 @@
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\Fuzzy Lookup_MortgageInsurance.Inputs[Fuzzy Lookup Input].Columns[LeadSourceType]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="LeadSourceType"
-                      lineageId="Package\Data Flow Task\Lookup 1_LeadSource.Outputs[Lookup Match Output].Columns[LeadSourceType]">
-                      <properties>
-                        <property
-                          dataType="System.Null"
-                          description="Name of the reference table column with which the input column should be matched."
-                          name="JoinToReferenceColumn"
-                          state="escaped" />
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies whether the match is a fuzzy or an exact match."
-                          name="JoinType"
-                          typeConverter="tcJoinType">2</property>
-                        <property
-                          dataType="System.Single"
-                          description="Specifies the minimum textual similarity required between input and fuzzy matched records on values in this particular join column.  Must be a floating point value between 0.0 and 1.0."
-                          name="MinSimilarity">0</property>
-                        <property
-                          dataType="System.UInt32"
-                          description="Specifies the comparison options for character data. The options are those supported by the FoldString function."
-                          name="FuzzyComparisonFlags"
-                          typeConverter="tcComparisonFlags">1</property>
-                        <property
-                          dataType="System.UInt32"
-                          description="Flags to FoldString that should be used when comparing whether two strings are equivalent."
-                          name="FuzzyComparisonFlagsEx"
-                          typeConverter="tcComparisonFlagsEx">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\Data Flow Task\Fuzzy Lookup_MortgageInsurance.Inputs[Fuzzy Lookup Input].Columns[Mortgageinsurance]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -10499,31 +10514,6 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Fuzzy Lookup_MortgageInsurance.Outputs[Fuzzy Lookup Output].Columns[LeadSourceType]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      lineageId="Package\Data Flow Task\Fuzzy Lookup_MortgageInsurance.Outputs[Fuzzy Lookup Output].Columns[LeadSourceType]"
-                      name="LeadSourceType">
-                      <properties>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the reference table column that is copied to the output for each match result."
-                          name="CopyFromReferenceColumn"
-                          state="escaped" />
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Lookup 1_LeadSource.Outputs[Lookup Match Output].Columns[LeadSourceType]}</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies whether the column is used to indicate confidence or similarity."
-                          name="ColumnType"
-                          typeConverter="tcColumnType">0</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Data Flow Task\Fuzzy Lookup_MortgageInsurance.Outputs[Fuzzy Lookup Output].Columns[Insurance_Company]"
                       dataType="wstr"
                       length="50"
@@ -11184,7 +11174,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                       cachedLength="10"
                       cachedName="LeadSourceType"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeadSourceType]"
-                      lineageId="Package\Data Flow Task\Fuzzy Lookup_MortgageInsurance.Outputs[Fuzzy Lookup Output].Columns[LeadSourceType]" />
+                      lineageId="Package\Data Flow Task\1692:invalid" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ActualClosingDate__c]"
                       cachedDataType="dbTimeStamp"
@@ -12498,107 +12488,17 @@ where [refTable].[MarketSourceCode] = ?</property>
                   description="Specifies the type of source data from Salesforce"
                   expressionType="Notify"
                   name="SourceType"
-                  typeConverter="KingswaySoft.IntegrationToolkit.Salesforce.SalesforceSourceType">1</property>
+                  typeConverter="KingswaySoft.IntegrationToolkit.Salesforce.SalesforceSourceType">0</property>
                 <property
                   dataType="System.String"
                   description="Salesforce object to retrieve data from."
                   expressionType="Notify"
-                  name="SourceObject"></property>
+                  name="SourceObject">Quicken_Loans__c</property>
                 <property
                   dataType="System.String"
                   description="Salesforce object query statement."
                   expressionType="Notify"
-                  name="ObjectQuery">SELECT
-      ActualClosingDate__c
-    , AmortizationType__c
-    , AnnualPercentageRate__c
-    , ApplicationDate__c
-    , ApplicationReturnedDate__c
-    , ApplicationStartedDate__c
-    , AppraisedValue__c
-    , ApprovalDate__c
-    , ApprovalStatus__c
-    , BorrAddress__c
-    , BorrBirthDate__c
-    , BorrCity__c
-    , BorrEmailAddress__c
-    , BorrFirstName__c
-    , BorrGender__c
-    , BorrLastName__c
-    , BorrNoYearsOnJob__c
-    , BorrState__c
-    , BorrTotalIncome__c
-    , BorrZip__c
-    , BottomQualificationRatios__c
-    , CloserName__c
-    , ClosingDisclosureRecievedDate__c
-    , CombinedLoanToValueRatio__c
-    , ConditionalApprovalDate__c
-    , ConditionsReceivedDate__c
-    , CreditPullDate__c
-    , CurrentMilestone__c
-    , CurrentMilestoneTrackingDate__c
-    , DenialDate__c
-    , DisbursementDate__c
-    , DocumentPreparedDate__c
-    , DocumentResubmittedDate__c
-    , DocumentReviewedDate__c
-    , DocumentShippingDate__c
-    , DocumentSigningDate__c
-    , DocumentSubmittalDate__c
-    , EstimatedLoanClosingDate__c
-    , FinalDocumentDate__c
-    , FinallCreditScore__c
-    , FundedDate__c
-    , HouseOnSaleState__c
-    , HouseOnSaleStreet__c
-    , HouseOnSaleZip__c
-    , InitialClosingDisclosureSentDate__c
-    , InitialDisclosureProvidedDate__c
-    , InitialLoanEstimateDueDate__c
-    , InitialLoanEstimateSentDate__c
-    , InterestRate__c
-    , IntialLoanAmount__c
-    , IsBorrSelfEmployeedFlag__c
-    , IsConstructionLoan__c
-    , LastLoadDate__c
-    , LastModifiedDate__c
-    , LeadDate__c
-    , LeadId__c
-    , LeadSource__c
-    , LoanExpirationDate__c
-    , LoanID__c
-    , LoanInformationDocumentDate__c
-    , LoanOfficer__c
-    , LoanOfficerEmail__c
-    , LoanProcessorName__c
-    , LoanProgram__c
-    , LoanPurpose__c
-    , LoanSetupDate__c
-    , LoanStatus__c
-    , LoanStatusActionDate__c
-    , LoanTerm__c
-    , LoanToValueRatio__c
-    , LoanType__c
-    , LockDate__c
-    , LockExpireDate__c
-    , MarketSource__c
-    , MilestoneStatus__c
-    , MortgageInsuranceCompany__c
-    , NetBuyPrice__c
-    , OfficeID__c
-    , OriginationFee__c
-    , ProcessingDate__c
-    , PropertyOccupancyType__c
-    , QAFailDate__c
-    , QAStatus__c
-    , TopQualificationRatios__c
-    , TotalFees__c
-    , TotalLoanAmt__c
-    , UnderwriterName__c
-    , UnderwriterRiskAssess__c
-    , UnderwritingReceivedDate__c
-  FROM Quicken_Loans__c</property>
+                  name="ObjectQuery"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the batch size of the query."
@@ -13155,6 +13055,25 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="LastLoadDate__c"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedById]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastModifiedById]"
+                      length="18"
+                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedById]"
+                      name="LastModifiedById"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastModifiedDate]"
+                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedDate]"
+                      name="LastModifiedDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedDate__c]"
                       dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
@@ -13162,6 +13081,24 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastModifiedDate__c]"
                       lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedDate__c]"
                       name="LastModifiedDate__c"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastReferencedDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastReferencedDate]"
+                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastReferencedDate]"
+                      name="LastReferencedDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastViewedDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastViewedDate]"
+                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastViewedDate]"
+                      name="LastViewedDate"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LeadDate__c]"
@@ -13639,6 +13576,15 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="dbTimeStamp"
                       name="ConditionsReceivedDate__c" />
                     <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[CreatedById]"
+                      dataType="wstr"
+                      length="18"
+                      name="CreatedById" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[CreatedDate]"
+                      dataType="dbTimeStamp"
+                      name="CreatedDate" />
+                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[CreditPullDate__c]"
                       dataType="dbTimeStamp"
                       name="CreditPullDate__c" />
@@ -13717,6 +13663,11 @@ where [refTable].[MarketSourceCode] = ?</property>
                       length="50"
                       name="HouseOnSaleZip__c" />
                     <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[Id]"
+                      dataType="wstr"
+                      length="18"
+                      name="Id" />
+                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[InitialClosingDisclosureSentDate__c]"
                       dataType="dbTimeStamp"
                       name="InitialClosingDisclosureSentDate__c" />
@@ -13755,13 +13706,38 @@ where [refTable].[MarketSourceCode] = ?</property>
                       length="50"
                       name="IsConstructionLoan__c" />
                     <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[IsDeleted]"
+                      dataType="bool"
+                      name="IsDeleted" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastActivityDate]"
+                      dataType="dbDate"
+                      name="LastActivityDate" />
+                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastLoadDate__c]"
                       dataType="dbTimeStamp"
                       name="LastLoadDate__c" />
                     <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastModifiedById]"
+                      dataType="wstr"
+                      length="18"
+                      name="LastModifiedById" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastModifiedDate]"
+                      dataType="dbTimeStamp"
+                      name="LastModifiedDate" />
+                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastModifiedDate__c]"
                       dataType="dbTimeStamp"
                       name="LastModifiedDate__c" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastReferencedDate]"
+                      dataType="dbTimeStamp"
+                      name="LastReferencedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastViewedDate]"
+                      dataType="dbTimeStamp"
+                      name="LastViewedDate" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LeadDate__c]"
                       dataType="dbTimeStamp"
@@ -13866,6 +13842,11 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="nText"
                       name="MortgageInsuranceCompany__c" />
                     <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="80"
+                      name="Name" />
+                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[NetBuyPrice__c]"
                       dataType="numeric"
                       name="NetBuyPrice__c"
@@ -13882,6 +13863,11 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="OriginationFee__c"
                       precision="17"
                       scale="5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[OwnerId]"
+                      dataType="wstr"
+                      length="18"
+                      name="OwnerId" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[ProcessingDate__c]"
                       dataType="dbTimeStamp"
@@ -13900,6 +13886,10 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="wstr"
                       length="100"
                       name="QAStatus__c" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[SystemModstamp]"
+                      dataType="dbTimeStamp"
+                      name="SystemModstamp" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[TopQualificationRatios__c]"
                       dataType="numeric"
@@ -13944,6 +13934,11 @@ where [refTable].[MarketSourceCode] = ?</property>
               name="Derived Column Output"
               startId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output]" />
             <path
+              refId="Package\Data Flow Task.Paths[Derived Column Output1]"
+              endId="Package\Data Flow Task\Fuzzy Lookup_MortgageInsurance.Inputs[Fuzzy Lookup Input]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
+            <path
               refId="Package\Data Flow Task.Paths[Fuzzy Lookup Output]"
               endId="Package\Data Flow Task\Row Count 1.Inputs[Row Count Input 1]"
               name="Fuzzy Lookup Output"
@@ -13960,19 +13955,14 @@ where [refTable].[MarketSourceCode] = ?</property>
               startId="Package\Data Flow Task\Conditional Split.Outputs[KEEP]" />
             <path
               refId="Package\Data Flow Task.Paths[Lookup Match Output]"
-              endId="Package\Data Flow Task\Lookup 1_LeadSource.Inputs[Lookup Input]"
-              name="Lookup Match Output"
-              startId="Package\Data Flow Task\Lookup_MarketSource.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Data Flow Task.Paths[Lookup Match Output1]"
               endId="Package\Data Flow Task\Lookup_MarketSource.Inputs[Lookup Input]"
               name="Lookup Match Output"
               startId="Package\Data Flow Task\Lookup_Channel.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Lookup Match Output2]"
-              endId="Package\Data Flow Task\Fuzzy Lookup_MortgageInsurance.Inputs[Fuzzy Lookup Input]"
+              refId="Package\Data Flow Task.Paths[Lookup Match Output1]"
+              endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
               name="Lookup Match Output"
-              startId="Package\Data Flow Task\Lookup 1_LeadSource.Outputs[Lookup Match Output]" />
+              startId="Package\Data Flow Task\Lookup_MarketSource.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Row Count Output 1]"
               endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
@@ -13992,7 +13982,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:Disabled="True"
-      DTS:DTSID="{12E8B181-D523-421A-B7E9-50A7600C1526}"
+      DTS:DTSID="{21B1D047-7A98-494F-A18A-4D5DCC797474}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task 1_DeletingLending_QB"
@@ -14001,7 +13991,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{41CD3745-BEBC-4F3C-87CD-A57A050CD517}"
+          SQLTask:Connection="{99D915B9-B277-469D-8B7B-7076EB2245E4}"
           SQLTask:SqlStatementSource="delete from Stg_Meron_Dilnesaw_QL&#xA;where SourceName= 'QuickenLoan'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -14009,7 +13999,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:refId="Package\Execute SQL Task_MaxLastModifieddate"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{3FF1EF2C-C323-4AFA-BCAE-EF12DCE96F6F}"
+      DTS:DTSID="{2D2531D7-FB87-422A-BE69-BF398D7A65EE}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task_MaxLastModifieddate"
@@ -14018,7 +14008,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{41CD3745-BEBC-4F3C-87CD-A57A050CD517}"
+          SQLTask:Connection="{99D915B9-B277-469D-8B7B-7076EB2245E4}"
           SQLTask:SqlStmtSourceType="Variable"
           SQLTask:SqlStatementSource="User::varGetMaxModifiedDate"
           SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
@@ -14042,7 +14032,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{CB4003DF-0CD5-43F2-A7CC-8CC5B8A1EBB7}"
+      DTS:DTSID="{24DA0284-E2F2-4B08-80ED-8C6FDB716F9C}"
       DTS:From="Package\Execute SQL Task_MaxLastModifieddate"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -14050,7 +14040,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{874B2E96-01E4-454B-9A82-D99AE1C6DBC6}"
+      DTS:DTSID="{0B58AC99-8868-4072-BEEF-44B22280BE78}"
       DTS:From="Package\Execute SQL Task 1_DeletingLending_QB"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -14060,7 +14050,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnError]"
       DTS:CreationName="OnError"
-      DTS:DTSID="{3786BDE4-AEF0-4265-BD8C-DE51F4D2331D}"
+      DTS:DTSID="{CAA26CC2-6781-4500-A24F-E5D4CA265DAF}"
       DTS:EventID="7798881"
       DTS:EventName="OnError"
       DTS:LocaleID="-1">
@@ -14068,7 +14058,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{63FE54E3-74D7-4BAC-B65D-6CC2E5699863}"
+          DTS:DTSID="{59DD0381-8EF7-4044-AD5D-19B06339A412}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -14081,7 +14071,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\Execute SQL Task_ErrorLog"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{EC7053CF-D246-44CE-B953-A14AC9BD28CF}"
+          DTS:DTSID="{9A257F4F-28E9-4CE3-B643-281D277EB567}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task_ErrorLog"
@@ -14091,7 +14081,7 @@ where [refTable].[MarketSourceCode] = ?</property>
             <DTS:EventHandler
               DTS:refId="Package.EventHandlers[OnError]\Execute SQL Task_ErrorLog.EventHandlers[OnError]"
               DTS:CreationName="OnError"
-              DTS:DTSID="{C6347D24-02AB-4D0E-BF8C-3B8B4609F9E1}"
+              DTS:DTSID="{4AD1076B-66D6-408B-B556-97F084E21DDC}"
               DTS:EventID="1996513536"
               DTS:EventName="OnError"
               DTS:LocaleID="-1">
@@ -14099,7 +14089,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                 <DTS:Variable
                   DTS:CreationName=""
                   DTS:Description="The propagate property of the event"
-                  DTS:DTSID="{B9F987E8-0E6E-4668-A48F-C8F287FB2A0A}"
+                  DTS:DTSID="{0E0F4F7A-B35E-40AC-8218-DD65A9ECA6AF}"
                   DTS:IncludeInDebugDump="6789"
                   DTS:Namespace="System"
                   DTS:ObjectName="Propagate">
@@ -14112,7 +14102,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           </DTS:EventHandlers>
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{48E3340F-1E6F-45E6-AA17-08C2F39A45EE}"
+              SQLTask:Connection="{82E71433-0E0E-4D39-BB43-73045B9170B9}"
               SQLTask:SqlStatementSource="INSERT INTO [dbo].[Quicken_Loans_ETL_Error_Log]&#xA;(&#xA;PackageID &#xA;,PackageName  &#xA;,SourceName&#xA;,LoadDate&#xA;,RunBy  &#xA;,ErrorCode&#xA;,ErrorDescription&#xA;)&#xA;Values&#xA;       (?, ?, ?, ?, ?, ?, ? )&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -14163,7 +14153,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\Script Task"
           DTS:CreationName="Microsoft.ScriptTask"
           DTS:Description="Script Task"
-          DTS:DTSID="{D8F5D080-4E24-42BA-928F-F5954FE4BFCF}"
+          DTS:DTSID="{FA06E98B-9B53-4A6C-8DB5-81A1ADA125CF}"
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Script Task">
@@ -14183,7 +14173,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package.EventHandlers[OnError].PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{CCC53F9D-E64F-4CBE-B81C-548CC7999A1D}"
+          DTS:DTSID="{623EAD23-3EBA-4DE6-BF36-EED4EB72E464}"
           DTS:From="Package.EventHandlers[OnError]\Execute SQL Task_ErrorLog"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -14193,7 +14183,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnPostExecute]"
       DTS:CreationName="OnPostExecute"
-      DTS:DTSID="{AEF952F2-6E3C-40B0-B138-771166E5CAEA}"
+      DTS:DTSID="{2B49D729-280A-4066-AAD2-E67C84C2E889}"
       DTS:EventID="1996513536"
       DTS:EventName="OnPostExecute"
       DTS:LocaleID="-1">
@@ -14201,7 +14191,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{E5239359-C7C3-42E0-AAE5-5D178403E638}"
+          DTS:DTSID="{0B591414-B5C1-469A-B63D-39872171E9E1}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -14214,7 +14204,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package.EventHandlers[OnPostExecute]\Execute SQL Task 1_ETLLOG"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{69D96622-0D71-43D9-9963-48C144458F5E}"
+          DTS:DTSID="{9FCDA3EC-CC67-4475-8293-70524B7E5282}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task 1_ETLLOG"
@@ -14222,7 +14212,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{48E3340F-1E6F-45E6-AA17-08C2F39A45EE}"
+              SQLTask:Connection="{82E71433-0E0E-4D39-BB43-73045B9170B9}"
               SQLTask:SqlStatementSource="insert into  [dbo].[QL_FirstName_LastName_ETL_Log](&#xA; PackageID &#xA; ,PackageName&#xA; ,SourceName&#xA; ,Runtime&#xA; ,RunBy&#xA; ,NumberOfRowsInserted&#xA; ,MaxLastModifiedDate)&#xA;values(?,?,?,?,?,?,?)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ParameterBinding
                 SQLTask:ParameterName="0"
@@ -14273,7 +14263,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package.EventHandlers[OnPostExecute]\Script Task"
           DTS:CreationName="Microsoft.ScriptTask"
           DTS:Description="Script Task"
-          DTS:DTSID="{E02D4E77-FEF9-41F8-A000-BDE48D96F4C0}"
+          DTS:DTSID="{B04B2D8B-E4D7-40B4-83FE-5D2339BA5031}"
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Script Task">
@@ -14286,36 +14276,6 @@ where [refTable].[MarketSourceCode] = ?</property>
               Language="CSharp"
               ReadOnlyVariables="System::PackageName,User::varFromEmail,User::varPassward,User::varSmtpClient,User::varSmtpServerPort,User::varSubject,User::varTimeStamp,User::varToEmail"
               ReadWriteVariables="User::varBody">
-              <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_4e6b114e29ba452783b3c449bba17d07")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_4e6b114e29ba452783b3c449bba17d07")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -14435,6 +14395,35 @@ using System.Runtime.CompilerServices;
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_4e6b114e29ba452783b3c449bba17d07.Properties.Settings.get_Default():ST_4e6b114e29ba452783b3c449bba17d07.Properties.Sett" +
+    "ings")]
+
+namespace ST_4e6b114e29ba452783b3c449bba17d07.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="ST_4e6b114e29ba452783b3c449bba17d07.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -14691,34 +14680,35 @@ namespace ST_4e6b114e29ba452783b3c449bba17d07
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
 //
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_4e6b114e29ba452783b3c449bba17d07")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_4e6b114e29ba452783b3c449bba17d07")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_4e6b114e29ba452783b3c449bba17d07.Properties.Settings.get_Default():ST_4e6b114e29ba452783b3c449bba17d07.Properties.Sett" +
-    "ings")]
-
-namespace ST_4e6b114e29ba452783b3c449bba17d07.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Settings.settings"
                 Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -14940,7 +14930,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:PrecedenceConstraint
           DTS:refId="Package.EventHandlers[OnPostExecute].PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{32D9AC24-5AD2-4E97-8E59-A978FDBC3FA7}"
+          DTS:DTSID="{802DBE87-D00A-4B4D-B43C-3E07AF5F5CE2}"
           DTS:From="Package.EventHandlers[OnPostExecute]\Execute SQL Task 1_ETLLOG"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -15245,47 +15235,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Match Output2]"
-          TopLeft="785.524880069659,497.050358131983">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-125.899886262954,27.0022819682828"
-              Start="0,0"
-              End="-118.399886262954,27.0022819682828">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-58.9499431314771,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-58.9499431314771,0"
-                    Point2="-62.9499431314771,0"
-                    Point3="-62.9499431314771,4" />
-                  <mssgle:LineSegment
-                    End="-62.9499431314771,23.0022819682828" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-62.9499431314771,23.0022819682828"
-                    Point2="-62.9499431314771,27.0022819682828"
-                    Point3="-66.9499431314771,27.0022819682828" />
-                  <mssgle:LineSegment
-                    End="-118.399886262954,27.0022819682828" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-111.141329850227,-17.609375,96.3827734375,11.609375"
+              BoundingBox="-53.4613087222073,-40.6516301452825,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Match Output1]"
+          Id="Package\Data Flow Task.Paths[Lookup Match Output]"
           TopLeft="916.931805710564,260.550010770488">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -15317,30 +15273,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="-67.3864620909572,50.4555726757981,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Match Output]"
-          TopLeft="878.699934184571,394.127822788751">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,81.5892020098978"
-              Start="0,0"
-              End="0,74.0892020098978">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,74.0892020098978" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,31.2399135049489,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -15476,6 +15408,80 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     Point3="63.0054091443325,-32.8557767290073" />
                   <mssgle:LineSegment
                     End="110.510818288665,-32.8557767290073" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="156,42.6666666666667"
+          Id="Package\Data Flow Task\Derived Column"
+          TopLeft="546.874991850928,299.912286346859" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Lookup Match Output1]"
+          TopLeft="785.208321632816,372.794489455418">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-82.3333297818884,-51.5488697752259"
+              Start="0,0"
+              End="-74.8333297818884,-51.5488697752259">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-37.1666648909442,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-37.1666648909442,0"
+                    Point2="-41.1666648909442,0"
+                    Point3="-41.1666648909442,-4" />
+                  <mssgle:LineSegment
+                    End="-41.1666648909442,-47.5488697752259" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-41.1666648909442,-47.5488697752259"
+                    Point2="-41.1666648909442,-51.5488697752259"
+                    Point3="-45.1666648909442,-51.5488697752259" />
+                  <mssgle:LineSegment
+                    End="-74.8333297818884,-51.5488697752259" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-89.3580516096942,1,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output1]"
+          TopLeft="624.874991850928,342.578953013526">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-47.9166647108892,160.140353753406"
+              Start="0,0"
+              End="-47.9166647108892,152.640353753406">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,91.4582564719001" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,91.4582564719001"
+                    Point2="0,95.4582564719001"
+                    Point3="-4,95.4582564719001" />
+                  <mssgle:LineSegment
+                    End="-43.9166647108892,95.4582564719001" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-43.9166647108892,95.4582564719001"
+                    Point2="-47.9166647108892,95.4582564719001"
+                    Point3="-47.9166647108892,99.4582564719001" />
+                  <mssgle:LineSegment
+                    End="-47.9166647108892,152.640353753406" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

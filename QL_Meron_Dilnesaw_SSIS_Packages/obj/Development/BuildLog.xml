@@ -2,28 +2,33 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Meron_Dilnesaw_SSIS_Packages</Name>
-    <LastWriteTime>2020-09-15T21:14:45.598224Z</LastWriteTime>
+    <LastWriteTime>2020-09-19T02:40:28.6330302Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Pkg_Meron_Dilnesaw_Lending_QB.dtsx</Name>
-      <LastWriteTime>2020-09-15T19:39:19.3234081Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>PKG_Meron_Dilnesaw_Quiken_Loans_Master.dtsx</Name>
-      <LastWriteTime>2020-09-05T02:51:09.4933772Z</LastWriteTime>
+      <LastWriteTime>2020-09-19T01:35:52.7143533Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Meron_Dilnesaw_Quicken_Loans.dtsx</Name>
-      <LastWriteTime>2020-09-15T21:49:56.6706877Z</LastWriteTime>
+      <LastWriteTime>2020-09-19T01:39:12.6738707Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Meron_Dilnesaw_UberWriter.dtsx</Name>
       <LastWriteTime>2020-09-16T02:23:29.4802881Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Practice.dtsx</Name>
+      <LastWriteTime>2020-09-17T22:19:03.6349676Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Pkg_Meron_Dilnesaw_Lending_Pad.dtsx</Name>
+      <LastWriteTime>2020-09-19T05:05:15.520474Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

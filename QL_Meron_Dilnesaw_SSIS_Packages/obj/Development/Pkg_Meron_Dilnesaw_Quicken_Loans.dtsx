@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Meron_Dilnesaw_Quicken_Loans"
   DTS:PackageType="5"
-  DTS:VersionBuild="146"
-  DTS:VersionGUID="{9FB8E150-966A-41BB-95A2-44EE35C3945B}">
+  DTS:VersionBuild="148"
+  DTS:VersionGUID="{C355A50C-3A12-417E-899B-6A35B08E99BB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -221,7 +221,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varLoaddate">
       <DTS:VariableValue
-        DTS:DataType="7">9/15/2020 5:49:59 PM</DTS:VariableValue>
+        DTS:DataType="7">9/18/2020 9:39:15 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -270,7 +270,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/15/2020 5:49:59 PM</DTS:VariableValue>
+        DTS:DataType="7">9/18/2020 9:39:15 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -317,7 +317,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/15/2020 5:49:59 PM</DTS:VariableValue>
+        DTS:DataType="7">9/18/2020 9:39:15 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -12498,17 +12498,107 @@ where [refTable].[MarketSourceCode] = ?</property>
                   description="Specifies the type of source data from Salesforce"
                   expressionType="Notify"
                   name="SourceType"
-                  typeConverter="KingswaySoft.IntegrationToolkit.Salesforce.SalesforceSourceType">0</property>
+                  typeConverter="KingswaySoft.IntegrationToolkit.Salesforce.SalesforceSourceType">1</property>
                 <property
                   dataType="System.String"
                   description="Salesforce object to retrieve data from."
                   expressionType="Notify"
-                  name="SourceObject">Quicken_Loans__c</property>
+                  name="SourceObject"></property>
                 <property
                   dataType="System.String"
                   description="Salesforce object query statement."
                   expressionType="Notify"
-                  name="ObjectQuery"></property>
+                  name="ObjectQuery">SELECT
+      ActualClosingDate__c
+    , AmortizationType__c
+    , AnnualPercentageRate__c
+    , ApplicationDate__c
+    , ApplicationReturnedDate__c
+    , ApplicationStartedDate__c
+    , AppraisedValue__c
+    , ApprovalDate__c
+    , ApprovalStatus__c
+    , BorrAddress__c
+    , BorrBirthDate__c
+    , BorrCity__c
+    , BorrEmailAddress__c
+    , BorrFirstName__c
+    , BorrGender__c
+    , BorrLastName__c
+    , BorrNoYearsOnJob__c
+    , BorrState__c
+    , BorrTotalIncome__c
+    , BorrZip__c
+    , BottomQualificationRatios__c
+    , CloserName__c
+    , ClosingDisclosureRecievedDate__c
+    , CombinedLoanToValueRatio__c
+    , ConditionalApprovalDate__c
+    , ConditionsReceivedDate__c
+    , CreditPullDate__c
+    , CurrentMilestone__c
+    , CurrentMilestoneTrackingDate__c
+    , DenialDate__c
+    , DisbursementDate__c
+    , DocumentPreparedDate__c
+    , DocumentResubmittedDate__c
+    , DocumentReviewedDate__c
+    , DocumentShippingDate__c
+    , DocumentSigningDate__c
+    , DocumentSubmittalDate__c
+    , EstimatedLoanClosingDate__c
+    , FinalDocumentDate__c
+    , FinallCreditScore__c
+    , FundedDate__c
+    , HouseOnSaleState__c
+    , HouseOnSaleStreet__c
+    , HouseOnSaleZip__c
+    , InitialClosingDisclosureSentDate__c
+    , InitialDisclosureProvidedDate__c
+    , InitialLoanEstimateDueDate__c
+    , InitialLoanEstimateSentDate__c
+    , InterestRate__c
+    , IntialLoanAmount__c
+    , IsBorrSelfEmployeedFlag__c
+    , IsConstructionLoan__c
+    , LastLoadDate__c
+    , LastModifiedDate__c
+    , LeadDate__c
+    , LeadId__c
+    , LeadSource__c
+    , LoanExpirationDate__c
+    , LoanID__c
+    , LoanInformationDocumentDate__c
+    , LoanOfficer__c
+    , LoanOfficerEmail__c
+    , LoanProcessorName__c
+    , LoanProgram__c
+    , LoanPurpose__c
+    , LoanSetupDate__c
+    , LoanStatus__c
+    , LoanStatusActionDate__c
+    , LoanTerm__c
+    , LoanToValueRatio__c
+    , LoanType__c
+    , LockDate__c
+    , LockExpireDate__c
+    , MarketSource__c
+    , MilestoneStatus__c
+    , MortgageInsuranceCompany__c
+    , NetBuyPrice__c
+    , OfficeID__c
+    , OriginationFee__c
+    , ProcessingDate__c
+    , PropertyOccupancyType__c
+    , QAFailDate__c
+    , QAStatus__c
+    , TopQualificationRatios__c
+    , TotalFees__c
+    , TotalLoanAmt__c
+    , UnderwriterName__c
+    , UnderwriterRiskAssess__c
+    , UnderwritingReceivedDate__c
+  FROM Quicken_Loans__c</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the batch size of the query."
@@ -13549,15 +13639,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="dbTimeStamp"
                       name="ConditionsReceivedDate__c" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[CreatedById]"
-                      dataType="wstr"
-                      length="18"
-                      name="CreatedById" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[CreatedDate]"
-                      dataType="dbTimeStamp"
-                      name="CreatedDate" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[CreditPullDate__c]"
                       dataType="dbTimeStamp"
                       name="CreditPullDate__c" />
@@ -13636,11 +13717,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       length="50"
                       name="HouseOnSaleZip__c" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[Id]"
-                      dataType="wstr"
-                      length="18"
-                      name="Id" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[InitialClosingDisclosureSentDate__c]"
                       dataType="dbTimeStamp"
                       name="InitialClosingDisclosureSentDate__c" />
@@ -13679,38 +13755,13 @@ where [refTable].[MarketSourceCode] = ?</property>
                       length="50"
                       name="IsConstructionLoan__c" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[IsDeleted]"
-                      dataType="bool"
-                      name="IsDeleted" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastActivityDate]"
-                      dataType="dbDate"
-                      name="LastActivityDate" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastLoadDate__c]"
                       dataType="dbTimeStamp"
                       name="LastLoadDate__c" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastModifiedById]"
-                      dataType="wstr"
-                      length="18"
-                      name="LastModifiedById" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastModifiedDate]"
-                      dataType="dbTimeStamp"
-                      name="LastModifiedDate" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastModifiedDate__c]"
                       dataType="dbTimeStamp"
                       name="LastModifiedDate__c" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastReferencedDate]"
-                      dataType="dbTimeStamp"
-                      name="LastReferencedDate" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastViewedDate]"
-                      dataType="dbTimeStamp"
-                      name="LastViewedDate" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LeadDate__c]"
                       dataType="dbTimeStamp"
@@ -13815,11 +13866,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="nText"
                       name="MortgageInsuranceCompany__c" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[Name]"
-                      dataType="wstr"
-                      length="80"
-                      name="Name" />
-                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[NetBuyPrice__c]"
                       dataType="numeric"
                       name="NetBuyPrice__c"
@@ -13836,11 +13882,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="OriginationFee__c"
                       precision="17"
                       scale="5" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[OwnerId]"
-                      dataType="wstr"
-                      length="18"
-                      name="OwnerId" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[ProcessingDate__c]"
                       dataType="dbTimeStamp"
@@ -13859,10 +13900,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="wstr"
                       length="100"
                       name="QAStatus__c" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[SystemModstamp]"
-                      dataType="dbTimeStamp"
-                      name="SystemModstamp" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[TopQualificationRatios__c]"
                       dataType="numeric"
@@ -14250,36 +14287,6 @@ where [refTable].[MarketSourceCode] = ?</property>
               ReadOnlyVariables="System::PackageName,User::varFromEmail,User::varPassward,User::varSmtpClient,User::varSmtpServerPort,User::varSubject,User::varTimeStamp,User::varToEmail"
               ReadWriteVariables="User::varBody">
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_4e6b114e29ba452783b3c449bba17d07")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_4e6b114e29ba452783b3c449bba17d07")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-              <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -14398,6 +14405,35 @@ using System.Runtime.CompilerServices;
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_4e6b114e29ba452783b3c449bba17d07.Properties.Settings.get_Default():ST_4e6b114e29ba452783b3c449bba17d07.Properties.Sett" +
+    "ings")]
+
+namespace ST_4e6b114e29ba452783b3c449bba17d07.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="ST_4e6b114e29ba452783b3c449bba17d07.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -14654,34 +14690,35 @@ namespace ST_4e6b114e29ba452783b3c449bba17d07
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
 //
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_4e6b114e29ba452783b3c449bba17d07")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_4e6b114e29ba452783b3c449bba17d07")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_4e6b114e29ba452783b3c449bba17d07.Properties.Settings.get_Default():ST_4e6b114e29ba452783b3c449bba17d07.Properties.Sett" +
-    "ings")]
-
-namespace ST_4e6b114e29ba452783b3c449bba17d07.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Settings.settings"
                 Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
