@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Meron_Dilnesaw_Quicken_Loans"
   DTS:PackageType="5"
-  DTS:VersionBuild="148"
-  DTS:VersionGUID="{C355A50C-3A12-417E-899B-6A35B08E99BB}">
+  DTS:VersionBuild="154"
+  DTS:VersionGUID="{86B6E627-0949-4D5C-A359-C3F76FD71D8D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -221,7 +221,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varLoaddate">
       <DTS:VariableValue
-        DTS:DataType="7">9/18/2020 9:39:15 PM</DTS:VariableValue>
+        DTS:DataType="7">9/19/2020 7:05:09 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -270,7 +270,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/18/2020 9:39:15 PM</DTS:VariableValue>
+        DTS:DataType="7">9/19/2020 7:05:09 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -317,7 +317,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/18/2020 9:39:15 PM</DTS:VariableValue>
+        DTS:DataType="7">9/19/2020 7:05:09 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -500,13 +500,13 @@
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">(DT_WSTR,100)#{Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[BorrFirstName__c]} == "Test" || (DT_WSTR,100)#{Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[BorrLastName__c]} == "Test"</property>
+                      name="Expression">(DT_WSTR,50)#{Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[BorrFirstName__c]} == "Test" || (DT_WSTR,50)#{Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[BorrLastName__c]} == "Test"</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">(DT_WSTR,100)BorrFirstName__c == "Test" || (DT_WSTR,100)BorrLastName__c == "Test"</property>
+                      name="FriendlyExpression">(DT_WSTR,50)BorrFirstName__c == "Test" || (DT_WSTR,50)BorrLastName__c == "Test"</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -12498,107 +12498,17 @@ where [refTable].[MarketSourceCode] = ?</property>
                   description="Specifies the type of source data from Salesforce"
                   expressionType="Notify"
                   name="SourceType"
-                  typeConverter="KingswaySoft.IntegrationToolkit.Salesforce.SalesforceSourceType">1</property>
+                  typeConverter="KingswaySoft.IntegrationToolkit.Salesforce.SalesforceSourceType">0</property>
                 <property
                   dataType="System.String"
                   description="Salesforce object to retrieve data from."
                   expressionType="Notify"
-                  name="SourceObject"></property>
+                  name="SourceObject">Quicken_Loans__c</property>
                 <property
                   dataType="System.String"
                   description="Salesforce object query statement."
                   expressionType="Notify"
-                  name="ObjectQuery">SELECT
-      ActualClosingDate__c
-    , AmortizationType__c
-    , AnnualPercentageRate__c
-    , ApplicationDate__c
-    , ApplicationReturnedDate__c
-    , ApplicationStartedDate__c
-    , AppraisedValue__c
-    , ApprovalDate__c
-    , ApprovalStatus__c
-    , BorrAddress__c
-    , BorrBirthDate__c
-    , BorrCity__c
-    , BorrEmailAddress__c
-    , BorrFirstName__c
-    , BorrGender__c
-    , BorrLastName__c
-    , BorrNoYearsOnJob__c
-    , BorrState__c
-    , BorrTotalIncome__c
-    , BorrZip__c
-    , BottomQualificationRatios__c
-    , CloserName__c
-    , ClosingDisclosureRecievedDate__c
-    , CombinedLoanToValueRatio__c
-    , ConditionalApprovalDate__c
-    , ConditionsReceivedDate__c
-    , CreditPullDate__c
-    , CurrentMilestone__c
-    , CurrentMilestoneTrackingDate__c
-    , DenialDate__c
-    , DisbursementDate__c
-    , DocumentPreparedDate__c
-    , DocumentResubmittedDate__c
-    , DocumentReviewedDate__c
-    , DocumentShippingDate__c
-    , DocumentSigningDate__c
-    , DocumentSubmittalDate__c
-    , EstimatedLoanClosingDate__c
-    , FinalDocumentDate__c
-    , FinallCreditScore__c
-    , FundedDate__c
-    , HouseOnSaleState__c
-    , HouseOnSaleStreet__c
-    , HouseOnSaleZip__c
-    , InitialClosingDisclosureSentDate__c
-    , InitialDisclosureProvidedDate__c
-    , InitialLoanEstimateDueDate__c
-    , InitialLoanEstimateSentDate__c
-    , InterestRate__c
-    , IntialLoanAmount__c
-    , IsBorrSelfEmployeedFlag__c
-    , IsConstructionLoan__c
-    , LastLoadDate__c
-    , LastModifiedDate__c
-    , LeadDate__c
-    , LeadId__c
-    , LeadSource__c
-    , LoanExpirationDate__c
-    , LoanID__c
-    , LoanInformationDocumentDate__c
-    , LoanOfficer__c
-    , LoanOfficerEmail__c
-    , LoanProcessorName__c
-    , LoanProgram__c
-    , LoanPurpose__c
-    , LoanSetupDate__c
-    , LoanStatus__c
-    , LoanStatusActionDate__c
-    , LoanTerm__c
-    , LoanToValueRatio__c
-    , LoanType__c
-    , LockDate__c
-    , LockExpireDate__c
-    , MarketSource__c
-    , MilestoneStatus__c
-    , MortgageInsuranceCompany__c
-    , NetBuyPrice__c
-    , OfficeID__c
-    , OriginationFee__c
-    , ProcessingDate__c
-    , PropertyOccupancyType__c
-    , QAFailDate__c
-    , QAStatus__c
-    , TopQualificationRatios__c
-    , TotalFees__c
-    , TotalLoanAmt__c
-    , UnderwriterName__c
-    , UnderwriterRiskAssess__c
-    , UnderwritingReceivedDate__c
-  FROM Quicken_Loans__c</property>
+                  name="ObjectQuery"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the batch size of the query."
@@ -12632,7 +12542,7 @@ where [refTable].[MarketSourceCode] = ?</property>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Salesforce Source.Connections[Salesforce]"
-                  connectionManagerID="{898FB7DF-CF1A-4E9A-AEA6-DEBCEB32A53E}:external"
+                  connectionManagerID="{454EEBB4-59E0-49DA-A146-7A8F870A8172}:external"
                   connectionManagerRefId="Project.ConnectionManagers[Salesforce Connection Manager]"
                   description="Salesforce Connection"
                   name="Salesforce" />
@@ -12900,6 +12810,25 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="ConditionsReceivedDate__c"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[CreatedById]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[CreatedById]"
+                      length="18"
+                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[CreatedById]"
+                      name="CreatedById"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[CreatedDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[CreatedDate]"
+                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[CreatedDate]"
+                      name="CreatedDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[CreditPullDate__c]"
                       dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
@@ -13068,6 +12997,16 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="HouseOnSaleZip__c"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[Id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[Id]"
+                      length="18"
+                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[Id]"
+                      name="Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[InitialClosingDisclosureSentDate__c]"
                       dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
@@ -13146,6 +13085,24 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="IsConstructionLoan__c"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[IsDeleted]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[IsDeleted]"
+                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[IsDeleted]"
+                      name="IsDeleted"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastActivityDate]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastActivityDate]"
+                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastActivityDate]"
+                      name="LastActivityDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastLoadDate__c]"
                       dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
@@ -13155,6 +13112,25 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="LastLoadDate__c"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedById]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastModifiedById]"
+                      length="18"
+                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedById]"
+                      name="LastModifiedById"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastModifiedDate]"
+                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedDate]"
+                      name="LastModifiedDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedDate__c]"
                       dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
@@ -13162,6 +13138,24 @@ where [refTable].[MarketSourceCode] = ?</property>
                       externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastModifiedDate__c]"
                       lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastModifiedDate__c]"
                       name="LastModifiedDate__c"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastReferencedDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastReferencedDate]"
+                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastReferencedDate]"
+                      name="LastReferencedDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastViewedDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastViewedDate]"
+                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastViewedDate]"
+                      name="LastViewedDate"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LeadDate__c]"
@@ -13377,6 +13371,16 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="MortgageInsuranceCompany__c"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[Name]"
+                      length="80"
+                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[NetBuyPrice__c]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
@@ -13407,6 +13411,16 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="OriginationFee__c"
                       precision="17"
                       scale="5"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[OwnerId]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[OwnerId]"
+                      length="18"
+                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[OwnerId]"
+                      name="OwnerId"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[ProcessingDate__c]"
@@ -13445,6 +13459,15 @@ where [refTable].[MarketSourceCode] = ?</property>
                       length="100"
                       lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[QAStatus__c]"
                       name="QAStatus__c"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[SystemModstamp]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[SystemModstamp]"
+                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[SystemModstamp]"
+                      name="SystemModstamp"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[TopQualificationRatios__c]"
@@ -13639,6 +13662,15 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="dbTimeStamp"
                       name="ConditionsReceivedDate__c" />
                     <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[CreatedById]"
+                      dataType="wstr"
+                      length="18"
+                      name="CreatedById" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[CreatedDate]"
+                      dataType="dbTimeStamp"
+                      name="CreatedDate" />
+                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[CreditPullDate__c]"
                       dataType="dbTimeStamp"
                       name="CreditPullDate__c" />
@@ -13717,6 +13749,11 @@ where [refTable].[MarketSourceCode] = ?</property>
                       length="50"
                       name="HouseOnSaleZip__c" />
                     <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[Id]"
+                      dataType="wstr"
+                      length="18"
+                      name="Id" />
+                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[InitialClosingDisclosureSentDate__c]"
                       dataType="dbTimeStamp"
                       name="InitialClosingDisclosureSentDate__c" />
@@ -13755,13 +13792,38 @@ where [refTable].[MarketSourceCode] = ?</property>
                       length="50"
                       name="IsConstructionLoan__c" />
                     <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[IsDeleted]"
+                      dataType="bool"
+                      name="IsDeleted" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastActivityDate]"
+                      dataType="dbDate"
+                      name="LastActivityDate" />
+                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastLoadDate__c]"
                       dataType="dbTimeStamp"
                       name="LastLoadDate__c" />
                     <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastModifiedById]"
+                      dataType="wstr"
+                      length="18"
+                      name="LastModifiedById" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastModifiedDate]"
+                      dataType="dbTimeStamp"
+                      name="LastModifiedDate" />
+                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastModifiedDate__c]"
                       dataType="dbTimeStamp"
                       name="LastModifiedDate__c" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastReferencedDate]"
+                      dataType="dbTimeStamp"
+                      name="LastReferencedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastViewedDate]"
+                      dataType="dbTimeStamp"
+                      name="LastViewedDate" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LeadDate__c]"
                       dataType="dbTimeStamp"
@@ -13866,6 +13928,11 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="nText"
                       name="MortgageInsuranceCompany__c" />
                     <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="80"
+                      name="Name" />
+                    <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[NetBuyPrice__c]"
                       dataType="numeric"
                       name="NetBuyPrice__c"
@@ -13882,6 +13949,11 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="OriginationFee__c"
                       precision="17"
                       scale="5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[OwnerId]"
+                      dataType="wstr"
+                      length="18"
+                      name="OwnerId" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[ProcessingDate__c]"
                       dataType="dbTimeStamp"
@@ -13900,6 +13972,10 @@ where [refTable].[MarketSourceCode] = ?</property>
                       dataType="wstr"
                       length="100"
                       name="QAStatus__c" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[SystemModstamp]"
+                      dataType="dbTimeStamp"
+                      name="SystemModstamp" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[TopQualificationRatios__c]"
                       dataType="numeric"
@@ -13940,7 +14016,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           <paths>
             <path
               refId="Package\Data Flow Task.Paths[Derived Column Output]"
-              endId="Package\Data Flow Task\Conditional Split_BorrowerFirstName.Inputs[Conditional Split Input]"
+              endId="Package\Data Flow Task\Lookup_Channel.Inputs[Lookup Input]"
               name="Derived Column Output"
               startId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output]" />
             <path
@@ -13949,15 +14025,15 @@ where [refTable].[MarketSourceCode] = ?</property>
               name="Fuzzy Lookup Output"
               startId="Package\Data Flow Task\Fuzzy Lookup_MortgageInsurance.Outputs[Fuzzy Lookup Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Keep]"
-              endId="Package\Data Flow Task\Lookup_Channel.Inputs[Lookup Input]"
-              name="Keep"
-              startId="Package\Data Flow Task\Conditional Split_BorrowerFirstName.Outputs[Keep]" />
-            <path
               refId="Package\Data Flow Task.Paths[KEEP]"
               endId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]"
               name="KEEP"
               startId="Package\Data Flow Task\Conditional Split.Outputs[KEEP]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Keep]"
+              endId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+              name="Keep"
+              startId="Package\Data Flow Task\Conditional Split_BorrowerFirstName.Outputs[Keep]" />
             <path
               refId="Package\Data Flow Task.Paths[Lookup Match Output]"
               endId="Package\Data Flow Task\Lookup 1_LeadSource.Inputs[Lookup Input]"
@@ -13980,7 +14056,7 @@ where [refTable].[MarketSourceCode] = ?</property>
               startId="Package\Data Flow Task\Row Count 1.Outputs[Row Count Output 1]" />
             <path
               refId="Package\Data Flow Task.Paths[Salesforce Source Output]"
-              endId="Package\Data Flow Task\Conditional Split.Inputs[Conditional Split Input]"
+              endId="Package\Data Flow Task\Conditional Split_BorrowerFirstName.Inputs[Conditional Split Input]"
               name="Salesforce Source Output"
               startId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output]" />
           </paths>
@@ -13991,7 +14067,6 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:refId="Package\Execute SQL Task 1_DeletingLending_QB"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{12E8B181-D523-421A-B7E9-50A7600C1526}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -15141,10 +15216,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="174,63.3333333333334"
-          Id="Package\Data Flow Task\Conditional Split_BorrowerFirstName"
-          TopLeft="570.844147337915,131.28457743222" />
-        <NodeLayout
           Size="160,42.6666666666667"
           Id="Package\Data Flow Task\Lookup_Channel"
           TopLeft="836.931805710564,217.883344103822" />
@@ -15180,40 +15251,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Size="141.333333333334,42.6666666666667"
           Id="Package\Data Flow Task\Row Count 1"
           TopLeft="349.70237574141,417.005020003963" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Salesforce Source Output]"
-          TopLeft="431.249994815638,69.3918129084257">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-313.803566822074,79.7485379902323"
-              Start="0,0"
-              End="-313.803566822074,72.2485379902323">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.8742689951162" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,35.8742689951162"
-                    Point2="0,39.8742689951162"
-                    Point3="-4,39.8742689951162" />
-                  <mssgle:LineSegment
-                    End="-309.803566822074,39.8742689951162" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-309.803566822074,39.8742689951162"
-                    Point2="-313.803566822074,39.8742689951162"
-                    Point3="-313.803566822074,43.8742689951162" />
-                  <mssgle:LineSegment
-                    End="-313.803566822074,72.2485379902323" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Row Count Output 1]"
           TopLeft="420.369042408077,417.005020003963">
@@ -15381,42 +15418,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Keep]"
-          TopLeft="657.844147337915,194.617910765554">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="259.087658372648,23.2654333382677"
-              Start="0,0"
-              End="259.087658372648,15.7654333382677">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,7.63271666913387" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,7.63271666913387"
-                    Point2="0,11.6327166691339"
-                    Point3="4,11.6327166691339" />
-                  <mssgle:LineSegment
-                    End="255.087658372648,11.6327166691339" />
-                  <mssgle:CubicBezierSegment
-                    Point1="255.087658372648,11.6327166691339"
-                    Point2="259.087658372648,11.6327166691339"
-                    Point3="259.087658372648,15.6327166691339" />
-                  <mssgle:LineSegment
-                    End="259.087658372648,15.7654333382677" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="118.092852623824,16.6327166691339,22.901953125,11.2822265625"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Data Flow Task.Paths[Fuzzy Lookup Output]"
           TopLeft="537.624993806705,502.719306766932">
           <EdgeLayout.Curve>
@@ -15450,32 +15451,106 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="174,63.3333333333334"
+          Id="Package\Data Flow Task\Conditional Split_BorrowerFirstName"
+          TopLeft="641.041660193975,156.842107838871" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Salesforce Source Output]"
+          TopLeft="431.249994815638,69.3918129084257">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="296.791665378337,87.4502949304454"
+              Start="0,0"
+              End="296.791665378337,79.9502949304454">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.7251474652227" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.7251474652227"
+                    Point2="0,43.7251474652227"
+                    Point3="4,43.7251474652227" />
+                  <mssgle:LineSegment
+                    End="292.791665378337,43.7251474652227" />
+                  <mssgle:CubicBezierSegment
+                    Point1="292.791665378337,43.7251474652227"
+                    Point2="296.791665378337,43.7251474652227"
+                    Point3="296.791665378337,47.7251474652227" />
+                  <mssgle:LineSegment
+                    End="296.791665378337,79.9502949304454" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Keep]"
+          TopLeft="641.041660193975,188.508774505538">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-444.928565533743,-23.8128680513242"
+              Start="0,0"
+              End="-437.428565533743,-23.8128680513242">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-253.308086091804,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-253.308086091804,0"
+                    Point2="-257.308086091804,0"
+                    Point3="-257.308086091804,-4" />
+                  <mssgle:LineSegment
+                    End="-257.308086091804,-19.8128680513242" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-257.308086091804,-19.8128680513242"
+                    Point2="-257.308086091804,-23.8128680513242"
+                    Point3="-261.308086091804,-23.8128680513242" />
+                  <mssgle:LineSegment
+                    End="-437.428565533743,-23.8128680513242" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-268.759062654304,1,22.901953125,11.2822265625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Derived Column Output]"
           TopLeft="452.83332904925,195.807020827894">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="118.010818288665,-32.8557767290073"
+              EndConnector="384.098476661314,43.409656609261"
               Start="0,0"
-              End="110.510818288665,-32.8557767290073">
+              End="376.598476661314,43.409656609261">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="55.0054091443325,0" />
+                    End="188.049238330657,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="55.0054091443325,0"
-                    Point2="59.0054091443325,0"
-                    Point3="59.0054091443325,-4" />
+                    Point1="188.049238330657,0"
+                    Point2="192.049238330657,0"
+                    Point3="192.049238330657,4" />
                   <mssgle:LineSegment
-                    End="59.0054091443325,-28.8557767290073" />
+                    End="192.049238330657,39.409656609261" />
                   <mssgle:CubicBezierSegment
-                    Point1="59.0054091443325,-28.8557767290073"
-                    Point2="59.0054091443325,-32.8557767290073"
-                    Point3="63.0054091443325,-32.8557767290073" />
+                    Point1="192.049238330657,39.409656609261"
+                    Point2="192.049238330657,43.409656609261"
+                    Point3="196.049238330657,43.409656609261" />
                   <mssgle:LineSegment
-                    End="110.510818288665,-32.8557767290073" />
+                    End="376.598476661314,43.409656609261" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15505,7 +15580,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -15541,7 +15616,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -15564,7 +15639,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
