@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Meron_Dilnesaw_Quicken_Loans"
   DTS:PackageType="5"
-  DTS:VersionBuild="154"
-  DTS:VersionGUID="{86B6E627-0949-4D5C-A359-C3F76FD71D8D}">
+  DTS:VersionBuild="167"
+  DTS:VersionGUID="{70A08BA8-67D6-4E07-8029-EAD7B88BE4D3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -187,33 +187,6 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{41F04457-21E1-4C86-8B44-B77BD97B12B4}"
-      DTS:IncludeInDebugDump="6789"
-      DTS:Namespace="User"
-      DTS:ObjectName="Variable">
-      <DTS:VariableValue
-        DTS:DataType="3">0</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{8BD20B9A-BB48-40E1-99D5-8F0FFAB90D7C}"
-      DTS:IncludeInDebugDump="6789"
-      DTS:Namespace="User"
-      DTS:ObjectName="Variable1">
-      <DTS:VariableValue
-        DTS:DataType="3">0</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{7EA86C84-4227-4845-B7A2-ACFBDC242C22}"
-      DTS:IncludeInDebugDump="6789"
-      DTS:Namespace="User"
-      DTS:ObjectName="Variable2">
-      <DTS:VariableValue
-        DTS:DataType="3">0</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
       DTS:DTSID="{72DFCF38-F723-4587-8159-52BF6E795F28}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="GETDATE()"
@@ -221,7 +194,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varLoaddate">
       <DTS:VariableValue
-        DTS:DataType="7">9/19/2020 7:05:09 PM</DTS:VariableValue>
+        DTS:DataType="7">9/20/2020 6:24:04 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -270,7 +243,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/19/2020 7:05:09 PM</DTS:VariableValue>
+        DTS:DataType="7">9/20/2020 6:24:04 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -317,7 +290,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/19/2020 7:05:09 PM</DTS:VariableValue>
+        DTS:DataType="7">9/20/2020 6:24:04 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -12997,16 +12970,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="HouseOnSaleZip__c"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[Id]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[Id]"
-                      length="18"
-                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[Id]"
-                      name="Id"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[InitialClosingDisclosureSentDate__c]"
                       dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
@@ -13083,24 +13046,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       length="50"
                       lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[IsConstructionLoan__c]"
                       name="IsConstructionLoan__c"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[IsDeleted]"
-                      dataType="bool"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[IsDeleted]"
-                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[IsDeleted]"
-                      name="IsDeleted"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastActivityDate]"
-                      dataType="dbDate"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[LastActivityDate]"
-                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastActivityDate]"
-                      name="LastActivityDate"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[LastLoadDate__c]"
@@ -13371,16 +13316,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="MortgageInsuranceCompany__c"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[Name]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[Name]"
-                      length="80"
-                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[Name]"
-                      name="Name"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[NetBuyPrice__c]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
@@ -13411,16 +13346,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                       name="OriginationFee__c"
                       precision="17"
                       scale="5"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[OwnerId]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].ExternalColumns[OwnerId]"
-                      length="18"
-                      lineageId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[OwnerId]"
-                      name="OwnerId"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Data Flow Task\Salesforce Source.Outputs[Salesforce Source Output].Columns[ProcessingDate__c]"
@@ -14362,6 +14287,15 @@ where [refTable].[MarketSourceCode] = ?</property>
               ReadOnlyVariables="System::PackageName,User::varFromEmail,User::varPassward,User::varSmtpClient,User::varSmtpServerPort,User::varSubject,User::varTimeStamp,User::varToEmail"
               ReadWriteVariables="User::varBody">
               <ProjectItem
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+              <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -14480,35 +14414,6 @@ where [refTable].[MarketSourceCode] = ?</property>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_4e6b114e29ba452783b3c449bba17d07.Properties.Settings.get_Default():ST_4e6b114e29ba452783b3c449bba17d07.Properties.Sett" +
-    "ings")]
-
-namespace ST_4e6b114e29ba452783b3c449bba17d07.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
               <ProjectItem
                 Name="ST_4e6b114e29ba452783b3c449bba17d07.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -14765,6 +14670,35 @@ namespace ST_4e6b114e29ba452783b3c449bba17d07
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_4e6b114e29ba452783b3c449bba17d07.Properties.Settings.get_Default():ST_4e6b114e29ba452783b3c449bba17d07.Properties.Sett" +
+    "ings")]
+
+namespace ST_4e6b114e29ba452783b3c449bba17d07.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <ProjectItem
                 Name="Properties\AssemblyInfo.cs"
                 Encoding="UTF8"><![CDATA[using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -14794,15 +14728,6 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -15166,37 +15091,37 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="225.333333333334,42.6666666666667"
           Id="Package.EventHandlers[OnPostExecute]\Execute SQL Task 1_ETLLOG"
-          TopLeft="268,76" />
+          TopLeft="351,105" />
         <NodeLayout
           Size="133.333333333334,42.6666666666667"
           Id="Package.EventHandlers[OnPostExecute]\Script Task"
           TopLeft="284,210" />
         <EdgeLayout
           Id="Package.EventHandlers[OnPostExecute].PrecedenceConstraints[Constraint]"
-          TopLeft="380.666666666667,118.666666666667">
+          TopLeft="463.666666666667,147.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-29.9999999999999,91.3333333333333"
+              EndConnector="-113,62.3333333333333"
               Start="0,0"
-              End="-29.9999999999999,83.8333333333333">
+              End="-113,54.8333333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,41.6666666666666" />
+                    End="0,27.1666666666667" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,41.6666666666666"
-                    Point2="0,45.6666666666666"
-                    Point3="-4,45.6666666666666" />
+                    Point1="0,27.1666666666667"
+                    Point2="0,31.1666666666667"
+                    Point3="-4,31.1666666666667" />
                   <mssgle:LineSegment
-                    End="-25.9999999999999,45.6666666666666" />
+                    End="-109,31.1666666666667" />
                   <mssgle:CubicBezierSegment
-                    Point1="-25.9999999999999,45.6666666666666"
-                    Point2="-29.9999999999999,45.6666666666666"
-                    Point3="-29.9999999999999,49.6666666666666" />
+                    Point1="-109,31.1666666666667"
+                    Point2="-113,31.1666666666667"
+                    Point3="-113,35.1666666666667" />
                   <mssgle:LineSegment
-                    End="-29.9999999999999,83.8333333333333" />
+                    End="-113,54.8333333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15216,6 +15141,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="174,63.3333333333334"
+          Id="Package\Data Flow Task\Conditional Split_BorrowerFirstName"
+          TopLeft="641.041660193975,156.842107838871" />
+        <NodeLayout
           Size="160,42.6666666666667"
           Id="Package\Data Flow Task\Lookup_Channel"
           TopLeft="836.931805710564,217.883344103822" />
@@ -15226,7 +15155,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="165.333333333334,42.6666666666667"
           Id="Package\Data Flow Task\Derived Column 1"
-          TopLeft="287.499995715917,174.473687494561" />
+          TopLeft="260.714281829341,219.436094355904" />
         <NodeLayout
           Size="166.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\Salesforce Source"
@@ -15251,6 +15180,132 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Size="141.333333333334,42.6666666666667"
           Id="Package\Data Flow Task\Row Count 1"
           TopLeft="349.70237574141,417.005020003963" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[KEEP]"
+          TopLeft="117.446427993565,191.807017565325">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="225.934520502443,27.6290767905797"
+              Start="0,0"
+              End="225.934520502443,20.1290767905797">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.81453839528984" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.81453839528984"
+                    Point2="0,13.8145383952898"
+                    Point3="4,13.8145383952898" />
+                  <mssgle:LineSegment
+                    End="221.934520502443,13.8145383952898" />
+                  <mssgle:CubicBezierSegment
+                    Point1="221.934520502443,13.8145383952898"
+                    Point2="225.934520502443,13.8145383952898"
+                    Point3="225.934520502443,17.8145383952898" />
+                  <mssgle:LineSegment
+                    End="225.934520502443,20.1290767905797" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="101.122338376221,18.8145383952898,23.68984375,9.2705078125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Fuzzy Lookup Output]"
+          TopLeft="537.624993806705,502.719306766932">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-117.255951398628,-43.0476200963021"
+              Start="0,0"
+              End="-117.255951398628,-35.5476200963021">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-17.5238100481511" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-17.5238100481511"
+                    Point2="0,-21.5238100481511"
+                    Point3="-4,-21.5238100481511" />
+                  <mssgle:LineSegment
+                    End="-113.255951398628,-21.5238100481511" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-113.255951398628,-21.5238100481511"
+                    Point2="-117.255951398628,-21.5238100481511"
+                    Point3="-117.255951398628,-25.5238100481511" />
+                  <mssgle:LineSegment
+                    End="-117.255951398628,-35.5476200963021" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          TopLeft="426.047615162674,239.993052563197">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="410.88419054789,0"
+              Start="0,0"
+              End="403.38419054789,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="403.38419054789,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Salesforce Source Output]"
+          TopLeft="431.249994815638,69.3918129084257">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="296.791665378337,87.4502949304454"
+              Start="0,0"
+              End="296.791665378337,79.9502949304454">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.7251474652227" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39.7251474652227"
+                    Point2="0,43.7251474652227"
+                    Point3="4,43.7251474652227" />
+                  <mssgle:LineSegment
+                    End="292.791665378337,43.7251474652227" />
+                  <mssgle:CubicBezierSegment
+                    Point1="292.791665378337,43.7251474652227"
+                    Point2="296.791665378337,43.7251474652227"
+                    Point3="296.791665378337,47.7251474652227" />
+                  <mssgle:LineSegment
+                    End="296.791665378337,79.9502949304454" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Row Count Output 1]"
           TopLeft="420.369042408077,417.005020003963">
@@ -15382,114 +15437,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[KEEP]"
-          TopLeft="196.113094660231,170.473684231991">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="91.3869010556855,25.3333365959032"
-              Start="0,0"
-              End="83.8869010556855,25.3333365959032">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="41.6934505278427,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="41.6934505278427,0"
-                    Point2="45.6934505278427,0"
-                    Point3="45.6934505278427,4" />
-                  <mssgle:LineSegment
-                    End="45.6934505278427,21.3333365959032" />
-                  <mssgle:CubicBezierSegment
-                    Point1="45.6934505278427,21.3333365959032"
-                    Point2="45.6934505278427,25.3333365959032"
-                    Point3="49.6934505278427,25.3333365959032" />
-                  <mssgle:LineSegment
-                    End="83.8869010556855,25.3333365959032" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="33.8485286528427,-15.2705078125,23.68984375,9.2705078125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Fuzzy Lookup Output]"
-          TopLeft="537.624993806705,502.719306766932">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-117.255951398628,-43.0476200963021"
-              Start="0,0"
-              End="-117.255951398628,-35.5476200963021">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-17.5238100481511" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-17.5238100481511"
-                    Point2="0,-21.5238100481511"
-                    Point3="-4,-21.5238100481511" />
-                  <mssgle:LineSegment
-                    End="-113.255951398628,-21.5238100481511" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-113.255951398628,-21.5238100481511"
-                    Point2="-117.255951398628,-21.5238100481511"
-                    Point3="-117.255951398628,-25.5238100481511" />
-                  <mssgle:LineSegment
-                    End="-117.255951398628,-35.5476200963021" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="174,63.3333333333334"
-          Id="Package\Data Flow Task\Conditional Split_BorrowerFirstName"
-          TopLeft="641.041660193975,156.842107838871" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Salesforce Source Output]"
-          TopLeft="431.249994815638,69.3918129084257">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="296.791665378337,87.4502949304454"
-              Start="0,0"
-              End="296.791665378337,79.9502949304454">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39.7251474652227" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,39.7251474652227"
-                    Point2="0,43.7251474652227"
-                    Point3="4,43.7251474652227" />
-                  <mssgle:LineSegment
-                    End="292.791665378337,43.7251474652227" />
-                  <mssgle:CubicBezierSegment
-                    Point1="292.791665378337,43.7251474652227"
-                    Point2="296.791665378337,43.7251474652227"
-                    Point3="296.791665378337,47.7251474652227" />
-                  <mssgle:LineSegment
-                    End="296.791665378337,79.9502949304454" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Data Flow Task.Paths[Keep]"
           TopLeft="641.041660193975,188.508774505538">
           <EdgeLayout.Curve>
@@ -15525,40 +15472,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="452.83332904925,195.807020827894">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="384.098476661314,43.409656609261"
-              Start="0,0"
-              End="376.598476661314,43.409656609261">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="188.049238330657,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="188.049238330657,0"
-                    Point2="192.049238330657,0"
-                    Point3="192.049238330657,4" />
-                  <mssgle:LineSegment
-                    End="192.049238330657,39.409656609261" />
-                  <mssgle:CubicBezierSegment
-                    Point1="192.049238330657,39.409656609261"
-                    Point2="192.049238330657,43.409656609261"
-                    Point3="196.049238330657,43.409656609261" />
-                  <mssgle:LineSegment
-                    End="376.598476661314,43.409656609261" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -15580,7 +15493,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -15616,7 +15529,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -15639,7 +15552,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
