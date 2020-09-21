@@ -3,6 +3,8 @@
   DTS:ObjectName="DESKTOP-BPD4JUV_DUNAPROD2014.STGQL"
   DTS:DTSID="{33E38FE8-FAE1-4904-B8C8-1CBB2CCB57BB}"
   DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::DESKTOPBPD4JUV_DUNAPROD2014STGQL_ConnectionString]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:ConnectionString="Data Source=DESKTOP-BPD4JUV\DUNAPROD2014;Initial Catalog=STGQL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />

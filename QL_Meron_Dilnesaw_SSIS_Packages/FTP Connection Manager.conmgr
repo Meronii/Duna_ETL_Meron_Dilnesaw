@@ -4,7 +4,7 @@
   DTS:DTSID="{DC89CE4F-B313-4E05-A065-84206EE1D701}"
   DTS:CreationName="FTP">
   <DTS:PropertyExpression
-    DTS:Name="ConnectionString">@[$Project::FTPConnectionManager_ConnectionString2]</DTS:PropertyExpression>
+    DTS:Name="ConnectionString">@[$Project::FTPConnectionManager_ConnectionString]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:ConnectionString="ftp.drivehq.com:21">
@@ -14,7 +14,7 @@
         DTS:UsePassiveMode="True">
         <DTS:Property
           DTS:Name="ServerPassword"
-          Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAAA8iVWB8qgIumwME6ACX4mp57fwki2gya5CxLMAVaJ0fgAAAAAOgAAAAAIAACAAAABzDk6uEBu+W4ugHUxnaE6AC2WdPFdUk7V+CmIdaH2sCZAAAAAg0UgjK1M/Zjir9ZAV0oGKYFmL+OeJfXgB04gIrEQwJZn9VWOl71U2z4NwWXgp3v/q2yVmrkFI+nA1F0Ne7RndTMOyaD5t27SVUTFFovHWMV/r6FP9P0QbBLbKgwU6R98DwpG91EpR4Q2IT0pxPeQW+ec+XtT33lJU/2hHu0MGOcDvYBluV4qKPgwiTT2Fn1dAAAAAiz+Nj0OnPn3eVfdXgj8gfwmfCTDzZvEepcbMBbJ++bJkgjbAcDLEr8fM9NhkHwrg1uCcBNc/AWIWfGNAfkqaGA==</DTS:Property>
+          Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAAAWcp+PFFng/JtpE43rcvJsiK2rDOwRLf+QciszAi5q2QAAAAAOgAAAAAIAACAAAACjXV1p1vCJ7tULZssqABnQftRp7Ty4VhjFUZlL6cvc2JAAAABFpPF72UE4Iyc3H4Y0uAFhi8ybfAS2/Py65i6m2rDskOjtJmJ/MJE/I/fwkm96TxBoZYhekzMDH3pHRlEg1eHgWG6AXDMWCLY48Q3g07H07WiDzGbyHy2xor3FIwHuNnVr+WI8iEnyajRflEpwfnx3jF9mwL6uX6HM5/+2aqvVbHCKxpU2Z9rbRLgElsbUjcJAAAAACR4X+qXL7EXlJQTo9Sdrj7lLhG1ETBhIHeUHln8REgOv5LjDmBxI4KIU8e/7SWc/iMaFF0DecP3ES/elwxpLUw==</DTS:Property>
       </DTS:FtpConnection>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
