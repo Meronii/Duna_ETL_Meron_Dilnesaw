@@ -189,4 +189,26 @@
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
   </SSIS:Parameter>
+  <SSIS:Parameter
+    SSIS:Name="SalesforceConnectionManager_Password">
+    <SSIS:Properties>
+      <SSIS:Property
+        SSIS:Name="ID">{bc6b2978-b839-44b7-b4b9-36f7d71f9a94}</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="CreationName"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Description"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Required">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Sensitive">1</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Value"
+        SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAAA4fPvEotI9r3hvvJ7v2MYl+aQtiEsODaE12oMTHHwFlgAAAAAOgAAAAAIAACAAAABR7Z9NJ1pOZzsfUbXMiC82FG6kMCP1LrMy+5YxymbIkIAAAABUCq1YOi9wc0bSFgRmt7XhYf9dMh0D7M3D74wUv27XcSdbwfbFYcDpnk+Sk3GtFy60/H7+98g9Zrs4ktSOAeeO41jFRvSBWh79KRn27e7wgQRFDEign5jTBscW5rkNUxVyMoF/+Q81tU8hFNccY3pKDUoqwTbYPOEsUv/K3H0h7kAAAADNXBBEjpdi05GmLTjT2lxInEXSqxIDTaQw4dVA/dytfASdadLA8d1URqxEpupmnr938kPbKpxyXAyD1tpGpQiZ</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="DataType">18</SSIS:Property>
+    </SSIS:Properties>
+  </SSIS:Parameter>
 </SSIS:Parameters>
