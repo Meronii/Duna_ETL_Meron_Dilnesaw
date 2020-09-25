@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="P"
   DTS:PackageType="5"
-  DTS:VersionBuild="159"
-  DTS:VersionGUID="{F8CD1084-4F54-4FE6-A394-2380F19E08E2}">
+  DTS:VersionBuild="160"
+  DTS:VersionGUID="{7EBD4E65-6B55-4A3A-A891-63C71F275A93}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>
@@ -132,7 +132,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varLoaddate">
       <DTS:VariableValue
-        DTS:DataType="7">9/25/2020 7:33:15 PM</DTS:VariableValue>
+        DTS:DataType="7">9/25/2020 7:36:48 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -172,7 +172,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/25/2020 7:33:15 PM</DTS:VariableValue>
+        DTS:DataType="7">9/25/2020 7:36:48 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -219,7 +219,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/25/2020 7:33:15 PM</DTS:VariableValue>
+        DTS:DataType="7">9/25/2020 7:36:48 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -5341,7 +5341,7 @@
                       cachedDataType="str"
                       cachedLength="10"
                       cachedName="Channel"
-                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[Channel]">
+                      lineageId="Package\Data Flow Task\Lookup_Channal.Outputs[Lookup Match Output].Columns[Channel]">
                       <properties>
                         <property
                           dataType="System.Null"
@@ -8939,7 +8939,7 @@
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[Channel]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Data Flow Task\Lookup_Channal.Outputs[Lookup Match Output].Columns[Channel]}</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies whether the column is used to indicate confidence or similarity."
@@ -9100,167 +9100,6 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Lookup 1"
-              componentClassID="Microsoft.Lookup"
-              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
-              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Lookup 1"
-              usesDispositions="true"
-              version="6">
-              <properties>
-                <property
-                  dataType="System.String"
-                  description="Specifies the SQL statement that generates the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[channelLookup]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[channelLookup]) [refTable]
-where [refTable].[OfficeID] = ?</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the type of connection used to access the reference dataset."
-                  name="ConnectionType"
-                  typeConverter="LookupConnectionType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the cache type of the lookup table."
-                  name="CacheType"
-                  typeConverter="CacheType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
-                  name="NoMatchBehavior"
-                  typeConverter="LookupNoMatchBehavior">1</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
-                  name="NoMatchCachePercentage">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
-                  name="MaxMemoryUsage">25</property>
-                <property
-                  dataType="System.Int64"
-                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
-                  name="MaxMemoryUsage64">25</property>
-                <property
-                  dataType="System.String"
-                  description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Channel" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="OfficeID" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
-                <property
-                  containsID="true"
-                  dataType="System.String"
-                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_OfficeID]};</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
-                  name="TreatDuplicateKeysAsError">false</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Data Flow Task\Lookup 1.Connections[OleDbConnection]"
-                  connectionManagerID="{33E38FE8-FAE1-4904-B8C8-1CBB2CCB57BB}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-BPD4JUV_DUNAPROD2014.STGQL]"
-                  description="Connection manager used to access lookup data."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]"
-                  name="Lookup Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input].Columns[DC_OfficeID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="100"
-                      cachedName="DC_OfficeID"
-                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_OfficeID]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">OfficeID</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output]"
-                  errorOrTruncationOperation="Lookup"
-                  exclusionGroup="1"
-                  name="Lookup Match Output"
-                  synchronousInputId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[Channel]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Copy Column"
-                      length="10"
-                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output].Columns[Channel]"
-                      name="Channel"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">Channel</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup No Match Output]"
-                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
-                  exclusionGroup="1"
-                  name="Lookup No Match Output"
-                  synchronousInputId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Lookup Error Output"
-                  synchronousInputId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
               refId="Package\Data Flow Task\Lookup 1_LeadSource"
               componentClassID="Microsoft.Lookup"
               contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
@@ -9414,6 +9253,167 @@ where [refTable].[LeadSource] = ?</property>
                       refId="Package\Data Flow Task\Lookup 1_LeadSource.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Data Flow Task\Lookup 1_LeadSource.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Lookup_Channal"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup_Channal"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[channelLookup]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[channelLookup]) [refTable]
+where [refTable].[OfficeID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Channel" dataType="DT_STR" length="10" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="OfficeID" dataType="DT_STR" length="100" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_OfficeID]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Lookup_Channal.Connections[OleDbConnection]"
+                  connectionManagerID="{33E38FE8-FAE1-4904-B8C8-1CBB2CCB57BB}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-BPD4JUV_DUNAPROD2014.STGQL]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Lookup_Channal.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Lookup_Channal.Inputs[Lookup Input].Columns[DC_OfficeID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="DC_OfficeID"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_OfficeID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">OfficeID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Lookup_Channal.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup_Channal.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup_Channal.Outputs[Lookup Match Output].Columns[Channel]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="10"
+                      lineageId="Package\Data Flow Task\Lookup_Channal.Outputs[Lookup Match Output].Columns[Channel]"
+                      name="Channel"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Channel</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Lookup_Channal.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup_Channal.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Lookup_Channal.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup_Channal.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup_Channal.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Lookup_Channal.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup_Channal.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Lookup_Channal.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -12790,6 +12790,1925 @@ where [refTable].[MarketSourceCode] = ?</property>
               </outputs>
             </component>
             <component
+              refId="Package\Data Flow Task\OLE DB Destination 1"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination 1"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[CHANNALLEACK]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Destination 1.Connections[OleDbConnection]"
+                  connectionManagerID="{DF18F66F-FEC9-42B9-8A40-44A226C99A55}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-BPD4JUV_DUNAPROD2014.Meron]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LastLoadDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LastLoadDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LastLoadDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LastLoadDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LeadSource]"
+                      cachedDataType="nText"
+                      cachedName="LeadSource"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadSource]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LeadSource]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanID]"
+                      cachedDataType="nText"
+                      cachedName="LoanID"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanID]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LoanID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LeadID]"
+                      cachedDataType="nText"
+                      cachedName="LeadID"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadID]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LeadID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrFirstName]"
+                      cachedDataType="nText"
+                      cachedName="BorrFirstName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrFirstName]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[BorrFirstName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrLastName]"
+                      cachedDataType="nText"
+                      cachedName="BorrLastName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrLastName]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[BorrLastName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrBirthDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="BorrBirthDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrBirthDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[BorrBirthDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrGender]"
+                      cachedDataType="nText"
+                      cachedName="BorrGender"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrGender]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[BorrGender]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrEmailAddress]"
+                      cachedDataType="nText"
+                      cachedName="BorrEmailAddress"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrEmailAddress]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[BorrEmailAddress]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrAddress]"
+                      cachedDataType="nText"
+                      cachedName="BorrAddress"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrAddress]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[BorrAddress]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrCity]"
+                      cachedDataType="nText"
+                      cachedName="BorrCity"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrCity]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[BorrCity]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrState]"
+                      cachedDataType="nText"
+                      cachedName="BorrState"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrState]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[BorrState]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrZip]"
+                      cachedDataType="nText"
+                      cachedName="BorrZip"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrZip]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[BorrZip]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrNoYearsOnJob]"
+                      cachedDataType="r8"
+                      cachedName="BorrNoYearsOnJob"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrNoYearsOnJob]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[BorrNoYearsOnJob]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorTotalIncome]"
+                      cachedDataType="r8"
+                      cachedName="BorTotalIncome"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorTotalIncome]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[BorTotalIncome]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanOfficerEmail]"
+                      cachedDataType="nText"
+                      cachedName="LoanOfficerEmail"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerEmail]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LoanOfficerEmail]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[OfficeID]"
+                      cachedDataType="nText"
+                      cachedName="OfficeID"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[OfficeID]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[OfficeID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[IntialLoanAmount]"
+                      cachedDataType="r8"
+                      cachedName="IntialLoanAmount"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IntialLoanAmount]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[IntialLoanAmount]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[IsBorrSelfEmployeeFlag]"
+                      cachedDataType="nText"
+                      cachedName="IsBorrSelfEmployeeFlag"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IsBorrSelfEmployeeFlag]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[IsBorrSelfEmployeeFlag]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanOfficer]"
+                      cachedDataType="nText"
+                      cachedName="LoanOfficer"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficer]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LoanOfficer]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[TotalLoanAmt]"
+                      cachedDataType="r8"
+                      cachedName="TotalLoanAmt"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TotalLoanAmt]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[TotalLoanAmt]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Net_Buy_Price]"
+                      cachedDataType="r8"
+                      cachedName="Net_Buy_Price"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Net_Buy_Price]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[Net_Buy_Price]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[TopQualificationRatios]"
+                      cachedDataType="r8"
+                      cachedName="TopQualificationRatios"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TopQualificationRatios]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[TopQualificationRatios]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BottomQualificationRatios]"
+                      cachedDataType="r8"
+                      cachedName="BottomQualificationRatios"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BottomQualificationRatios]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[BottomQualificationRatios]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanToValueRatio]"
+                      cachedDataType="r8"
+                      cachedName="LoanToValueRatio"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanToValueRatio]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LoanToValueRatio]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CombinedLoanToValueRatio]"
+                      cachedDataType="r8"
+                      cachedName="CombinedLoanToValueRatio"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CombinedLoanToValueRatio]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[CombinedLoanToValueRatio]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[InterstRate]"
+                      cachedDataType="r8"
+                      cachedName="InterstRate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InterstRate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[InterstRate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[AppraisedValue]"
+                      cachedDataType="r8"
+                      cachedName="AppraisedValue"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AppraisedValue]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[AppraisedValue]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[AnnualPercentageRate]"
+                      cachedDataType="r8"
+                      cachedName="AnnualPercentageRate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[AnnualPercentageRate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[HouseOnSaleStreet]"
+                      cachedDataType="nText"
+                      cachedName="HouseOnSaleStreet"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleStreet]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[HouseOnSaleStreet]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[HouseOnSaleState]"
+                      cachedDataType="nText"
+                      cachedName="HouseOnSaleState"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleState]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[HouseOnSaleState]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[HouseOnSaleZip]"
+                      cachedDataType="nText"
+                      cachedName="HouseOnSaleZip"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleZip]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[HouseOnSaleZip]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanProgram]"
+                      cachedDataType="nText"
+                      cachedName="LoanProgram"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanProgram]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LoanProgram]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[AmortizationType]"
+                      cachedDataType="nText"
+                      cachedName="AmortizationType"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AmortizationType]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[AmortizationType]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanTerm]"
+                      cachedDataType="r8"
+                      cachedName="LoanTerm"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanTerm]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LoanTerm]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CreditPullDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="CreditPullDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CreditPullDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[CreditPullDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[FinallCreditScore]"
+                      cachedDataType="r8"
+                      cachedName="FinallCreditScore"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FinallCreditScore]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[FinallCreditScore]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[UnderwriterRiskAssess]"
+                      cachedDataType="nText"
+                      cachedName="UnderwriterRiskAssess"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterRiskAssess]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[UnderwriterRiskAssess]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanType]"
+                      cachedDataType="nText"
+                      cachedName="LoanType"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanType]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LoanType]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanPurpose]"
+                      cachedDataType="nText"
+                      cachedName="LoanPurpose"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanPurpose]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LoanPurpose]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MilestoneStatus]"
+                      cachedDataType="nText"
+                      cachedName="MilestoneStatus"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MilestoneStatus]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[MilestoneStatus]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CurrentMilestone]"
+                      cachedDataType="nText"
+                      cachedName="CurrentMilestone"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestone]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[CurrentMilestone]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanStatus]"
+                      cachedDataType="nText"
+                      cachedName="LoanStatus"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanStatus]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LoanStatus]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LeadDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LeadDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LeadDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ApplicationDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="ApplicationDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ApplicationDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LockDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LockDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LockDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LockDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LockExpireDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LockExpireDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LockExpireDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LockExpireDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LastModifiedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LastModifiedDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LastModifiedDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LastModifiedDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanStatusActionDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LoanStatusActionDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanStatusActionDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LoanStatusActionDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[FundedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="FundedDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FundedDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[FundedDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanExpirationDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LoanExpirationDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanExpirationDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LoanExpirationDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanInformationDocumentDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LoanInformationDocumentDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanInformationDocumentDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LoanInformationDocumentDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[InitialDisclosureProvidedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="InitialDisclosureProvidedDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialDisclosureProvidedDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[InitialDisclosureProvidedDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CurrentMilestoneTrackingDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="CurrentMilestoneTrackingDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestoneTrackingDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[CurrentMilestoneTrackingDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ApplicationReturnedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="ApplicationReturnedDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationReturnedDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ApplicationReturnedDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ApprovalDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="ApprovalDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApprovalDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ApprovalDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ConditionalApprovalDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="ConditionalApprovalDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ConditionalApprovalDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ConditionalApprovalDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ConditionsReceivedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="ConditionsReceivedDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ConditionsReceivedDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ConditionsReceivedDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DocumentPreparedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DocumentPreparedDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentPreparedDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[DocumentPreparedDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DocumentSigningDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DocumentSigningDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentSigningDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[DocumentSigningDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[FinalDocumentDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="FinalDocumentDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FinalDocumentDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[FinalDocumentDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanSetupDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LoanSetupDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanSetupDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[LoanSetupDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[EstimatedLoanClosingDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="EstimatedLoanClosingDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[EstimatedLoanClosingDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[EstimatedLoanClosingDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ActualClosingDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="ActualClosingDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ActualClosingDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ActualClosingDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ProcessingDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="ProcessingDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ProcessingDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ProcessingDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DocumentResubmittedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DocumentResubmittedDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentResubmittedDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[DocumentResubmittedDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DocumentReviewedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DocumentReviewedDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentReviewedDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[DocumentReviewedDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DocumentShippingDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DocumentShippingDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentShippingDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[DocumentShippingDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ApplicationStartedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="ApplicationStartedDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationStartedDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ApplicationStartedDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DocumentSubmittalDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DocumentSubmittalDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentSubmittalDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[DocumentSubmittalDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[UnderwrittingReceivedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="UnderwrittingReceivedDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwrittingReceivedDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[UnderwrittingReceivedDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[InitialClosingDisclosureSentDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="InitialClosingDisclosureSentDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialClosingDisclosureSentDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[InitialClosingDisclosureSentDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[InitialLoanEstimateSentDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="InitialLoanEstimateSentDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialLoanEstimateSentDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[InitialLoanEstimateSentDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[InitialLoanEstimateDueDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="InitialLoanEstimateDueDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialLoanEstimateDueDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[InitialLoanEstimateDueDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ClosingDisclosureRecievedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="ClosingDisclosureRecievedDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ClosingDisclosureRecievedDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ClosingDisclosureRecievedDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DisbursementDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DisbursementDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DisbursementDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[DisbursementDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DenialDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DenialDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DenialDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[DenialDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[QAFailDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="QAFailDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[QAFailDate]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[QAFailDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[IsConstructionLoan]"
+                      cachedDataType="nText"
+                      cachedName="IsConstructionLoan"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IsConstructionLoan]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[IsConstructionLoan]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ApprovalStatus]"
+                      cachedDataType="nText"
+                      cachedName="ApprovalStatus"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApprovalStatus]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ApprovalStatus]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[PropertyOccupancyType]"
+                      cachedDataType="nText"
+                      cachedName="PropertyOccupancyType"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PropertyOccupancyType]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[PropertyOccupancyType]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Closer_Name]"
+                      cachedDataType="nText"
+                      cachedName="Closer_Name"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Closer_Name]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[Closer_Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Loan_Processor_Name]"
+                      cachedDataType="nText"
+                      cachedName="Loan_Processor_Name"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Loan_Processor_Name]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[Loan_Processor_Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Underwriter_Name]"
+                      cachedDataType="nText"
+                      cachedName="Underwriter_Name"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Underwriter_Name]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[Underwriter_Name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MarketSource]"
+                      cachedDataType="nText"
+                      cachedName="MarketSource"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MarketSource]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[MarketSource]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MortgageInsuranceCompany]"
+                      cachedDataType="nText"
+                      cachedName="MortgageInsuranceCompany"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MortgageInsuranceCompany]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[MortgageInsuranceCompany]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[TotalFees]"
+                      cachedDataType="r8"
+                      cachedName="TotalFees"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TotalFees]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[TotalFees]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[OriginationFee]"
+                      cachedDataType="r8"
+                      cachedName="OriginationFee"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[OriginationFee]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[OriginationFee]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ContentType]"
+                      cachedDataType="nText"
+                      cachedName="ContentType"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ContentType]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ContentType]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Created]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Created"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Created]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[Created]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[QAStatus]"
+                      cachedDataType="nText"
+                      cachedName="QAStatus"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[QAStatus]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[QAStatus]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[FundedTier]"
+                      cachedDataType="i4"
+                      cachedName="FundedTier"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[FundedTier]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanOfficer_c_FirstName]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="DC_LoanOfficer_c_FirstName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanOfficer_c_FirstName]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanOfficer_c_FirstName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanOfficer_c_LastName]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="DC_LoanOfficer_c_LastName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanOfficer_c_LastName]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanOfficer_c_LastName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_CloserName_c_FirstName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_CloserName_c_FirstName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_CloserName_c_FirstName]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_CloserName_c_FirstName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_CloserName_c_LastName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_CloserName_c_LastName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_CloserName_c_LastName]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_CloserName_c_LastName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanProcessorName_c-FirstName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_LoanProcessorName_c-FirstName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanProcessorName_c-FirstName]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanProcessorName_c-FirstName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanProcessorName_c_LastName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_LoanProcessorName_c_LastName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanProcessorName_c_LastName]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanProcessorName_c_LastName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_UnderwriterName_FirstName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_UnderwriterName_FirstName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_UnderwriterName_FirstName]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_UnderwriterName_FirstName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_UnderwriterNameLastName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_UnderwriterNameLastName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_UnderwriterNameLastName]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_UnderwriterNameLastName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[SourceName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="SourceName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SourceName]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[SourceName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoadBy]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="LoadBy"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoadBy]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[LoadBy]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoadDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="LoadDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoadDate]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[LoadDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Mortgageinsurance]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="Mortgageinsurance"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Mortgageinsurance]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[Mortgageinsurance]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanOfficerFullName]"
+                      cachedDataType="wstr"
+                      cachedLength="101"
+                      cachedName="DC_LoanOfficerFullName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanOfficerFullName]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanOfficerFullName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_ProcessorFullName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_ProcessorFullName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_ProcessorFullName]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_ProcessorFullName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_UnderWriterFullName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_UnderWriterFullName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_UnderWriterFullName]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_UnderWriterFullName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_MortgageInsuranceCompany]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_MortgageInsuranceCompany"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_MortgageInsuranceCompany]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_MortgageInsuranceCompany]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="72"
+                      cachedName="DC_LoanID"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanID]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LeadId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="132"
+                      cachedName="DC_LeadId"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LeadId]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LeadId]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrBirthDate]"
+                      cachedDataType="dbDate"
+                      cachedName="DC_BorrBirthDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrBirthDate]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_BorrBirthDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrEmailAddress]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="DC_BorrEmailAddress"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrEmailAddress]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_BorrEmailAddress]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrAddress]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="159"
+                      cachedName="DC_BorrAddress"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrAddress]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_BorrAddress]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrCity]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_BorrCity"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrCity]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_BorrCity]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrZip]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_BorrZip"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrZip]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_BorrZip]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_IsBorrSelfEmployeedFlag]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_IsBorrSelfEmployeedFlag"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_IsBorrSelfEmployeedFlag]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_IsBorrSelfEmployeedFlag]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanOfficerEmail]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="DC_LoanOfficerEmail"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanOfficerEmail]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanOfficerEmail]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_OfficeID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="DC_OfficeID"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_OfficeID]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_OfficeID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BottomQualificationRatios]"
+                      cachedDataType="numeric"
+                      cachedName="DC_BottomQualificationRatios"
+                      cachedPrecision="23"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BottomQualificationRatios]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_BottomQualificationRatios]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanToValueRatio]"
+                      cachedDataType="numeric"
+                      cachedName="DC_LoanToValueRatio"
+                      cachedPrecision="23"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanToValueRatio]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanToValueRatio]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_CombinedLoanToValueRatio]"
+                      cachedDataType="numeric"
+                      cachedName="DC_CombinedLoanToValueRatio"
+                      cachedPrecision="23"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_CombinedLoanToValueRatio]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_CombinedLoanToValueRatio]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_HouseOnSaleStreet]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="159"
+                      cachedName="DC_HouseOnSaleStreet"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_HouseOnSaleStreet]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_HouseOnSaleStreet]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanProgram]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_LoanProgram"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanProgram]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanProgram]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_AmortizationType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_AmortizationType"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_AmortizationType]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_AmortizationType]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_UnderwriterRiskAssess]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_UnderwriterRiskAssess"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_UnderwriterRiskAssess]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_UnderwriterRiskAssess]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_LoanType"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanType]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanType]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanPurpose]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_LoanPurpose"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanPurpose]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanPurpose]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_MilestoneStatus]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_MilestoneStatus"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_MilestoneStatus]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_MilestoneStatus]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanStatus]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_LoanStatus"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanStatus]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanStatus]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_IsConstractionLoan]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_IsConstractionLoan"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_IsConstractionLoan]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_IsConstractionLoan]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_ApprovalStatus]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_ApprovalStatus"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_ApprovalStatus]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_ApprovalStatus]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_PropertyOccupancyType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_PropertyOccupancyType"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_PropertyOccupancyType]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_PropertyOccupancyType]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_MarketSource]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="7"
+                      cachedName="DC_MarketSource"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_MarketSource]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_MarketSource]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_QAStatuse]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_QAStatuse"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_QAStatuse]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_QAStatuse]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LeadSource]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="225"
+                      cachedName="DC_LeadSource"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LeadSource]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LeadSource]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_CloserFullName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_CloserFullName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_CloserFullName]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_CloserFullName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_AnnualPercentageDate]"
+                      cachedDataType="numeric"
+                      cachedName="DC_AnnualPercentageDate"
+                      cachedPrecision="23"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_AnnualPercentageDate]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_AnnualPercentageDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_AppraisedValue]"
+                      cachedDataType="numeric"
+                      cachedName="DC_AppraisedValue"
+                      cachedPrecision="23"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_AppraisedValue]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_AppraisedValue]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrFirstName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DC_BorrFirstName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrFirstName]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_BorrFirstName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrLastName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DC_BorrLastName"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrLastName]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_BorrLastName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrGender]"
+                      cachedDataType="wstr"
+                      cachedLength="1"
+                      cachedName="DC_BorrGender"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrGender]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_BorrGender]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrState]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_BorrState"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrState]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_BorrState]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrNoYearsOnJob]"
+                      cachedDataType="numeric"
+                      cachedName="DC_BorrNoYearsOnJob"
+                      cachedPrecision="24"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrNoYearsOnJob]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_BorrNoYearsOnJob]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BorrTotalIncome]"
+                      cachedDataType="numeric"
+                      cachedName="DC_BorrTotalIncome"
+                      cachedPrecision="26"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrTotalIncome]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_BorrTotalIncome]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_BottomQualificationRatio]"
+                      cachedDataType="numeric"
+                      cachedName="DC_BottomQualificationRatio"
+                      cachedPrecision="23"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BottomQualificationRatio]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_BottomQualificationRatio]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_ClosingDisclousreRecieveDate]"
+                      cachedDataType="dbDate"
+                      cachedName="DC_ClosingDisclousreRecieveDate"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_ClosingDisclousreRecieveDate]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_ClosingDisclousreRecieveDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_CurrentMilestone]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_CurrentMilestone"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_CurrentMilestone]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_CurrentMilestone]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_FinallCreditScore]"
+                      cachedDataType="numeric"
+                      cachedName="DC_FinallCreditScore"
+                      cachedPrecision="23"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_FinallCreditScore]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_FinallCreditScore]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_HouseOnSaleZip]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_HouseOnSaleZip"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_HouseOnSaleZip]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_HouseOnSaleZip]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_InterstRate]"
+                      cachedDataType="numeric"
+                      cachedName="DC_InterstRate"
+                      cachedPrecision="23"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_InterstRate]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_InterstRate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_IntialLoanAmount]"
+                      cachedDataType="numeric"
+                      cachedName="DC_IntialLoanAmount"
+                      cachedPrecision="23"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_IntialLoanAmount]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_IntialLoanAmount]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanTerm]"
+                      cachedDataType="numeric"
+                      cachedName="DC_LoanTerm"
+                      cachedPrecision="23"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanTerm]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanTerm]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_NetBuyPrice]"
+                      cachedDataType="numeric"
+                      cachedName="DC_NetBuyPrice"
+                      cachedPrecision="23"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_NetBuyPrice]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_NetBuyPrice]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_OriginationFee]"
+                      cachedDataType="numeric"
+                      cachedName="DC_OriginationFee"
+                      cachedPrecision="27"
+                      cachedScale="13"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_OriginationFee]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_OriginationFee]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_TopQualificationRatios]"
+                      cachedDataType="numeric"
+                      cachedName="DC_TopQualificationRatios"
+                      cachedPrecision="23"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_TopQualificationRatios]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_TopQualificationRatios]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_TotalFees]"
+                      cachedDataType="numeric"
+                      cachedName="DC_TotalFees"
+                      cachedPrecision="27"
+                      cachedScale="13"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_TotalFees]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_TotalFees]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_TotalLoanAmount]"
+                      cachedDataType="numeric"
+                      cachedName="DC_TotalLoanAmount"
+                      cachedPrecision="23"
+                      cachedScale="10"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_TotalLoanAmount]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_TotalLoanAmount]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_HouseOnSaleState]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DC_HouseOnSaleState"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_HouseOnSaleState]"
+                      lineageId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_HouseOnSaleState]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LastLoadDate]"
+                      dataType="dbTimeStamp"
+                      name="LastLoadDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadSource]"
+                      dataType="nText"
+                      name="LeadSource" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanID]"
+                      dataType="nText"
+                      name="LoanID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadID]"
+                      dataType="nText"
+                      name="LeadID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrFirstName]"
+                      dataType="nText"
+                      name="BorrFirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrLastName]"
+                      dataType="nText"
+                      name="BorrLastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrBirthDate]"
+                      dataType="dbTimeStamp"
+                      name="BorrBirthDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrGender]"
+                      dataType="nText"
+                      name="BorrGender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrEmailAddress]"
+                      dataType="nText"
+                      name="BorrEmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrAddress]"
+                      dataType="nText"
+                      name="BorrAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrCity]"
+                      dataType="nText"
+                      name="BorrCity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrState]"
+                      dataType="nText"
+                      name="BorrState" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrZip]"
+                      dataType="nText"
+                      name="BorrZip" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrNoYearsOnJob]"
+                      dataType="r8"
+                      name="BorrNoYearsOnJob" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorTotalIncome]"
+                      dataType="r8"
+                      name="BorTotalIncome" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerEmail]"
+                      dataType="nText"
+                      name="LoanOfficerEmail" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[OfficeID]"
+                      dataType="nText"
+                      name="OfficeID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IntialLoanAmount]"
+                      dataType="r8"
+                      name="IntialLoanAmount" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IsBorrSelfEmployeeFlag]"
+                      dataType="nText"
+                      name="IsBorrSelfEmployeeFlag" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficer]"
+                      dataType="nText"
+                      name="LoanOfficer" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TotalLoanAmt]"
+                      dataType="r8"
+                      name="TotalLoanAmt" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Net_Buy_Price]"
+                      dataType="r8"
+                      name="Net_Buy_Price" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TopQualificationRatios]"
+                      dataType="r8"
+                      name="TopQualificationRatios" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BottomQualificationRatios]"
+                      dataType="r8"
+                      name="BottomQualificationRatios" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanToValueRatio]"
+                      dataType="r8"
+                      name="LoanToValueRatio" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CombinedLoanToValueRatio]"
+                      dataType="r8"
+                      name="CombinedLoanToValueRatio" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InterstRate]"
+                      dataType="r8"
+                      name="InterstRate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AppraisedValue]"
+                      dataType="r8"
+                      name="AppraisedValue" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
+                      dataType="r8"
+                      name="AnnualPercentageRate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleStreet]"
+                      dataType="nText"
+                      name="HouseOnSaleStreet" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleState]"
+                      dataType="nText"
+                      name="HouseOnSaleState" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleZip]"
+                      dataType="nText"
+                      name="HouseOnSaleZip" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanProgram]"
+                      dataType="nText"
+                      name="LoanProgram" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AmortizationType]"
+                      dataType="nText"
+                      name="AmortizationType" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanTerm]"
+                      dataType="r8"
+                      name="LoanTerm" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CreditPullDate]"
+                      dataType="dbTimeStamp"
+                      name="CreditPullDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FinallCreditScore]"
+                      dataType="r8"
+                      name="FinallCreditScore" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterRiskAssess]"
+                      dataType="nText"
+                      name="UnderwriterRiskAssess" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanType]"
+                      dataType="nText"
+                      name="LoanType" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanPurpose]"
+                      dataType="nText"
+                      name="LoanPurpose" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MilestoneStatus]"
+                      dataType="nText"
+                      name="MilestoneStatus" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestone]"
+                      dataType="nText"
+                      name="CurrentMilestone" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanStatus]"
+                      dataType="nText"
+                      name="LoanStatus" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadDate]"
+                      dataType="dbTimeStamp"
+                      name="LeadDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationDate]"
+                      dataType="dbTimeStamp"
+                      name="ApplicationDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LockDate]"
+                      dataType="dbTimeStamp"
+                      name="LockDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LockExpireDate]"
+                      dataType="dbTimeStamp"
+                      name="LockExpireDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LastModifiedDate]"
+                      dataType="dbTimeStamp"
+                      name="LastModifiedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanStatusActionDate]"
+                      dataType="dbTimeStamp"
+                      name="LoanStatusActionDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FundedDate]"
+                      dataType="dbTimeStamp"
+                      name="FundedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanExpirationDate]"
+                      dataType="dbTimeStamp"
+                      name="LoanExpirationDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanInformationDocumentDate]"
+                      dataType="dbTimeStamp"
+                      name="LoanInformationDocumentDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialDisclosureProvidedDate]"
+                      dataType="dbTimeStamp"
+                      name="InitialDisclosureProvidedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestoneTrackingDate]"
+                      dataType="dbTimeStamp"
+                      name="CurrentMilestoneTrackingDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationReturnedDate]"
+                      dataType="dbTimeStamp"
+                      name="ApplicationReturnedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApprovalDate]"
+                      dataType="dbTimeStamp"
+                      name="ApprovalDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ConditionalApprovalDate]"
+                      dataType="dbTimeStamp"
+                      name="ConditionalApprovalDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ConditionsReceivedDate]"
+                      dataType="dbTimeStamp"
+                      name="ConditionsReceivedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentPreparedDate]"
+                      dataType="dbTimeStamp"
+                      name="DocumentPreparedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentSigningDate]"
+                      dataType="dbTimeStamp"
+                      name="DocumentSigningDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FinalDocumentDate]"
+                      dataType="dbTimeStamp"
+                      name="FinalDocumentDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanSetupDate]"
+                      dataType="dbTimeStamp"
+                      name="LoanSetupDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[EstimatedLoanClosingDate]"
+                      dataType="dbTimeStamp"
+                      name="EstimatedLoanClosingDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ActualClosingDate]"
+                      dataType="dbTimeStamp"
+                      name="ActualClosingDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ProcessingDate]"
+                      dataType="dbTimeStamp"
+                      name="ProcessingDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentResubmittedDate]"
+                      dataType="dbTimeStamp"
+                      name="DocumentResubmittedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentReviewedDate]"
+                      dataType="dbTimeStamp"
+                      name="DocumentReviewedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentShippingDate]"
+                      dataType="dbTimeStamp"
+                      name="DocumentShippingDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationStartedDate]"
+                      dataType="dbTimeStamp"
+                      name="ApplicationStartedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentSubmittalDate]"
+                      dataType="dbTimeStamp"
+                      name="DocumentSubmittalDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwrittingReceivedDate]"
+                      dataType="dbTimeStamp"
+                      name="UnderwrittingReceivedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialClosingDisclosureSentDate]"
+                      dataType="dbTimeStamp"
+                      name="InitialClosingDisclosureSentDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialLoanEstimateSentDate]"
+                      dataType="dbTimeStamp"
+                      name="InitialLoanEstimateSentDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialLoanEstimateDueDate]"
+                      dataType="dbTimeStamp"
+                      name="InitialLoanEstimateDueDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ClosingDisclosureRecievedDate]"
+                      dataType="dbTimeStamp"
+                      name="ClosingDisclosureRecievedDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DisbursementDate]"
+                      dataType="dbTimeStamp"
+                      name="DisbursementDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DenialDate]"
+                      dataType="dbTimeStamp"
+                      name="DenialDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[QAFailDate]"
+                      dataType="dbTimeStamp"
+                      name="QAFailDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IsConstructionLoan]"
+                      dataType="nText"
+                      name="IsConstructionLoan" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApprovalStatus]"
+                      dataType="nText"
+                      name="ApprovalStatus" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PropertyOccupancyType]"
+                      dataType="nText"
+                      name="PropertyOccupancyType" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Closer_Name]"
+                      dataType="nText"
+                      name="Closer_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Loan_Processor_Name]"
+                      dataType="nText"
+                      name="Loan_Processor_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Underwriter_Name]"
+                      dataType="nText"
+                      name="Underwriter_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MarketSource]"
+                      dataType="nText"
+                      name="MarketSource" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MortgageInsuranceCompany]"
+                      dataType="nText"
+                      name="MortgageInsuranceCompany" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TotalFees]"
+                      dataType="r8"
+                      name="TotalFees" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[OriginationFee]"
+                      dataType="r8"
+                      name="OriginationFee" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ContentType]"
+                      dataType="nText"
+                      name="ContentType" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Created]"
+                      dataType="dbTimeStamp"
+                      name="Created" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[QAStatus]"
+                      dataType="nText"
+                      name="QAStatus" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
+                      dataType="i4"
+                      name="FundedTier" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanOfficer_c_FirstName]"
+                      dataType="wstr"
+                      length="100"
+                      name="DC_LoanOfficer_c_FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanOfficer_c_LastName]"
+                      dataType="wstr"
+                      length="100"
+                      name="DC_LoanOfficer_c_LastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_CloserName_c_FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_CloserName_c_FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_CloserName_c_LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_CloserName_c_LastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanProcessorName_c-FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_LoanProcessorName_c-FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanProcessorName_c_LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_LoanProcessorName_c_LastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_UnderwriterName_FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_UnderwriterName_FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_UnderwriterNameLastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_UnderwriterNameLastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SourceName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="SourceName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoadBy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="LoadBy" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoadDate]"
+                      dataType="dbTimeStamp"
+                      name="LoadDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Mortgageinsurance]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="Mortgageinsurance" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanOfficerFullName]"
+                      dataType="wstr"
+                      length="101"
+                      name="DC_LoanOfficerFullName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_ProcessorFullName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_ProcessorFullName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_UnderWriterFullName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_UnderWriterFullName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_MortgageInsuranceCompany]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_MortgageInsuranceCompany" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="72"
+                      name="DC_LoanID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LeadId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="132"
+                      name="DC_LeadId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrBirthDate]"
+                      dataType="dbDate"
+                      name="DC_BorrBirthDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrEmailAddress]"
+                      dataType="wstr"
+                      length="100"
+                      name="DC_BorrEmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="159"
+                      name="DC_BorrAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrCity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_BorrCity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrZip]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_BorrZip" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_IsBorrSelfEmployeedFlag]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_IsBorrSelfEmployeedFlag" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanOfficerEmail]"
+                      dataType="wstr"
+                      length="100"
+                      name="DC_LoanOfficerEmail" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_OfficeID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="DC_OfficeID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BottomQualificationRatios]"
+                      dataType="numeric"
+                      name="DC_BottomQualificationRatios"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanToValueRatio]"
+                      dataType="numeric"
+                      name="DC_LoanToValueRatio"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_CombinedLoanToValueRatio]"
+                      dataType="numeric"
+                      name="DC_CombinedLoanToValueRatio"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_HouseOnSaleStreet]"
+                      codePage="1252"
+                      dataType="str"
+                      length="159"
+                      name="DC_HouseOnSaleStreet" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanProgram]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_LoanProgram" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_AmortizationType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_AmortizationType" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_UnderwriterRiskAssess]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_UnderwriterRiskAssess" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_LoanType" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanPurpose]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_LoanPurpose" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_MilestoneStatus]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_MilestoneStatus" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanStatus]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_LoanStatus" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_IsConstractionLoan]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_IsConstractionLoan" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_ApprovalStatus]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_ApprovalStatus" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_PropertyOccupancyType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_PropertyOccupancyType" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_MarketSource]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      name="DC_MarketSource" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_QAStatuse]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_QAStatuse" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LeadSource]"
+                      codePage="1252"
+                      dataType="str"
+                      length="225"
+                      name="DC_LeadSource" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_CloserFullName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_CloserFullName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_AnnualPercentageDate]"
+                      dataType="numeric"
+                      name="DC_AnnualPercentageDate"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_AppraisedValue]"
+                      dataType="numeric"
+                      name="DC_AppraisedValue"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrFirstName]"
+                      dataType="wstr"
+                      length="50"
+                      name="DC_BorrFirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrLastName]"
+                      dataType="wstr"
+                      length="50"
+                      name="DC_BorrLastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrGender]"
+                      dataType="wstr"
+                      length="1"
+                      name="DC_BorrGender" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrState]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_BorrState" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrNoYearsOnJob]"
+                      dataType="numeric"
+                      name="DC_BorrNoYearsOnJob"
+                      precision="24"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BorrTotalIncome]"
+                      dataType="numeric"
+                      name="DC_BorrTotalIncome"
+                      precision="26"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_BottomQualificationRatio]"
+                      dataType="numeric"
+                      name="DC_BottomQualificationRatio"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_ClosingDisclousreRecieveDate]"
+                      dataType="dbDate"
+                      name="DC_ClosingDisclousreRecieveDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_CurrentMilestone]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_CurrentMilestone" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_FinallCreditScore]"
+                      dataType="numeric"
+                      name="DC_FinallCreditScore"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_HouseOnSaleZip]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_HouseOnSaleZip" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_InterstRate]"
+                      dataType="numeric"
+                      name="DC_InterstRate"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_IntialLoanAmount]"
+                      dataType="numeric"
+                      name="DC_IntialLoanAmount"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanTerm]"
+                      dataType="numeric"
+                      name="DC_LoanTerm"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_NetBuyPrice]"
+                      dataType="numeric"
+                      name="DC_NetBuyPrice"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_OriginationFee]"
+                      dataType="numeric"
+                      name="DC_OriginationFee"
+                      precision="27"
+                      scale="13" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_TopQualificationRatios]"
+                      dataType="numeric"
+                      name="DC_TopQualificationRatios"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_TotalFees]"
+                      dataType="numeric"
+                      name="DC_TotalFees"
+                      precision="27"
+                      scale="13" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_TotalLoanAmount]"
+                      dataType="numeric"
+                      name="DC_TotalLoanAmount"
+                      precision="23"
+                      scale="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_HouseOnSaleState]"
+                      codePage="1252"
+                      dataType="str"
+                      length="128"
+                      name="DC_HouseOnSaleState" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Data Flow Task\Row Count 1"
               componentClassID="Microsoft.RowCount"
               contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -12822,7 +14741,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           <paths>
             <path
               refId="Package\Data Flow Task.Paths[Derived Column Output]"
-              endId="Package\Data Flow Task\Lookup 1.Inputs[Lookup Input]"
+              endId="Package\Data Flow Task\Lookup_Channal.Inputs[Lookup Input]"
               name="Derived Column Output"
               startId="Package\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output]" />
             <path
@@ -12844,7 +14763,7 @@ where [refTable].[MarketSourceCode] = ?</property>
               refId="Package\Data Flow Task.Paths[Lookup Match Output]"
               endId="Package\Data Flow Task\Lookup 1_LeadSource.Inputs[Lookup Input]"
               name="Lookup Match Output"
-              startId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output]" />
+              startId="Package\Data Flow Task\Lookup_Channal.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Lookup Match Output1]"
               endId="Package\Data Flow Task\Lookup_MarketSource.Inputs[Lookup Input]"
@@ -12855,6 +14774,11 @@ where [refTable].[MarketSourceCode] = ?</property>
               endId="Package\Data Flow Task\Fuzzy Lookup.Inputs[Fuzzy Lookup Input]"
               name="Lookup Match Output"
               startId="Package\Data Flow Task\Lookup_MarketSource.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Lookup No Match Output]"
+              endId="Package\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+              name="Lookup No Match Output"
+              startId="Package\Data Flow Task\Lookup_Channal.Outputs[Lookup No Match Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Output]"
               endId="Package\Data Flow Task\Conditional Splt_MaxModifieddate.Inputs[Conditional Split Input]"
@@ -13983,8 +15907,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Id="Package\Data Flow Task\Lookup_MarketSource"
           TopLeft="606.711300483106,531.962412652406" />
         <NodeLayout
-          Size="124,42.6666666666667"
-          Id="Package\Data Flow Task\Lookup 1"
+          Size="160,42.6666666666667"
+          Id="Package\Data Flow Task\Lookup_Channal"
           TopLeft="974.999985471369,369.883047374956" />
         <NodeLayout
           Size="174.666666666667,42.6666666666667"
@@ -14110,9 +16034,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="236.791662770635,43.9415220561932"
+              EndConnector="254.791662770635,43.9415220561932"
               Start="0,0"
-              End="236.791662770635,36.4415220561932">
+              End="254.791662770635,36.4415220561932">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -14123,13 +16047,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     Point2="0,21.9707610280966"
                     Point3="4,21.9707610280966" />
                   <mssgle:LineSegment
-                    End="232.791662770635,21.9707610280966" />
+                    End="250.791662770635,21.9707610280966" />
                   <mssgle:CubicBezierSegment
-                    Point1="232.791662770635,21.9707610280966"
-                    Point2="236.791662770635,21.9707610280966"
-                    Point3="236.791662770635,25.9707610280966" />
+                    Point1="250.791662770635,21.9707610280966"
+                    Point2="254.791662770635,21.9707610280966"
+                    Point3="254.791662770635,25.9707610280966" />
                   <mssgle:LineSegment
-                    End="236.791662770635,36.4415220561932" />
+                    End="254.791662770635,36.4415220561932" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14140,25 +16064,37 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Lookup Match Output]"
-          TopLeft="1035.79165238949,412.549714041623">
+          TopLeft="1054.99998547137,412.549714041623">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,134.081873688927"
+              EndConnector="-20.4166661637532,134.081873688927"
               Start="0,0"
-              End="0,126.581873688927">
+              End="-20.4166661637532,126.581873688927">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,126.581873688927" />
+                    End="0,63.0409368444637" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,63.0409368444637"
+                    Point2="0,67.0409368444637"
+                    Point3="-4,67.0409368444637" />
+                  <mssgle:LineSegment
+                    End="-16.4166661637532,67.0409368444637" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-16.4166661637532,67.0409368444637"
+                    Point2="-20.4166661637532,67.0409368444637"
+                    Point3="-20.4166661637532,71.0409368444637" />
+                  <mssgle:LineSegment
+                    End="-20.4166661637532,126.581873688927" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,57.4862493444637,96.3827734375,11.609375"
+              BoundingBox="-58.3997198006266,72.0409368444637,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -14302,6 +16238,40 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="184,42.6666666666667"
+          Id="Package\Data Flow Task\OLE DB Destination 1"
+          TopLeft="1139.58331635222,432.690064532458" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Lookup No Match Output]"
+          TopLeft="1134.99998547137,391.216380708289">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="96.5833308808501,41.4736838241689"
+              Start="0,0"
+              End="96.5833308808501,33.9736838241689">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="92.5833308808501,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="92.5833308808501,0"
+                    Point2="96.5833308808501,0"
+                    Point3="96.5833308808501,4" />
+                  <mssgle:LineSegment
+                    End="96.5833308808501,33.9736838241689" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="40.7769441621001,-17.609375,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -14364,7 +16334,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Lookup 1">
+    design-time-name="Package\Data Flow Task\Lookup_Channal">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
@@ -14401,6 +16371,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\Fuzzy Lookup">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Destination 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
