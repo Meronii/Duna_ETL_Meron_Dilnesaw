@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Meron_Dilnesaw_Lending_Pad"
   DTS:PackageType="5"
-  DTS:VersionBuild="210"
-  DTS:VersionGUID="{6390333A-3D3D-454F-909A-63C1F5F05DDA}">
+  DTS:VersionBuild="211"
+  DTS:VersionGUID="{3D0DD59A-41AD-4180-9B91-43498CEF7D0F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -57,7 +57,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varArchivedFolder">
       <DTS:VariableValue
-        DTS:DataType="8">C:\QuckienLoans\ArchivedFolder\LendingPad_2020-09-23-22-24.zip</DTS:VariableValue>
+        DTS:DataType="8">C:\QuckienLoans\ArchivedFolder\LendingPad_2020-09-24-22-41.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -113,7 +113,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varLastModifiedDate">
       <DTS:VariableValue
-        DTS:DataType="7">9/23/2020 10:24:45 PM</DTS:VariableValue>
+        DTS:DataType="7">9/24/2020 10:41:34 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -124,7 +124,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varLoadDate">
       <DTS:VariableValue
-        DTS:DataType="7">9/23/2020 10:24:45 PM</DTS:VariableValue>
+        DTS:DataType="7">9/24/2020 10:41:34 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -186,7 +186,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/23/2020 10:24:45 PM</DTS:VariableValue>
+        DTS:DataType="7">9/24/2020 10:41:34 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -462,14 +462,35 @@
           ReadOnlyVariables="User::varZipedFile,User::varZipedFileName"
           ReadWriteVariables="User::varIsfileexistisflag">
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_4479bdcdef824eef9018cdf1ae94bc4b")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_4479bdcdef824eef9018cdf1ae94bc4b")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -855,35 +876,14 @@ namespace ST_4479bdcdef824eef9018cdf1ae94bc4b.Properties {
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_4479bdcdef824eef9018cdf1ae94bc4b")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_4479bdcdef824eef9018cdf1ae94bc4b")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1092,14 +1092,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           ReadOnlyVariables="System::PackageName,System::StartTime,User::varFromEmail,User::varPassword,User::varSmtpClient,User::varSmtpServerPort,User::varSubject,User::varToEmail"
           ReadWriteVariables="User::varBody">
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_4e6b114e29ba452783b3c449bba17d07")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_4e6b114e29ba452783b3c449bba17d07")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1505,35 +1526,14 @@ namespace ST_4e6b114e29ba452783b3c449bba17d07.Properties {
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_4e6b114e29ba452783b3c449bba17d07")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_4e6b114e29ba452783b3c449bba17d07")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -14002,1371 +14002,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1"
-                  componentClassID="Microsoft.OLEDBDestination"
-                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-                  description="OLE DB Destination"
-                  name="OLE DB Destination 1"
-                  usesDispositions="true"
-                  version="4">
-                  <properties>
-                    <property
-                      dataType="System.Int32"
-                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                      name="CommandTimeout">0</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the name of the database object used to open a rowset."
-                      name="OpenRowset">[LICKEDCHANNEL]</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the variable that contains the name of the database object used to open a rowset."
-                      name="OpenRowsetVariable"></property>
-                    <property
-                      dataType="System.String"
-                      description="The SQL command to be executed."
-                      name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the column code page to use when code page information is unavailable from the data source."
-                      name="DefaultCodePage">1252</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Forces the use of the DefaultCodePage property value when describing character data."
-                      name="AlwaysUseDefaultCodePage">false</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies the mode used to access the database."
-                      name="AccessMode"
-                      typeConverter="AccessMode">3</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepIdentity">false</property>
-                    <property
-                      dataType="System.Boolean"
-                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                      name="FastLoadKeepNulls">false</property>
-                    <property
-                      dataType="System.String"
-                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                    <property
-                      dataType="System.Int32"
-                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                      name="FastLoadMaxInsertCommitSize">2147483647</property>
-                  </properties>
-                  <connections>
-                    <connection
-                      refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Connections[OleDbConnection]"
-                      connectionManagerID="{DF18F66F-FEC9-42B9-8A40-44A226C99A55}:external"
-                      connectionManagerRefId="Project.ConnectionManagers[DESKTOP-BPD4JUV_DUNAPROD2014.Meron]"
-                      description="The OLE DB runtime connection used to access the database."
-                      name="OleDbConnection" />
-                  </connections>
-                  <inputs>
-                    <input
-                      refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
-                      errorOrTruncationOperation="Insert"
-                      errorRowDisposition="FailComponent"
-                      hasSideEffects="true"
-                      name="OLE DB Destination Input">
-                      <inputColumns>
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanID]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="72"
-                          cachedName="LoanID"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanID]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanID]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LastLoadDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="LastLoadDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LastLoadDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LastLoadDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LeadSource]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="255"
-                          cachedName="LeadSource"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadSource]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadSource]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LeadId]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="132"
-                          cachedName="LeadId"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadId]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadId]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrFirstName]"
-                          cachedDataType="wstr"
-                          cachedLength="50"
-                          cachedName="BorrFirstName"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrFirstName]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[BorrFirstName]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrLastName]"
-                          cachedDataType="wstr"
-                          cachedLength="50"
-                          cachedName="BorrLastName"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrLastName]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[BorrLastName]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrBirthDate]"
-                          cachedDataType="dbDate"
-                          cachedName="BorrBirthDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrBirthDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[BorrBirthDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrGender]"
-                          cachedDataType="wstr"
-                          cachedLength="1"
-                          cachedName="BorrGender"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrGender]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[BorrGender]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrEmailAddress]"
-                          cachedDataType="wstr"
-                          cachedLength="100"
-                          cachedName="BorrEmailAddress"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrEmailAddress]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[BorrEmailAddress]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrAddress]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="159"
-                          cachedName="BorrAddress"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrAddress]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[BorrAddress]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrCity]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="BorrCity"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrCity]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[BorrCity]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrState]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="BorrState"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrState]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[BorrState]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrZip]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="BorrZip"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrZip]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[BorrZip]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrNoYearsOnJob]"
-                          cachedDataType="numeric"
-                          cachedName="BorrNoYearsOnJob"
-                          cachedPrecision="24"
-                          cachedScale="10"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrNoYearsOnJob]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[BorrNoYearsOnJob]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[IsBorrSelfEmployeedFlag]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="IsBorrSelfEmployeedFlag"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IsBorrSelfEmployeedFlag]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[IsBorrSelfEmployeedFlag]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BorrTotalIncome]"
-                          cachedDataType="numeric"
-                          cachedName="BorrTotalIncome"
-                          cachedPrecision="26"
-                          cachedScale="10"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrTotalIncome]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[BorrTotalIncome]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanOfficer]"
-                          cachedDataType="wstr"
-                          cachedLength="100"
-                          cachedName="LoanOfficer"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficer]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanOfficer]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanOfficerEmail]"
-                          cachedDataType="wstr"
-                          cachedLength="100"
-                          cachedName="LoanOfficerEmail"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerEmail]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanOfficerEmail]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[OfficeID]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="100"
-                          cachedName="OfficeID"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[OfficeID]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[OfficeID]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[IntialLoanAmount]"
-                          cachedDataType="numeric"
-                          cachedName="IntialLoanAmount"
-                          cachedPrecision="23"
-                          cachedScale="10"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IntialLoanAmount]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[IntialLoanAmount]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[TotalLoanAmt]"
-                          cachedDataType="wstr"
-                          cachedLength="68"
-                          cachedName="TotalLoanAmt"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TotalLoanAmt]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[TotalLoanAmt]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Net_Buy_Price]"
-                          cachedDataType="numeric"
-                          cachedName="Net_Buy_Price"
-                          cachedPrecision="23"
-                          cachedScale="10"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Net_Buy_Price]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[Net_Buy_Price]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[TopQualificationRatios]"
-                          cachedDataType="wstr"
-                          cachedLength="52"
-                          cachedName="TopQualificationRatios"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TopQualificationRatios]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[TopQualificationRatios]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BottomQualificationRatios]"
-                          cachedDataType="numeric"
-                          cachedName="BottomQualificationRatios"
-                          cachedPrecision="23"
-                          cachedScale="10"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BottomQualificationRatios]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[BottomQualificationRatios]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanToValueRatio]"
-                          cachedDataType="numeric"
-                          cachedName="LoanToValueRatio"
-                          cachedPrecision="23"
-                          cachedScale="10"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanToValueRatio]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanToValueRatio]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CombinedLoanToValueRatio]"
-                          cachedDataType="numeric"
-                          cachedName="CombinedLoanToValueRatio"
-                          cachedPrecision="23"
-                          cachedScale="10"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CombinedLoanToValueRatio]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[CombinedLoanToValueRatio]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[InterestRate]"
-                          cachedDataType="numeric"
-                          cachedName="InterestRate"
-                          cachedPrecision="23"
-                          cachedScale="10"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InterestRate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[InterestRate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[AppraisedValue]"
-                          cachedDataType="numeric"
-                          cachedName="AppraisedValue"
-                          cachedPrecision="23"
-                          cachedScale="10"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AppraisedValue]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[AppraisedValue]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[AnnualPercentageRate]"
-                          cachedDataType="numeric"
-                          cachedName="AnnualPercentageRate"
-                          cachedPrecision="23"
-                          cachedScale="10"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[AnnualPercentageRate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[HouseOnSaleStreet]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="159"
-                          cachedName="HouseOnSaleStreet"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleStreet]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[HouseOnSaleStreet]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[HouseOnSaleState]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="HouseOnSaleState"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleState]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[HouseOnSaleState]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[HouseOnSaleZip]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="HouseOnSaleZip"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleZip]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[HouseOnSaleZip]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanProgram]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="LoanProgram"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanProgram]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanProgram]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[AmortizationType]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="AmortizationType"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AmortizationType]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[AmortizationType]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanTerm]"
-                          cachedDataType="numeric"
-                          cachedName="LoanTerm"
-                          cachedPrecision="23"
-                          cachedScale="10"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanTerm]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanTerm]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CreditPullDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="CreditPullDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CreditPullDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[CreditPullDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[FinallCreditScore]"
-                          cachedDataType="numeric"
-                          cachedName="FinallCreditScore"
-                          cachedPrecision="24"
-                          cachedScale="10"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FinallCreditScore]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[FinallCreditScore]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[UnderwriterRiskAssess]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="UnderwriterRiskAssess"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterRiskAssess]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[UnderwriterRiskAssess]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanType]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="LoanType"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanType]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanType]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanPurpose]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="LoanPurpose"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanPurpose]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanPurpose]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MilestoneStatus]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="MilestoneStatus"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MilestoneStatus]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[MilestoneStatus]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CurrentMilestone]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="CurrentMilestone"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestone]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[CurrentMilestone]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanStatus]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="LoanStatus"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanStatus]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanStatus]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LeadDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="LeadDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LeadDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ApplicationDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="ApplicationDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[ApplicationDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LockDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="LockDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LockDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LockDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LockExpireDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="LockExpireDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LockExpireDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LockExpireDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LastModifiedDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="LastModifiedDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LastModifiedDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LastModifiedDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanStatusActionDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="LoanStatusActionDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanStatusActionDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanStatusActionDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[FundedDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="FundedDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FundedDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[FundedDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanExpirationDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="LoanExpirationDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanExpirationDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanExpirationDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanInformationDocumentDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="LoanInformationDocumentDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanInformationDocumentDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanInformationDocumentDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[InitialDisclosureProvidedDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="InitialDisclosureProvidedDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialDisclosureProvidedDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[InitialDisclosureProvidedDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CurrentMilestoneTrackingDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="CurrentMilestoneTrackingDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestoneTrackingDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[CurrentMilestoneTrackingDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ApplicationReturnedDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="ApplicationReturnedDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationReturnedDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[ApplicationReturnedDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ApprovalDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="ApprovalDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApprovalDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[ApprovalDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ConditionalApprovalDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="ConditionalApprovalDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ConditionalApprovalDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[ConditionalApprovalDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ConditionsReceivedDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="ConditionsReceivedDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ConditionsReceivedDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[ConditionsReceivedDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DocumentPreparedDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="DocumentPreparedDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentPreparedDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[DocumentPreparedDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DocumentSigningDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="DocumentSigningDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentSigningDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[DocumentSigningDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[FinalDocumentDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="FinalDocumentDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FinalDocumentDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[FinalDocumentDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoanSetupDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="LoanSetupDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanSetupDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[LoanSetupDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[EstimatedLoanClosingDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="EstimatedLoanClosingDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[EstimatedLoanClosingDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[EstimatedLoanClosingDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ProcessingDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="ProcessingDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ProcessingDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[ProcessingDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DocumentResubmittedDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="DocumentResubmittedDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentResubmittedDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[DocumentResubmittedDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DocumentReviewedDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="DocumentReviewedDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentReviewedDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[DocumentReviewedDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DocumentShippingDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="DocumentShippingDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentShippingDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[DocumentShippingDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ApplicationStartedDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="ApplicationStartedDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationStartedDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[ApplicationStartedDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DocumentSubmittalDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="DocumentSubmittalDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentSubmittalDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[DocumentSubmittalDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[UnderwritingReceivedDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="UnderwritingReceivedDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwritingReceivedDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[UnderwritingReceivedDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[InitialClosingDisclosureSentDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="InitialClosingDisclosureSentDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialClosingDisclosureSentDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[InitialClosingDisclosureSentDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[InitialLoanEstimateSentDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="InitialLoanEstimateSentDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialLoanEstimateSentDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[InitialLoanEstimateSentDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[InitialLoanEstimateDueDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="InitialLoanEstimateDueDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialLoanEstimateDueDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[InitialLoanEstimateDueDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ClosingDisclosureRecievedDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="ClosingDisclosureRecievedDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ClosingDisclosureRecievedDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[ClosingDisclosureRecievedDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DisbursementDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="DisbursementDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DisbursementDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[DisbursementDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DenialDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="DenialDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DenialDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[DenialDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[QAFailDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="QAFailDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[QAFailDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[QAFailDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[IsConstructionLoan]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="IsConstructionLoan"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IsConstructionLoan]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[IsConstructionLoan]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ApprovalStatus]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="ApprovalStatus"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApprovalStatus]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[ApprovalStatus]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[PropertyOccupancyType]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="PropertyOccupancyType"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PropertyOccupancyType]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[PropertyOccupancyType]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Closer_Name]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="Closer_Name"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Closer_Name]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[Closer_Name]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Loan_Processor_Name]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="Loan_Processor_Name"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Loan_Processor_Name]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[Loan_Processor_Name]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Underwriter_Name]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="Underwriter_Name"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Underwriter_Name]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[Underwriter_Name]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MarketSource]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="7"
-                          cachedName="MarketSource"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MarketSource]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[MarketSource]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[QAStatus]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="QAStatus"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[QAStatus]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[QAStatus]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MortgageInsuranceCompany]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="MortgageInsuranceCompany"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MortgageInsuranceCompany]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[MortgageInsuranceCompany]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[TotalFees]"
-                          cachedDataType="numeric"
-                          cachedName="TotalFees"
-                          cachedPrecision="27"
-                          cachedScale="13"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TotalFees]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[TotalFees]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[OriginationFee]"
-                          cachedDataType="numeric"
-                          cachedName="OriginationFee"
-                          cachedPrecision="27"
-                          cachedScale="13"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[OriginationFee]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[OriginationFee]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ActualClosingDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="ActualClosingDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ActualClosingDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[ActualClosingDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[FundedTier]"
-                          cachedDataType="i4"
-                          cachedName="FundedTier"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
-                          lineageId="Package\Sequence Container\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[FundedTier]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanOfficer_c_FirstName]"
-                          cachedDataType="wstr"
-                          cachedLength="100"
-                          cachedName="DC_LoanOfficer_c_FirstName"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanOfficer_c_FirstName]"
-                          lineageId="Package\Sequence Container\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanOfficer_c_FirstName]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanOfficer_c_LastName]"
-                          cachedDataType="wstr"
-                          cachedLength="100"
-                          cachedName="DC_LoanOfficer_c_LastName"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanOfficer_c_LastName]"
-                          lineageId="Package\Sequence Container\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanOfficer_c_LastName]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_CloserName_c_FirstName]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="DC_CloserName_c_FirstName"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_CloserName_c_FirstName]"
-                          lineageId="Package\Sequence Container\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_CloserName_c_FirstName]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_CloserName_c_LastName]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="DC_CloserName_c_LastName"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_CloserName_c_LastName]"
-                          lineageId="Package\Sequence Container\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_CloserName_c_LastName]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanProcessorName_c-FirstName]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="DC_LoanProcessorName_c-FirstName"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanProcessorName_c-FirstName]"
-                          lineageId="Package\Sequence Container\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanProcessorName_c-FirstName]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LoanProcessorName_c_LastName]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="DC_LoanProcessorName_c_LastName"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanProcessorName_c_LastName]"
-                          lineageId="Package\Sequence Container\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LoanProcessorName_c_LastName]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_UnderwriterName_FirstName]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="DC_UnderwriterName_FirstName"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_UnderwriterName_FirstName]"
-                          lineageId="Package\Sequence Container\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_UnderwriterName_FirstName]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_UnderwriterNameLastName]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="DC_UnderwriterNameLastName"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_UnderwriterNameLastName]"
-                          lineageId="Package\Sequence Container\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_UnderwriterNameLastName]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[SourceName]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="SourceName"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SourceName]"
-                          lineageId="Package\Sequence Container\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[SourceName]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoadBy]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="LoadBy"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoadBy]"
-                          lineageId="Package\Sequence Container\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[LoadBy]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LoadDate]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="LoadDate"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoadDate]"
-                          lineageId="Package\Sequence Container\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[LoadDate]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_MortgageInsuranceCompany]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="128"
-                          cachedName="DC_MortgageInsuranceCompany"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_MortgageInsuranceCompany]"
-                          lineageId="Package\Sequence Container\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_MortgageInsuranceCompany]" />
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DC_LeadSource]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="255"
-                          cachedName="DC_LeadSource"
-                          externalMetadataColumnId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LeadSource]"
-                          lineageId="Package\Sequence Container\Data Flow Task\Derived Column 1 1.Outputs[Derived Column Output].Columns[DC_LeadSource]" />
-                      </inputColumns>
-                      <externalMetadataColumns
-                        isUsed="True">
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanID]"
-                          codePage="1252"
-                          dataType="str"
-                          length="72"
-                          name="LoanID" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LastLoadDate]"
-                          dataType="dbTimeStamp"
-                          name="LastLoadDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadSource]"
-                          codePage="1252"
-                          dataType="str"
-                          length="255"
-                          name="LeadSource" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadId]"
-                          codePage="1252"
-                          dataType="str"
-                          length="132"
-                          name="LeadId" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrFirstName]"
-                          dataType="wstr"
-                          length="50"
-                          name="BorrFirstName" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrLastName]"
-                          dataType="wstr"
-                          length="50"
-                          name="BorrLastName" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrBirthDate]"
-                          dataType="dbDate"
-                          name="BorrBirthDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrGender]"
-                          dataType="wstr"
-                          length="1"
-                          name="BorrGender" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrEmailAddress]"
-                          dataType="wstr"
-                          length="100"
-                          name="BorrEmailAddress" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrAddress]"
-                          codePage="1252"
-                          dataType="str"
-                          length="159"
-                          name="BorrAddress" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrCity]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="BorrCity" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrState]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="BorrState" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrZip]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="BorrZip" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrNoYearsOnJob]"
-                          dataType="numeric"
-                          name="BorrNoYearsOnJob"
-                          precision="24"
-                          scale="10" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IsBorrSelfEmployeedFlag]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="IsBorrSelfEmployeedFlag" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BorrTotalIncome]"
-                          dataType="numeric"
-                          name="BorrTotalIncome"
-                          precision="26"
-                          scale="10" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficer]"
-                          dataType="wstr"
-                          length="100"
-                          name="LoanOfficer" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanOfficerEmail]"
-                          dataType="wstr"
-                          length="100"
-                          name="LoanOfficerEmail" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[OfficeID]"
-                          codePage="1252"
-                          dataType="str"
-                          length="100"
-                          name="OfficeID" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IntialLoanAmount]"
-                          dataType="numeric"
-                          name="IntialLoanAmount"
-                          precision="23"
-                          scale="10" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TotalLoanAmt]"
-                          dataType="wstr"
-                          length="68"
-                          name="TotalLoanAmt" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Net_Buy_Price]"
-                          dataType="numeric"
-                          name="Net_Buy_Price"
-                          precision="23"
-                          scale="10" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TopQualificationRatios]"
-                          dataType="wstr"
-                          length="52"
-                          name="TopQualificationRatios" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BottomQualificationRatios]"
-                          dataType="numeric"
-                          name="BottomQualificationRatios"
-                          precision="23"
-                          scale="10" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanToValueRatio]"
-                          dataType="numeric"
-                          name="LoanToValueRatio"
-                          precision="23"
-                          scale="10" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CombinedLoanToValueRatio]"
-                          dataType="numeric"
-                          name="CombinedLoanToValueRatio"
-                          precision="23"
-                          scale="10" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InterestRate]"
-                          dataType="numeric"
-                          name="InterestRate"
-                          precision="23"
-                          scale="10" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AppraisedValue]"
-                          dataType="numeric"
-                          name="AppraisedValue"
-                          precision="23"
-                          scale="10" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AnnualPercentageRate]"
-                          dataType="numeric"
-                          name="AnnualPercentageRate"
-                          precision="23"
-                          scale="10" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleStreet]"
-                          codePage="1252"
-                          dataType="str"
-                          length="159"
-                          name="HouseOnSaleStreet" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleState]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="HouseOnSaleState" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[HouseOnSaleZip]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="HouseOnSaleZip" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanProgram]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="LoanProgram" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[AmortizationType]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="AmortizationType" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanTerm]"
-                          dataType="numeric"
-                          name="LoanTerm"
-                          precision="23"
-                          scale="10" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CreditPullDate]"
-                          dataType="dbTimeStamp"
-                          name="CreditPullDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FinallCreditScore]"
-                          dataType="numeric"
-                          name="FinallCreditScore"
-                          precision="24"
-                          scale="10" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwriterRiskAssess]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="UnderwriterRiskAssess" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanType]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="LoanType" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanPurpose]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="LoanPurpose" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MilestoneStatus]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="MilestoneStatus" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestone]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="CurrentMilestone" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanStatus]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="LoanStatus" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LeadDate]"
-                          dataType="dbTimeStamp"
-                          name="LeadDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationDate]"
-                          dataType="dbTimeStamp"
-                          name="ApplicationDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LockDate]"
-                          dataType="dbTimeStamp"
-                          name="LockDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LockExpireDate]"
-                          dataType="dbTimeStamp"
-                          name="LockExpireDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LastModifiedDate]"
-                          dataType="dbTimeStamp"
-                          name="LastModifiedDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanStatusActionDate]"
-                          dataType="dbTimeStamp"
-                          name="LoanStatusActionDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FundedDate]"
-                          dataType="dbTimeStamp"
-                          name="FundedDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanExpirationDate]"
-                          dataType="dbTimeStamp"
-                          name="LoanExpirationDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanInformationDocumentDate]"
-                          dataType="dbTimeStamp"
-                          name="LoanInformationDocumentDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialDisclosureProvidedDate]"
-                          dataType="dbTimeStamp"
-                          name="InitialDisclosureProvidedDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CurrentMilestoneTrackingDate]"
-                          dataType="dbTimeStamp"
-                          name="CurrentMilestoneTrackingDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationReturnedDate]"
-                          dataType="dbTimeStamp"
-                          name="ApplicationReturnedDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApprovalDate]"
-                          dataType="dbTimeStamp"
-                          name="ApprovalDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ConditionalApprovalDate]"
-                          dataType="dbTimeStamp"
-                          name="ConditionalApprovalDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ConditionsReceivedDate]"
-                          dataType="dbTimeStamp"
-                          name="ConditionsReceivedDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentPreparedDate]"
-                          dataType="dbTimeStamp"
-                          name="DocumentPreparedDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentSigningDate]"
-                          dataType="dbTimeStamp"
-                          name="DocumentSigningDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FinalDocumentDate]"
-                          dataType="dbTimeStamp"
-                          name="FinalDocumentDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoanSetupDate]"
-                          dataType="dbTimeStamp"
-                          name="LoanSetupDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[EstimatedLoanClosingDate]"
-                          dataType="dbTimeStamp"
-                          name="EstimatedLoanClosingDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ProcessingDate]"
-                          dataType="dbTimeStamp"
-                          name="ProcessingDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentResubmittedDate]"
-                          dataType="dbTimeStamp"
-                          name="DocumentResubmittedDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentReviewedDate]"
-                          dataType="dbTimeStamp"
-                          name="DocumentReviewedDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentShippingDate]"
-                          dataType="dbTimeStamp"
-                          name="DocumentShippingDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApplicationStartedDate]"
-                          dataType="dbTimeStamp"
-                          name="ApplicationStartedDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DocumentSubmittalDate]"
-                          dataType="dbTimeStamp"
-                          name="DocumentSubmittalDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UnderwritingReceivedDate]"
-                          dataType="dbTimeStamp"
-                          name="UnderwritingReceivedDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialClosingDisclosureSentDate]"
-                          dataType="dbTimeStamp"
-                          name="InitialClosingDisclosureSentDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialLoanEstimateSentDate]"
-                          dataType="dbTimeStamp"
-                          name="InitialLoanEstimateSentDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[InitialLoanEstimateDueDate]"
-                          dataType="dbTimeStamp"
-                          name="InitialLoanEstimateDueDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ClosingDisclosureRecievedDate]"
-                          dataType="dbTimeStamp"
-                          name="ClosingDisclosureRecievedDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DisbursementDate]"
-                          dataType="dbTimeStamp"
-                          name="DisbursementDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DenialDate]"
-                          dataType="dbTimeStamp"
-                          name="DenialDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[QAFailDate]"
-                          dataType="dbTimeStamp"
-                          name="QAFailDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IsConstructionLoan]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="IsConstructionLoan" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ApprovalStatus]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="ApprovalStatus" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PropertyOccupancyType]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="PropertyOccupancyType" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Closer_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="Closer_Name" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Loan_Processor_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="Loan_Processor_Name" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Underwriter_Name]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="Underwriter_Name" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MarketSource]"
-                          codePage="1252"
-                          dataType="str"
-                          length="7"
-                          name="MarketSource" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[QAStatus]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="QAStatus" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MortgageInsuranceCompany]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="MortgageInsuranceCompany" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TotalFees]"
-                          dataType="numeric"
-                          name="TotalFees"
-                          precision="27"
-                          scale="13" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[OriginationFee]"
-                          dataType="numeric"
-                          name="OriginationFee"
-                          precision="27"
-                          scale="13" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ActualClosingDate]"
-                          dataType="dbTimeStamp"
-                          name="ActualClosingDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FundedTier]"
-                          dataType="i4"
-                          name="FundedTier" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanOfficer_c_FirstName]"
-                          dataType="wstr"
-                          length="100"
-                          name="DC_LoanOfficer_c_FirstName" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanOfficer_c_LastName]"
-                          dataType="wstr"
-                          length="100"
-                          name="DC_LoanOfficer_c_LastName" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_CloserName_c_FirstName]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="DC_CloserName_c_FirstName" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_CloserName_c_LastName]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="DC_CloserName_c_LastName" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanProcessorName_c-FirstName]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="DC_LoanProcessorName_c-FirstName" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LoanProcessorName_c_LastName]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="DC_LoanProcessorName_c_LastName" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_UnderwriterName_FirstName]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="DC_UnderwriterName_FirstName" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_UnderwriterNameLastName]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="DC_UnderwriterNameLastName" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SourceName]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="SourceName" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoadBy]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="LoadBy" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LoadDate]"
-                          dataType="dbTimeStamp"
-                          name="LoadDate" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_MortgageInsuranceCompany]"
-                          codePage="1252"
-                          dataType="str"
-                          length="128"
-                          name="DC_MortgageInsuranceCompany" />
-                        <externalMetadataColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DC_LeadSource]"
-                          codePage="1252"
-                          dataType="str"
-                          length="255"
-                          name="DC_LeadSource" />
-                      </externalMetadataColumns>
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
-                      exclusionGroup="1"
-                      isErrorOut="true"
-                      name="OLE DB Destination Error Output"
-                      synchronousInputId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
-                      <outputColumns>
-                        <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                          dataType="i4"
-                          lineageId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                          name="ErrorCode"
-                          specialFlags="1" />
-                        <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                          dataType="i4"
-                          lineageId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                          name="ErrorColumn"
-                          specialFlags="2" />
-                      </outputColumns>
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
-                <component
                   refId="Package\Sequence Container\Data Flow Task\Row Count 1"
                   componentClassID="Microsoft.RowCount"
                   contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -15437,11 +14072,6 @@ where [refTable].[MarketSourceCode] = ?</property>
                   endId="Package\Sequence Container\Data Flow Task\Lookup 1_LeadSource.Inputs[Lookup Input]"
                   name="Lookup Match Output"
                   startId="Package\Sequence Container\Data Flow Task\Lookup_MarketSource.Outputs[Lookup Match Output]" />
-                <path
-                  refId="Package\Sequence Container\Data Flow Task.Paths[Lookup No Match Output]"
-                  endId="Package\Sequence Container\Data Flow Task\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
-                  name="Lookup No Match Output"
-                  startId="Package\Sequence Container\Data Flow Task\Lookup_Channal.Outputs[Lookup No Match Output]" />
                 <path
                   refId="Package\Sequence Container\Data Flow Task.Paths[Row Count Output 1]"
                   endId="Package\Sequence Container\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
@@ -15690,6 +14320,10 @@ where [refTable].[MarketSourceCode] = ?</property>
           Id="Package\Sequence Container\Data Flow Task"
           TopLeft="86.8749895164121,281.877198438676" />
         <NodeLayout
+          Size="168,42.6666666666667"
+          Id="Package\Sequence Container\Execute SQL Task"
+          TopLeft="87.8749892432244,14.8157922747723" />
+        <NodeLayout
           Size="217.333333333334,42.6666666666667"
           Id="Package\Sequence Container\Execute SQL Task 1_DeletingLending_QB"
           TopLeft="61.8333229646087,181.984410666754" />
@@ -15779,10 +14413,6 @@ where [refTable].[MarketSourceCode] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="168,42.6666666666667"
-          Id="Package\Sequence Container\Execute SQL Task"
-          TopLeft="87.8749892432244,14.8157922747723" />
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint 3]"
           TopLeft="174.222211832802,57.482458941439">
@@ -15808,7 +14438,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="471.333333333334,445.333333333334"
+          PanelSize="471.333333333334,446"
           Size="471.333333333334,488.666666666667"
           Id="Package\Sequence Container"
           TopLeft="634.027768330028,111.306044115609" />
@@ -16005,10 +14635,6 @@ where [refTable].[MarketSourceCode] = ?</property>
           Id="Package\Sequence Container\Data Flow Task\OLE DB Destination"
           TopLeft="214.285711092608,310.902260146596" />
         <NodeLayout
-          Size="184,42.6666666666667"
-          Id="Package\Sequence Container\Data Flow Task\OLE DB Destination 1"
-          TopLeft="1024.99998472631,324.315795578124" />
-        <NodeLayout
           Size="173.333333333334,42.6666666666667"
           Id="Package\Sequence Container\Data Flow Task\Derived Column 1 1"
           TopLeft="260,154" />
@@ -16032,42 +14658,6 @@ where [refTable].[MarketSourceCode] = ?</property>
           Size="157.333333333334,42.6666666666667"
           Id="Package\Sequence Container\Data Flow Task\Conditional Split"
           TopLeft="38.779761326898,149.140350898658" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Data Flow Task.Paths[Lookup No Match Output]"
-          TopLeft="1027.33333333333,255.666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="89.6666513929767,68.6491289114578"
-              Start="0,0"
-              End="89.6666513929767,61.1491289114578">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.867468171978" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.867468171978"
-                    Point2="0,27.867468171978"
-                    Point3="4,27.867468171978" />
-                  <mssgle:LineSegment
-                    End="85.6666513929767,27.867468171978" />
-                  <mssgle:CubicBezierSegment
-                    Point1="85.6666513929767,27.867468171978"
-                    Point2="89.6666513929767,27.867468171978"
-                    Point3="89.6666513929767,31.867468171978" />
-                  <mssgle:LineSegment
-                    End="89.6666513929767,61.1491289114578" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-10.9730610222616,32.867468171978,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Data Flow Task.Paths[Lookup Match Output2]"
           TopLeft="878.541654966149,394.127822788752">
@@ -16412,19 +15002,6 @@ where [refTable].[MarketSourceCode] = ?</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\Data Flow Task\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Data Flow Task\OLE DB Destination 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{2B42EE25-F8A4-4353-B93C-6D2AF7EBA191}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{C2684F03-CAEC-4F49-95D5-1F93B20BFA07}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -162,9 +162,25 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="162.666666666667,42.6666666666667"
+          Id="Package\SQ_Master_Package\EPT_LendingPad"
+          TopLeft="80.4999988824128,190.368425727551" />
+        <NodeLayout
+          Size="160,42.6666666666667"
+          Id="Package\SQ_Master_Package\EPT_LendingQB"
+          TopLeft="98.6249986123292,5.5" />
+        <NodeLayout
           Size="169.333333333334,42.6666666666667"
           Id="Package\SQ_Master_Package\EPT_QuickenLoan"
           TopLeft="96.749998640269,61.7368443590123" />
+        <NodeLayout
+          Size="169.333333333334,42.6666666666667"
+          Id="Package\SQ_Master_Package\EPT_SimpleNexus"
+          TopLeft="66.1249990966172,249.89474263746" />
+        <NodeLayout
+          Size="157.333333333334,42.6666666666667"
+          Id="Package\SQ_Master_Package\EPT_UberWriter"
+          TopLeft="78.6249989103525,124.000003425699" />
         <EdgeLayout
           Id="Package\SQ_Master_Package.PrecedenceConstraints[Constraint]"
           TopLeft="98.6249986123292,26.8333333333333">
@@ -227,14 +243,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="160,42.6666666666667"
-          Id="Package\SQ_Master_Package\EPT_LendingQB"
-          TopLeft="98.6249986123292,5.5" />
-        <NodeLayout
-          Size="157.333333333334,42.6666666666667"
-          Id="Package\SQ_Master_Package\EPT_UberWriter"
-          TopLeft="78.6249989103525,124.000003425699" />
         <EdgeLayout
           Id="Package\SQ_Master_Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="159.562498896383,166.666670092365">
@@ -257,10 +265,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="169.333333333334,42.6666666666667"
-          Id="Package\SQ_Master_Package\EPT_SimpleNexus"
-          TopLeft="66.1249990966172,249.89474263746" />
         <EdgeLayout
           Id="Package\SQ_Master_Package.PrecedenceConstraints[Constraint 3]"
           TopLeft="243.166665549079,211.701759060884">
@@ -295,15 +299,11 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="162.666666666667,42.6666666666667"
-          Id="Package\SQ_Master_Package\EPT_LendingPad"
-          TopLeft="80.4999988824128,190.368425727551" />
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
+          IsExpanded="True"
           PanelSize="345.333333333334,382.666666666667"
-          Size="203.333333333334,42.6666666666667"
+          Size="345.333333333334,425.333333333334"
           Id="Package\SQ_Master_Package"
           TopLeft="215.624996786937,102.017545340684" />
       </GraphLayout>
