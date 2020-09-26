@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="DESKTOP-BPD4JUV.master"
   DTS:DTSID="{CBFC9BED-C39B-4616-812D-C6C164E1492B}"

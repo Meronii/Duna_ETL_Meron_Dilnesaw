@@ -26,14 +26,13 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-BPD4JUV</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAAAk8rynEgBIS4H7nutbViH3i+cMei8eEh6WamHvBCUWSAAAAAAOgAAAAAIAACAAAABfQxBjJO2DYRCeLOFRM9Zxd55qVYZ645GrvZhTa8PAWJAAAADxV+IAmiRezErTriv3ySiJq7T6hOEMBAeH5GSn1cBZlZ7wAQb/WvcR/vvZmfRflbZb4s5XCvY246oBSgvYJSyZIdxofGlbbFjP3BKhKaPbR/TblVhySARVvwJQRD8qzYAMBXHf2d4CpKLCyghogQAjHHZeylupqAEUpXsjjgu0BG4ajB3TC1ygWt6tKKgUmC1AAAAA0vlWOE/Yb6PGe5QBR+Caxpn+5VN4QvUcg+dOl6A4X4Obe6Lk14BvySo8ot9mtioHw36czIUoAHdFA7cLdG57Ig==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAAAlYJnJ0s66yuAQmPkfzs9+E1wKJfRWtC1JBpFOjYc8WgAAAAAOgAAAAAIAACAAAAD9awDKREWsuOxVKIffdUBDucz/ERD+r6y5G+qIapchypAAAABcRP5gY2Ug6S4adNbT/p1zsEJjYYUuqnPUku1BUf7a0PUWgItuBGo3Tcl+obQMgOMEFlVliuFU8uaZawkB7B9+34iPFQCyTMNEHGBpEnOHlMDePqOx5PQ48Agiwj80Jl8EZZBe6PfZR0rfS9ULOydE4YxFOdgLkQrMH1ozguro+Hz9LT2sw4C/z6kCFLg4AUVAAAAAWSKRtKTzAgvVCyhZ1k85YvmjvrQqTEbgSu2uosUtcWtDSRPc7Q5BvZBKSVOPc9ytSHOTPPc9iv0xOvfcuW4orA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="Pkg_Meron_Dilnesaw_Lending_QB.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Pkg_Meron_Dilnesaw_Quicken_Loans.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Pkg_Meron_Dilnesaw_UberWriter.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Practice.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Pkg_Meron_Dilnesaw_Lending_Pad.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Pkg_Meron_Dilnesaw_Simple_Nexus.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Pkg_Meron_Dilnesaw_Quicken_Loan_Master.dtsx" SSIS:EntryPoint="1" />
@@ -77,7 +76,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie="SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0NTU1NTg1MTAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQ1NjQyMjUxNjM2NjY2NSwwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsN2U3ZWYyY2UtYzYzOS00YWY4LTg3NmItM2RhNzcyMmExMDRkLDdlN2VmMmNlLWM2MzktNGFmOC04NzZiLTNkYTc3MjJhMTA0ZCwsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxEcTZrNUd4dGR0WE1QbTlnanhETWZCeXZiZFBXbVNmL3AxQTdxbEVrbU90WFB4V21Pb1UyQ0lWNUxBcjZUMm10czM1dDJTUFZrMHdIQ3J0WmhqRFIzcTZGTDdTc2EwV1BOZ0gwSUpPZW1qM1BERXFPRE0vd05Mai9yMVlBVHNUY3NDMHlldzNvOHp2NkM0UVRSN3dwaXFlRW80QlNoUjNTbWd6UWlIS1hQY08xb3RzdkJESUxlK2dmVFVDbVlrblUrSzFseXE0VkxGZW5QdWVyODV3dkpxdEM1dFRHQVNqYWI3MkoyWkNYb0YxUVI3TnBWS1ZvWlN5UjNoNndpbTY3Zmpza3V2NnMyK0MrMlZmNjJBV0ZYZFZTejlUVkcyK3NnV09wWmswZHM1VXoyOFFuOU9RUEhGR0dGem4wdG52clRvQVhwTVowU0ticHpNSU5wOXpONkE9PTwvU1A+";User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie="SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjgsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzI0NTYyNzc3MjAwMDAwMDAsMTMyNDIxNzU3MDQwMDAwMDAwLDEzMjQ1NzE0MTcyMjE5NjI3MywwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsNjllNjdkOWYtYzBkMC0wMDAwLTY3NTItMWU4NmIwNTAzODc4LDY5ZTY3ZDlmLWMwZDAtMDAwMC02NzUyLTFlODZiMDUwMzg3OCwsMCwwLDAsLCwsMjY1MDQ2Nzc0Mzk5OTk5OTk5OSwwLCxIa280Tk9PTXg1UHNGSDFSRXNoak1nUzZnb1NXVitVS3NoZkZMdU80c0Y3VzVwRnhjWFBYK2xnRXM3ZGxJd1BZaWQwWGtNMStHMzFsNEJQTHZtUS9tZ0xYR1FwcGFoR3NrcHdvaVBQV2tCM2l5M243aVRnMThVVE04Zk94eUhvMW5rMXc0QXFlT2ZXdmgrTmdXTnBXb1dQU3NmZlgwTXR1ang1VFNDbWRtZWoxV3lnOHdnRUVvRlEwSFkyMW5DWTdxTHJqSDJpTkprTlNrT21DeFNoVzNTVUltTStQL2JBL3F6dzVPdndtQU9QSVBTSUVKTGkybHFrUEZYa3JhSEJLWlZNZ2ZJRFRGOGR4Qzlud2ErM0NHTjB6ZHl1VFB5U29Qb2k3T0grOG1TaVhUUjRsOGlVS1hqMGdlcC9ORFRWeE1qMFdiS1AxR0Z4ZUpHd2d4VWZjVFE9PTwvU1A+";User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -1338,10 +1337,10 @@
                 <SSIS:Property SSIS:Name="Name">P</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">164</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">183</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{9685BB10-AF31-45D7-9C4F-9D26B60394ED}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{72333E1D-E39B-4CAA-88F3-6DCACF2545AB}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1398,10 +1397,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Meron_Dilnesaw_Quicken_Loans</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">187</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">198</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{98DBDF04-3098-4720-A42E-79E4210A5FAB}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{E120D543-022F-457D-87A9-0BAFC03F69BF}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1500,10 +1499,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Meron_Dilnesaw_Quicken_Loans</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">175</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">181</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{3141ED2E-C530-4ABD-98F8-79FE0950646D}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{A84987EE-7106-4BD1-91B4-8985BD1BE5A1}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1596,118 +1595,16 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Practice.dtsx">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{D166D9F1-26F4-4278-8E9A-57AE588E44D6}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Practice</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">151</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{C5ECECEA-0668-4556-A0F1-A4FBCBEF4A4A}</SSIS:Property>
-                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
-              </SSIS:Properties>
-              <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="DESKTOPBPD4JUVDUNAPROD2014Meron_ConnectByProxy">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{17D8C629-AC93-4DB5-B725-1EA3AB8A12E1}</SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="DESKTOPBPD4JUVDUNAPROD2014Meron_ConnectionString">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{FC11703A-82F9-46E9-8F07-0B48527B053B}</SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-BPD4JUV\DUNAPROD2014;Initial Catalog=Meron;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="DESKTOPBPD4JUVDUNAPROD2014QLSSISLOG_ConnectByProxy">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{A71FA173-C4E3-495B-A0DB-C19B05D63C04}</SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="DESKTOPBPD4JUVDUNAPROD2014QLSSISLOG_ConnectionString">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{4195D079-C9DE-498A-BA20-CAF58CB0AFCA}</SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-BPD4JUV\DUNAPROD2014;Initial Catalog=QLSSISLOG;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="DESKTOPBPD4JUVDUNAPROD2014STGQL_ConnectByProxy">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{6ECE5F2C-6C6E-4CF6-82C9-8EA4100125C9}</SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="DESKTOPBPD4JUVDUNAPROD2014STGQL_ConnectionString">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{10FEEC14-5915-4765-BABC-09FCC966F7D0}</SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-BPD4JUV\DUNAPROD2014;Initial Catalog=STGQL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-              </SSIS:Parameters>
-            </SSIS:PackageMetaData>
             <SSIS:PackageMetaData SSIS:Name="Pkg_Meron_Dilnesaw_Lending_Pad.dtsx">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">{884A8718-6765-4BA5-8E48-F1A021A9259B}</SSIS:Property>
                 <SSIS:Property SSIS:Name="Name">Pkg_Meron_Dilnesaw_Lending_Pad</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">213</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">233</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{C42162D4-B475-4340-A396-7C4A9437D3AC}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{5BC08D44-8398-41F1-B294-4C5BC115F18D}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1721,10 +1618,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Meron_Dilnesaw_Simple_Nexus</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">239</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">247</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{21E94FA0-2500-4247-B568-56772FA3D4A9}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{6BAD5883-E6C2-4CDA-96A2-590614132236}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1738,10 +1635,10 @@
                 <SSIS:Property SSIS:Name="Name">Package2</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">3</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">4</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{F0048CF0-7789-46CA-94DA-CFD6E0C59119}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{E2C4A60B-2C4B-4F2B-A8EA-89890E01DE19}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
