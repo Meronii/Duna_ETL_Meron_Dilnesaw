@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{F0048CF0-7789-46CA-94DA-CFD6E0C59119}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{E2C4A60B-2C4B-4F2B-A8EA-89890E01DE19}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -121,7 +121,8 @@
           DTS:From="Package\SQ_Master_Package\EPT_LendingQB"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
-          DTS:To="Package\SQ_Master_Package\EPT_QuickenLoan" />
+          DTS:To="Package\SQ_Master_Package\EPT_QuickenLoan"
+          DTS:Value="2" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\SQ_Master_Package.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
@@ -129,7 +130,8 @@
           DTS:From="Package\SQ_Master_Package\EPT_QuickenLoan"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
-          DTS:To="Package\SQ_Master_Package\EPT_UberWriter" />
+          DTS:To="Package\SQ_Master_Package\EPT_UberWriter"
+          DTS:Value="2" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\SQ_Master_Package.PrecedenceConstraints[Constraint 2]"
           DTS:CreationName=""
@@ -137,7 +139,8 @@
           DTS:From="Package\SQ_Master_Package\EPT_UberWriter"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 2"
-          DTS:To="Package\SQ_Master_Package\EPT_LendingPad" />
+          DTS:To="Package\SQ_Master_Package\EPT_LendingPad"
+          DTS:Value="2" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\SQ_Master_Package.PrecedenceConstraints[Constraint 3]"
           DTS:CreationName=""
@@ -145,7 +148,8 @@
           DTS:From="Package\SQ_Master_Package\EPT_LendingPad"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 3"
-          DTS:To="Package\SQ_Master_Package\EPT_SimpleNexus" />
+          DTS:To="Package\SQ_Master_Package\EPT_SimpleNexus"
+          DTS:Value="2" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
   </DTS:Executables>
@@ -160,7 +164,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="162.666666666667,42.6666666666667"
           Id="Package\SQ_Master_Package\EPT_LendingPad"
@@ -212,7 +216,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-49.6794530970602,-17.609375,50.60890625,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -240,7 +246,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0.216380343375096,45.929825733353,50.60890625,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -262,7 +270,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-25.304453125,2.29619031759285,50.60890625,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -296,7 +306,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-2.804453125,-17.609375,50.60890625,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <ContainerLayout

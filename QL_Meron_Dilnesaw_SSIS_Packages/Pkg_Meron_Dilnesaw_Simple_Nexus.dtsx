@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Meron_Dilnesaw_Simple_Nexus"
   DTS:PackageType="5"
-  DTS:VersionBuild="239"
-  DTS:VersionGUID="{21E94FA0-2500-4247-B568-56772FA3D4A9}">
+  DTS:VersionBuild="244"
+  DTS:VersionGUID="{CFE29A3F-DAAA-4529-B7DC-B54B56A6D79B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -25,7 +25,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varArchivedFolder">
       <DTS:VariableValue
-        DTS:DataType="8">C:\QuckienLoans\ArchivedFolder\SimpleNexus_2020-09-24-19-51.zip</DTS:VariableValue>
+        DTS:DataType="8">C:\QuckienLoans\ArchivedFolder\SimpleNexus_2020-09-26-01-29.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -67,12 +67,12 @@
       DTS:CreationName=""
       DTS:DTSID="{6BB20333-AB49-41D5-B417-EC947477BCDF}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="GETDATE()"
+      DTS:Expression="DATEADD( &quot;YY&quot;, -20,  GETDATE())"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="varLastModifiedDate">
       <DTS:VariableValue
-        DTS:DataType="7">9/24/2020 7:51:55 PM</DTS:VariableValue>
+        DTS:DataType="7">9/26/2000 1:29:41 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -83,7 +83,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varLoadDate">
       <DTS:VariableValue
-        DTS:DataType="7">9/24/2020 7:51:55 PM</DTS:VariableValue>
+        DTS:DataType="7">9/26/2020 1:29:41 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -145,7 +145,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/24/2020 7:51:55 PM</DTS:VariableValue>
+        DTS:DataType="7">9/26/2020 1:29:41 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -430,14 +430,35 @@
           ReadOnlyVariables="User::varZipedFile,User::varZipedFileName"
           ReadWriteVariables="User::varIsfileexistisflag">
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_4479bdcdef824eef9018cdf1ae94bc4b")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_4479bdcdef824eef9018cdf1ae94bc4b")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -823,35 +844,14 @@ namespace ST_4479bdcdef824eef9018cdf1ae94bc4b.Properties {
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_4479bdcdef824eef9018cdf1ae94bc4b")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_4479bdcdef824eef9018cdf1ae94bc4b")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1060,6 +1060,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           ReadOnlyVariables="System::PackageName,System::StartTime,User::varFromEmail,User::varPassword,User::varSmtpClient,User::varSmtpServerPort,User::varSubject,User::varToEmail"
           ReadWriteVariables="User::varBody">
           <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+          <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -1178,35 +1187,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_4e6b114e29ba452783b3c449bba17d07.Properties.Settings.get_Default():ST_4e6b114e29ba452783b3c449bba17d07.Properties.Sett" +
-    "ings")]
-
-namespace ST_4e6b114e29ba452783b3c449bba17d07.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
           <ProjectItem
             Name="ST_3a19ebfeab2b40f2a6aae49679ee3790.csproj"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1464,6 +1444,35 @@ namespace ST_4e6b114e29ba452783b3c449bba17d07
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_4e6b114e29ba452783b3c449bba17d07.Properties.Settings.get_Default():ST_4e6b114e29ba452783b3c449bba17d07.Properties.Sett" +
+    "ings")]
+
+namespace ST_4e6b114e29ba452783b3c449bba17d07.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
             Name="Properties\AssemblyInfo.cs"
             Encoding="UTF8"><![CDATA[using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -1493,15 +1502,6 @@ using System.Runtime.CompilerServices;
 // by using the '*' as shown below:
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1793,13 +1793,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                          name="Expression">(DT_STR,100,1252)#{Package\Sequence Container\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastModifiedDate]} &lt; (DT_STR,100,1252)@[User::varMaxLastModifiedDate]</property>
+                          name="Expression">(DT_DBDATE)#{Package\Sequence Container\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastModifiedDate]} &gt; (DT_DBDATE)@[User::varLastModifiedDate]</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the friendly version of the expression. This expression version uses column names."
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_STR,100,1252)LastModifiedDate &lt; (DT_STR,100,1252)@[User::varMaxLastModifiedDate]</property>
+                          name="FriendlyExpression">(DT_DBDATE)LastModifiedDate &gt; (DT_DBDATE)@[User::varLastModifiedDate]</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -18936,17 +18936,25 @@ where [refTable].[MarketSourceCode] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="145.333333333334,42.6666666666667"
+          Id="Package\Sequence Container\Data Flow Task\Fuzzy Lookup"
+          TopLeft="789.541658517594,195.298249013977" />
+        <NodeLayout
+          Size="141.333333333334,42.6666666666667"
+          Id="Package\Sequence Container\Data Flow Task\Row Count 1"
+          TopLeft="349.70237574141,417.005020003963" />
+        <NodeLayout
           Size="174,63.3333333333334"
           Id="Package\Sequence Container\Data Flow Task\Conditional Split_BorrowerFirstName"
           TopLeft="570.844147337915,131.28457743222" />
         <NodeLayout
-          Size="244,42.6666666666667"
-          Id="Package\Sequence Container\Data Flow Task\Fuzzy Lookup_MortgageInsurance"
-          TopLeft="415.624993806705,502.719306766932" />
-        <NodeLayout
           Size="173.333333333334,42.6666666666667"
           Id="Package\Sequence Container\Data Flow Task\Derived Column 1 1"
           TopLeft="339.062494947575,177.894740190532" />
+        <NodeLayout
+          Size="186.666666666667,42.6666666666667"
+          Id="Package\Sequence Container\Data Flow Task\Lookup_MarketSource"
+          TopLeft="785.208321632816,351.461156122085" />
         <NodeLayout
           Size="186.666666666667,42.6666666666667"
           Id="Package\Sequence Container\Data Flow Task\Lookup 1_LeadSource"
@@ -18956,21 +18964,17 @@ where [refTable].[MarketSourceCode] = ?</property>
           Id="Package\Sequence Container\Data Flow Task\OLE DB Source"
           TopLeft="28.2916662848245,18.7719299018328" />
         <NodeLayout
-          Size="174.666666666667,42.6666666666667"
-          Id="Package\Sequence Container\Data Flow Task\OLE DB Destination"
-          TopLeft="214.285711092608,310.902260146596" />
-        <NodeLayout
-          Size="141.333333333334,42.6666666666667"
-          Id="Package\Sequence Container\Data Flow Task\Row Count 1"
-          TopLeft="349.70237574141,417.005020003963" />
-        <NodeLayout
           Size="157.333333333334,42.6666666666667"
           Id="Package\Sequence Container\Data Flow Task\Conditional Split"
           TopLeft="38.779761326898,149.140350898658" />
         <NodeLayout
-          Size="186.666666666667,42.6666666666667"
-          Id="Package\Sequence Container\Data Flow Task\Lookup_MarketSource"
-          TopLeft="785.208321632816,351.461156122085" />
+          Size="244,42.6666666666667"
+          Id="Package\Sequence Container\Data Flow Task\Fuzzy Lookup_MortgageInsurance"
+          TopLeft="415.624993806705,502.719306766932" />
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\Sequence Container\Data Flow Task\OLE DB Destination"
+          TopLeft="214.285711092608,310.902260146596" />
         <EdgeLayout
           Id="Package\Sequence Container\Data Flow Task.Paths[Row Count Output 1]"
           TopLeft="420.369042408077,417.005020003963">
@@ -19112,6 +19116,42 @@ where [refTable].[MarketSourceCode] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Sequence Container\Data Flow Task.Paths[Keep]"
+          TopLeft="744.844147337915,162.951244098887">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="44.6975111796792,53.6803382484232"
+              Start="0,0"
+              End="37.1975111796792,53.6803382484232">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="18.3487555898396,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.3487555898396,0"
+                    Point2="22.3487555898396,0"
+                    Point3="22.3487555898396,4" />
+                  <mssgle:LineSegment
+                    End="22.3487555898396,49.6803382484232" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.3487555898396,49.6803382484232"
+                    Point2="22.3487555898396,53.6803382484232"
+                    Point3="26.3487555898396,53.6803382484232" />
+                  <mssgle:LineSegment
+                    End="37.1975111796792,53.6803382484232" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="10.8977790273396,-17.2822265625,22.901953125,11.2822265625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Sequence Container\Data Flow Task.Paths[KEEP]"
           TopLeft="196.113094660231,170.473684231991">
           <EdgeLayout.Curve>
@@ -19145,6 +19185,40 @@ where [refTable].[MarketSourceCode] = ?</property>
             <mssgm:EdgeLabel
               BoundingBox="59.6297782686719,-15.2705078125,23.68984375,9.2705078125"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Data Flow Task.Paths[Fuzzy Lookup Output1]"
+          TopLeft="862.208325184261,237.964915680643">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="16.3333297818886,113.496240441442"
+              Start="0,0"
+              End="16.3333297818886,105.996240441442">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.7481202207209" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,52.7481202207209"
+                    Point2="0,56.7481202207209"
+                    Point3="4,56.7481202207209" />
+                  <mssgle:LineSegment
+                    End="12.3333297818886,56.7481202207209" />
+                  <mssgle:CubicBezierSegment
+                    Point1="12.3333297818886,56.7481202207209"
+                    Point2="16.3333297818886,56.7481202207209"
+                    Point3="16.3333297818886,60.7481202207209" />
+                  <mssgle:LineSegment
+                    End="16.3333297818886,105.996240441442" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -19215,80 +19289,6 @@ where [refTable].[MarketSourceCode] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="145.333333333334,42.6666666666667"
-          Id="Package\Sequence Container\Data Flow Task\Fuzzy Lookup"
-          TopLeft="789.541658517594,195.298249013977" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Data Flow Task.Paths[Keep]"
-          TopLeft="744.844147337915,162.951244098887">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="44.6975111796792,53.6803382484232"
-              Start="0,0"
-              End="37.1975111796792,53.6803382484232">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="18.3487555898396,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="18.3487555898396,0"
-                    Point2="22.3487555898396,0"
-                    Point3="22.3487555898396,4" />
-                  <mssgle:LineSegment
-                    End="22.3487555898396,49.6803382484232" />
-                  <mssgle:CubicBezierSegment
-                    Point1="22.3487555898396,49.6803382484232"
-                    Point2="22.3487555898396,53.6803382484232"
-                    Point3="26.3487555898396,53.6803382484232" />
-                  <mssgle:LineSegment
-                    End="37.1975111796792,53.6803382484232" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="10.8977790273396,-17.2822265625,22.901953125,11.2822265625"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Data Flow Task.Paths[Fuzzy Lookup Output1]"
-          TopLeft="862.208325184261,237.964915680643">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="16.3333297818886,113.496240441442"
-              Start="0,0"
-              End="16.3333297818886,105.996240441442">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.7481202207209" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,52.7481202207209"
-                    Point2="0,56.7481202207209"
-                    Point3="4,56.7481202207209" />
-                  <mssgle:LineSegment
-                    End="12.3333297818886,56.7481202207209" />
-                  <mssgle:CubicBezierSegment
-                    Point1="12.3333297818886,56.7481202207209"
-                    Point2="16.3333297818886,56.7481202207209"
-                    Point3="16.3333297818886,60.7481202207209" />
-                  <mssgle:LineSegment
-                    End="16.3333297818886,105.996240441442" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -19305,56 +19305,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     </LayoutInfo>
   </DtsEventHandler>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Data Flow Task\Fuzzy Lookup_MortgageInsurance">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Data Flow Task\Lookup 1_LeadSource">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[LookUpLeadSource]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Data Flow Task\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Sequence Container\Data Flow Task\Fuzzy Lookup">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -19390,7 +19341,56 @@ where [refTable].[MarketSourceCode] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Data Flow Task\Fuzzy Lookup">
+    design-time-name="Package\Sequence Container\Data Flow Task\Lookup 1_LeadSource">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[LookUpLeadSource]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Data Flow Task\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Data Flow Task\Fuzzy Lookup_MortgageInsurance">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Data Flow Task\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
