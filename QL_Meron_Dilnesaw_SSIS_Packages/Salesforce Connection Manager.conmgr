@@ -8,9 +8,9 @@
       ConnectionString="InstanceType=Sandbox;AuthenticationType=AuthorizationCode;ServiceEndpoint=SOAP;ServiceUrl=https://test.salesforce.com/services/Soap/u/48.0;TokenPath=;ClientId=;RedirectUri=;CertificateThumbprint=;UserName=salesforce@dunallc.com.sandboxdev;ServiceTimeout=120;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;ProxyUsername=;RetryOnIntermittentErrors=True"
       ConnectByProxy="False">
       <Password
-        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAABX5DmYAGNxa0oVVlCqv0+WPqlfLtThQjNhLVIvh4f3SgAAAAAOgAAAAAIAACAAAAA/754gerHOkIfYi24QfZpkSRJBeUcYPbk6zLA6iwEaE2AAAABO2UqaetP9LOB1NYa+0y0UHbqbm9iLpodW4f+Fb38bFb5xnPnEbI7/duxu/RzierbAQvpVe5xiwU+PRrYqc3kCuLtvvr/MYjB+2irP1LGlOOiq8TkDbQ1ilFtE3z13updAAAAA42VpMyJtbe9vKnNgWCv2D4iY35r1RZWfpNCjCDLnruVE6AXrtYMxzcBn/tNBM0gLbghVjGOA9p+Tsn0vNZ6NUw==</Password>
+        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"></Password>
       <SecurityToken
-        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAAAu8nDgG4FruHIpJk3MVix3OKGId6Z29MKF4Wo3vfCc3wAAAAAOgAAAAAIAACAAAADY1Kh1eL9nkyYHWJg1+gmcSxq6PmrbgF6aMbRQRa+kgnAAAADhhFW9vtQUUGCfRYG8jbE1Aoq0rgEIMhYiPJiqzPg2/Qn+mvI6p7waZmNPy7zUD7uHQEe/Qs0hrTjVnWvZFb1UE5I/HPjgLQBIZzqB+3eg11mkoMmO688KtATZRTI3EF6/BDxQeOBbMN46cjaHKRMbQAAAALK5uG8ayh/PyF3XRfJ7TIj87SN6mYWTGqAY9wsmsu/VfUwk4HFbjPZUpiiNF4RdKmHpPnnpGRvw/WCgV2yJWao=</SecurityToken>
+        Sensitive="1" xmlns="www.microsoft.com/SqlServer/Dts"></SecurityToken>
     </SalesforceConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

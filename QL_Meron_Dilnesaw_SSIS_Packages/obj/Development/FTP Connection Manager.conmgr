@@ -14,7 +14,7 @@
         DTS:UsePassiveMode="True">
         <DTS:Property
           DTS:Name="ServerPassword"
-          Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAAAe0yyfoXIEJRxE9nKpnyM6OVxUCBUgU5VWEJojsl6XegAAAAAOgAAAAAIAACAAAACpyPmxOJJZ4IJSLOCfTc17FlgzV2eQ3t0p+AUcnarjrJAAAABdyFCQyB3SRKyH/s/zoizuYbYuT7EEIKSu/ZABa7vkeDplNXXdVu++PO4XNieC3pH+U4LRcuFD8zQB6dr5UJmYkdY95WamRLCMKHlhaxg+IkTJN3zCBrssEHNsJgxcTv2JhAuGw6TNnVMtPiB/Wkr6bcpabYAoonFCMXeCf1XMCHW6P+wuWFdFdxcd6zzytB9AAAAA6KJiS9+tAzTXd5A/S8OXwIls5BWh5ozMc2dkD/nwCVYQz/NXXSj+uh7E+7UIRVKKljSdc8cAo74AUHhkcQ7r3Q==</DTS:Property>
+          Sensitive="1"></DTS:Property>
       </DTS:FtpConnection>
     </DTS:ConnectionManager>
   </DTS:ObjectData>

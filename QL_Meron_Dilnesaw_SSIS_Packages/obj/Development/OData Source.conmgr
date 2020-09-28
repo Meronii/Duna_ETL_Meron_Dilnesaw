@@ -1,20 +1,19 @@
 <?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="OData Source"
-  DTS:DTSID="{CE6C9486-9A96-428D-85C3-E9389BB50EF7}"
+  DTS:DTSID="{5ED46670-0E26-4F5C-BB48-35CE46CB2632}"
   DTS:CreationName="ODATA">
   <DTS:PropertyExpression
-    DTS:Name="AuthType">@[$Project::ODataSource_AuthType]</DTS:PropertyExpression>
+    DTS:Name="ConnectionString">@[$Project::ODataSource_ConnectionString]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <ODataConnectionManager
       UserName="sharepoint@dunatk.com"
       Url="https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc"
-      ConnectionString="Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104"
+      ConnectionString="Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=True;Max Received Message Size=4398046511104"
       MicrosoftOnlineServicesAuth="True"
-      AuthType="MicrosoftOnlineService"
       ConnectByProxy="False">
       <Password
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAACcvG2BZtdiBI56wAWGrgyV9hVKkDvnUgPAj0fKk+Eo1AAAAAAOgAAAAAIAACAAAAAEhheV5roREHv51RBDKN9+P0dwkoQNvUwcJ/h1H/NUCEAAAADhPjcW2TUsbiHyG/xLyc3GMBsiGmbyMCWOzJM83iE529B0zuLKds3Ao5ouZqqKF+AJDS1+OYWTaruT7FcDgbZ9QAAAAL1eUqtswoZ5RaiFB7JEYg6lxBse+KU2U+gS/B7sCOaWPhzBealh7oflC83V9JT5Li/S2QmNvLVXaGCEAgOoLuw=</Password>
+        Sensitive="1"></Password>
     </ODataConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

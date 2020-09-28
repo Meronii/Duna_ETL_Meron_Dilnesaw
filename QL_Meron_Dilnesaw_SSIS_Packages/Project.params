@@ -1,27 +1,6 @@
 <?xml version="1.0"?>
 <SSIS:Parameters xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
   <SSIS:Parameter
-    SSIS:Name="ODataSource_AuthType">
-    <SSIS:Properties>
-      <SSIS:Property
-        SSIS:Name="ID">{8efd2f89-84c0-4803-b7b6-0c9dc1c27493}</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="CreationName"></SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Description"></SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Required">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Sensitive">0</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104</SSIS:Property>
-      <SSIS:Property
-        SSIS:Name="DataType">18</SSIS:Property>
-    </SSIS:Properties>
-  </SSIS:Parameter>
-  <SSIS:Parameter
     SSIS:Name="DunaDatabaseWindowsNetUberWriterUberWriter1_ConnectionString">
     <SSIS:Properties>
       <SSIS:Property
@@ -206,7 +185,28 @@
         SSIS:Name="Sensitive">1</SSIS:Property>
       <SSIS:Property
         SSIS:Name="Value"
-        SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmD6IO/rAKUadRNhk/3dUWQAAAAACAAAAAAAQZgAAAAEAACAAAABqnzcoSJFpsztRPgy6e6lWEfpfxVIjz31GDC6oGlF11gAAAAAOgAAAAAIAACAAAACTOybzjOlIIo56DtyIzM8vAyh3HwHJOc6mMfzQuK5zg4AAAADa5bGqN57ANq9KKUn2E//PoQo0TU62DoV+atHyEUunyWBCKVRIFQ+p9oO7mL9QDUZ/JyyJ1rglM8oQoc3aLZTg0qHH1BMWpJvBNgomflr3bpAhcEOPCW/jhy2T2YkxiYgp+EOxH9tWIUZcOF70BSBYAM6j81lpu0mzmdkCqVelMEAAAACzaxN1yO7HW/bDPWOa9aLI9DUH1Gv/d9JbyDheLjuOR0F+HYGmUFUVT+sG6pWM0YQkbNhRMmbvZ5phKN9amguz</SSIS:Property>
+        SSIS:Sensitive="1"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="DataType">18</SSIS:Property>
+    </SSIS:Properties>
+  </SSIS:Parameter>
+  <SSIS:Parameter
+    SSIS:Name="ODataSource_ConnectionString">
+    <SSIS:Properties>
+      <SSIS:Property
+        SSIS:Name="ID">{3c54faa3-8474-476d-96b9-38183b35404c}</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="CreationName"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Description"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Required">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Sensitive">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Value">Service Document Url=https://dunatkcom.sharepoint.com/sites/LendingQB/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;User ID=sharepoint@dunatk.com;password=Covid19@prj*bi2020;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=True;Max Received Message Size=4398046511104</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
