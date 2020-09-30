@@ -4,7 +4,9 @@
   DTS:DTSID="{5ED46670-0E26-4F5C-BB48-35CE46CB2632}"
   DTS:CreationName="ODATA">
   <DTS:PropertyExpression
-    DTS:Name="ConnectionString">@[$Project::ODataSource_ConnectionString]</DTS:PropertyExpression>
+    DTS:Name="ConnectionString">@[$Project::ODataSource_ConnectionString1]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="Password">@[$Project::ODataSource_Password]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <ODataConnectionManager
       UserName="sharepoint@dunatk.com"

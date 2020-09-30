@@ -1,16 +1,26 @@
 <?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="FTP Connection Manager"
-  DTS:DTSID="{DC89CE4F-B313-4E05-A065-84206EE1D701}"
+  DTS:DTSID="{F0662A5C-F302-469E-A64C-3C5137C14C5A}"
   DTS:CreationName="FTP">
   <DTS:PropertyExpression
-    DTS:Name="ConnectionString">@[$Project::FTPConnectionManager_ConnectionString]</DTS:PropertyExpression>
+    DTS:Name="ChunkSize">1000</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerName">"ftp.drivehq.com"</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerPassword">"m96t4VvhetYuck5"</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerPort">21</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerUserName">"dunatek"</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:ConnectionString="ftp.drivehq.com:21">
       <DTS:FtpConnection
         DTS:ServerName="ftp.drivehq.com"
         DTS:ServerUserName="dunatek"
+        DTS:ChunkSize="1000"
+        DTS:TimeOut="120"
         DTS:UsePassiveMode="True">
         <DTS:Property
           DTS:Name="ServerPassword"

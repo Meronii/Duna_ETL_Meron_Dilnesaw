@@ -12,8 +12,8 @@
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{9F399742-3BF0-4071-847D-ED2EA1E06970}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{0B905EA7-C0F3-41CF-B94D-DBDA8D1011E6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -48,6 +48,7 @@
         <DTS:Executable
           DTS:refId="Package\SQ_Master_Package\EPT_LendingQB"
           DTS:CreationName="Microsoft.ExecutePackageTask"
+          DTS:DelayValidation="True"
           DTS:Description="Execute Package Task"
           DTS:DTSID="{E22D6730-D5B7-49B1-9757-A7CB2952AE65}"
           DTS:ExecutableType="Microsoft.ExecutePackageTask"
@@ -103,6 +104,7 @@
           DTS:DTSID="{36E9FA37-6C3C-420F-9F2B-D5406C457276}"
           DTS:ExecutableType="Microsoft.ExecutePackageTask"
           DTS:LocaleID="-1"
+          DTS:MaxErrorCount="255"
           DTS:ObjectName="EPT_UberWriter"
           DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
           <DTS:Variables />
@@ -120,7 +122,6 @@
           DTS:CreationName=""
           DTS:DTSID="{DEEB4ECE-1C7F-4E21-9E34-01F97AD12DC5}"
           DTS:From="Package\SQ_Master_Package\EPT_LendingQB"
-          DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
           DTS:To="Package\SQ_Master_Package\EPT_QuickenLoan"
           DTS:Value="2" />
@@ -129,7 +130,6 @@
           DTS:CreationName=""
           DTS:DTSID="{D44E911D-531E-471E-A0F2-EF5584AB88EB}"
           DTS:From="Package\SQ_Master_Package\EPT_QuickenLoan"
-          DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
           DTS:To="Package\SQ_Master_Package\EPT_UberWriter"
           DTS:Value="2" />
@@ -138,7 +138,6 @@
           DTS:CreationName=""
           DTS:DTSID="{2E10D12B-C13D-4AEE-92B2-EAE872039314}"
           DTS:From="Package\SQ_Master_Package\EPT_UberWriter"
-          DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 2"
           DTS:To="Package\SQ_Master_Package\EPT_LendingPad"
           DTS:Value="2" />
@@ -147,7 +146,6 @@
           DTS:CreationName=""
           DTS:DTSID="{C341630F-9D73-4888-9150-4BC07AC35DFF}"
           DTS:From="Package\SQ_Master_Package\EPT_LendingPad"
-          DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 3"
           DTS:To="Package\SQ_Master_Package\EPT_SimpleNexus"
           DTS:Value="2" />
