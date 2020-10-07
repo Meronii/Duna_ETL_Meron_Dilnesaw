@@ -1,10 +1,14 @@
 <?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="Salesforce Connection Manager"
-  DTS:DTSID="{228E92C4-575F-4D41-AA8D-9B2F00516394}"
+  DTS:DTSID="{CF5B4265-CFB6-4550-94DE-CEAEC8EC945D}"
   DTS:CreationName="Salesforce">
   <DTS:PropertyExpression
-    DTS:Name="ConnectionString">@[$Project::SalesforceConnectionManager_ConnectionString]</DTS:PropertyExpression>
+    DTS:Name="Password">"dunaTek123@1"</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="SecurityToken">"F9SGdHf9ArHH5TXhuBLGpEbVT"</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="UserName">"salesforce@dunallc.com.sandboxdev"</DTS:PropertyExpression>
   <DTS:ObjectData>
     <SalesforceConnectionManager
       ConnectionString="InstanceType=Sandbox;AuthenticationType=AuthorizationCode;ServiceEndpoint=SOAP;ServiceUrl=https://test.salesforce.com/services/Soap/u/48.0;TokenPath=;ClientId=;RedirectUri=;CertificateThumbprint=;UserName=salesforce@dunallc.com.sandboxdev;ServiceTimeout=120;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;ProxyUsername=;RetryOnIntermittentErrors=True"

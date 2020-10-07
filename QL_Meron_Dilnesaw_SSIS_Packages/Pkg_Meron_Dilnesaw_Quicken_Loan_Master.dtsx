@@ -12,8 +12,8 @@
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{0B905EA7-C0F3-41CF-B94D-DBDA8D1011E6}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{211C5DC2-F073-4C3F-9A29-03EB7EBB8C22}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -316,7 +316,7 @@
           PanelSize="345.333333333334,382.666666666667"
           Size="345.333333333334,425.333333333334"
           Id="Package\SQ_Master_Package"
-          TopLeft="215.624996786937,102.017545340684" />
+          TopLeft="487.499992735684,66.4385973025775" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
