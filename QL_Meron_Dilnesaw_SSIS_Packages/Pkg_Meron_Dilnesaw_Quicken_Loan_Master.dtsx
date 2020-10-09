@@ -12,8 +12,8 @@
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="14"
-  DTS:VersionGUID="{10355766-9ABC-4990-A799-C6ECD741D13B}">
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{F04E0056-D70A-4A30-B5BA-6CB6AE934383}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -148,6 +148,14 @@
           Size="160,42.6666666666667"
           Id="Package\Sequence Container_For_MasterPackage\EPT_LendingQB"
           TopLeft="90.0833302227161,106.263161513614" />
+        <NodeLayout
+          Size="169.333333333334,42.6666666666667"
+          Id="Package\Sequence Container_For_MasterPackage\EPT_QuickenLoan"
+          TopLeft="51.9583307908228,188.368426216937" />
+        <NodeLayout
+          Size="196.666666666667,42.6666666666667"
+          Id="Package\Sequence Container_For_MasterPackage\EPT_SimpleNexus"
+          TopLeft="63.2083306231846,271.157901459453" />
         <EdgeLayout
           Id="Package\Sequence Container_For_MasterPackage.PrecedenceConstraints[Constraint]"
           TopLeft="168.645830348445,48.1666666666667">
@@ -172,14 +180,6 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="169.333333333334,42.6666666666667"
-          Id="Package\Sequence Container_For_MasterPackage\EPT_QuickenLoan"
-          TopLeft="51.9583307908228,188.368426216937" />
-        <NodeLayout
-          Size="196.666666666667,42.6666666666667"
-          Id="Package\Sequence Container_For_MasterPackage\EPT_SimpleNexus"
-          TopLeft="63.2083306231846,271.157901459453" />
         <EdgeLayout
           Id="Package\Sequence Container_For_MasterPackage.PrecedenceConstraints[Constraint 1]"
           TopLeft="170.083330222716,148.929828180281">

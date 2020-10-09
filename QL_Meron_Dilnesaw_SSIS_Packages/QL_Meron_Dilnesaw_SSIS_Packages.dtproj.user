@@ -9,7 +9,7 @@
         <WinAuthUserName />
         <WinAuthDomain />
         <ServerName>DESKTOP-BPD4JUV\DUNAPROD2014</ServerName>
-        <PathOnServer>/SSISDB/QL_Meron_Dilnesaw_Etl/QL_Meron_Dilnesaw_SSIS_Packages</PathOnServer>
+        <PathOnServer>/SSISDB/SSIS_Packages/SSIS_Packages</PathOnServer>
         <UserIDs />
         <UserPasswords />
         <OfflineMode>false</OfflineMode>

@@ -12,24 +12,24 @@
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{5CA1CC8B-D132-40EE-AFCF-8D9144AE52F8}">
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{F04E0056-D70A-4A30-B5BA-6CB6AE934383}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Sequence Container"
+      DTS:refId="Package\Sequence Container_For_MasterPackage"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
       DTS:DTSID="{E827B7E7-2506-47AD-B50E-D87ED12CAF2C}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Sequence Container">
+      DTS:ObjectName="Sequence Container_For_MasterPackage">
       <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
-          DTS:refId="Package\Sequence Container\EPT_LendingPad"
+          DTS:refId="Package\Sequence Container_For_MasterPackage\EPT_LendingPad"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Execute Package Task"
           DTS:DTSID="{6C152E8A-FD03-4505-939F-A3855D32893D}"
@@ -46,7 +46,7 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Sequence Container\EPT_LendingQB"
+          DTS:refId="Package\Sequence Container_For_MasterPackage\EPT_LendingQB"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Execute Package Task"
           DTS:DTSID="{AE64CB6B-FD61-4F38-ADEA-71CD27B8FD25}"
@@ -63,7 +63,7 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Sequence Container\EPT_QuickenLoan"
+          DTS:refId="Package\Sequence Container_For_MasterPackage\EPT_QuickenLoan"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Execute Package Task"
           DTS:DTSID="{C4C3A9C6-6796-450C-AB8F-11A886B7876D}"
@@ -80,7 +80,7 @@
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Sequence Container\EPT_SimpleNexus"
+          DTS:refId="Package\Sequence Container_For_MasterPackage\EPT_SimpleNexus"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Execute Package Task"
           DTS:DTSID="{8182FBE6-7D34-45F5-8493-BE3A91CBB082}"
@@ -99,31 +99,31 @@
       </DTS:Executables>
       <DTS:PrecedenceConstraints>
         <DTS:PrecedenceConstraint
-          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          DTS:refId="Package\Sequence Container_For_MasterPackage.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
           DTS:DTSID="{D0999E89-1076-4195-9C82-18977494F6CC}"
-          DTS:From="Package\Sequence Container\EPT_LendingPad"
+          DTS:From="Package\Sequence Container_For_MasterPackage\EPT_LendingPad"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
-          DTS:To="Package\Sequence Container\EPT_LendingQB"
+          DTS:To="Package\Sequence Container_For_MasterPackage\EPT_LendingQB"
           DTS:Value="2" />
         <DTS:PrecedenceConstraint
-          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
+          DTS:refId="Package\Sequence Container_For_MasterPackage.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
           DTS:DTSID="{86C500C5-BAFE-405C-BE0C-C4495349C2AE}"
-          DTS:From="Package\Sequence Container\EPT_LendingQB"
+          DTS:From="Package\Sequence Container_For_MasterPackage\EPT_LendingQB"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
-          DTS:To="Package\Sequence Container\EPT_QuickenLoan"
+          DTS:To="Package\Sequence Container_For_MasterPackage\EPT_QuickenLoan"
           DTS:Value="2" />
         <DTS:PrecedenceConstraint
-          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
+          DTS:refId="Package\Sequence Container_For_MasterPackage.PrecedenceConstraints[Constraint 2]"
           DTS:CreationName=""
           DTS:DTSID="{A9EF042E-D768-4495-9EDA-ED4938FC2285}"
-          DTS:From="Package\Sequence Container\EPT_QuickenLoan"
+          DTS:From="Package\Sequence Container_For_MasterPackage\EPT_QuickenLoan"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 2"
-          DTS:To="Package\Sequence Container\EPT_SimpleNexus"
+          DTS:To="Package\Sequence Container_For_MasterPackage\EPT_SimpleNexus"
           DTS:Value="2" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
@@ -142,14 +142,22 @@
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="188,42.6666666666667"
-          Id="Package\Sequence Container\EPT_LendingPad"
+          Id="Package\Sequence Container_For_MasterPackage\EPT_LendingPad"
           TopLeft="73.2083304741731,5.5" />
         <NodeLayout
           Size="160,42.6666666666667"
-          Id="Package\Sequence Container\EPT_LendingQB"
+          Id="Package\Sequence Container_For_MasterPackage\EPT_LendingQB"
           TopLeft="90.0833302227161,106.263161513614" />
+        <NodeLayout
+          Size="169.333333333334,42.6666666666667"
+          Id="Package\Sequence Container_For_MasterPackage\EPT_QuickenLoan"
+          TopLeft="51.9583307908228,188.368426216937" />
+        <NodeLayout
+          Size="196.666666666667,42.6666666666667"
+          Id="Package\Sequence Container_For_MasterPackage\EPT_SimpleNexus"
+          TopLeft="63.2083306231846,271.157901459453" />
         <EdgeLayout
-          Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          Id="Package\Sequence Container_For_MasterPackage.PrecedenceConstraints[Constraint]"
           TopLeft="168.645830348445,48.1666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -172,16 +180,8 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="169.333333333334,42.6666666666667"
-          Id="Package\Sequence Container\EPT_QuickenLoan"
-          TopLeft="51.9583307908228,188.368426216937" />
-        <NodeLayout
-          Size="196.666666666667,42.6666666666667"
-          Id="Package\Sequence Container\EPT_SimpleNexus"
-          TopLeft="63.2083306231846,271.157901459453" />
         <EdgeLayout
-          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
+          Id="Package\Sequence Container_For_MasterPackage.PrecedenceConstraints[Constraint 1]"
           TopLeft="170.083330222716,148.929828180281">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -217,7 +217,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
+          Id="Package\Sequence Container_For_MasterPackage.PrecedenceConstraints[Constraint 2]"
           TopLeft="136.624997457489,231.035092883603">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -257,7 +257,7 @@
           IsExpanded="True"
           PanelSize="362.666666666667,434"
           Size="362.666666666667,476.666666666667"
-          Id="Package\Sequence Container"
+          Id="Package\Sequence Container_For_MasterPackage"
           TopLeft="118.749998230487,52.4385973025778" />
       </GraphLayout>
     </LayoutInfo>

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
-    <Name>QL_Meron_Dilnesaw_SSIS_Packages</Name>
-    <LastWriteTime>2020-10-07T18:35:08.0265758Z</LastWriteTime>
+    <Name>SSIS_Packages</Name>
+    <LastWriteTime>2020-10-07T20:46:47.8019652Z</LastWriteTime>
     <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -18,22 +18,22 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Meron_Dilnesaw_UberWriter.dtsx</Name>
-      <LastWriteTime>2020-10-07T19:11:48.1348902Z</LastWriteTime>
+      <LastWriteTime>2020-10-08T21:05:03.2678753Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Meron_Dilnesaw_Lending_Pad.dtsx</Name>
-      <LastWriteTime>2020-10-07T18:35:07.9996492Z</LastWriteTime>
+      <LastWriteTime>2020-10-08T21:05:03.6388849Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Meron_Dilnesaw_Simple_Nexus.dtsx</Name>
-      <LastWriteTime>2020-10-07T18:35:08.0176016Z</LastWriteTime>
+      <LastWriteTime>2020-10-09T18:49:09.8003906Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Meron_Dilnesaw_Quicken_Loan_Master.dtsx</Name>
-      <LastWriteTime>2020-10-07T19:12:51.9363117Z</LastWriteTime>
+      <LastWriteTime>2020-10-08T21:05:03.2269848Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
