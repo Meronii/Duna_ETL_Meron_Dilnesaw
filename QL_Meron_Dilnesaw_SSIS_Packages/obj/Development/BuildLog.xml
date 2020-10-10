@@ -2,38 +2,38 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSIS_Packages</Name>
-    <LastWriteTime>2020-10-07T20:46:47.8019652Z</LastWriteTime>
+    <LastWriteTime>2020-10-10T05:46:59.8632967Z</LastWriteTime>
     <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Pkg_Meron_Dilnesaw_Lending_QB.dtsx</Name>
-      <LastWriteTime>2020-10-07T18:35:08.0056331Z</LastWriteTime>
+      <LastWriteTime>2020-10-10T04:54:38.9768336Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Meron_Dilnesaw_Quicken_Loans.dtsx</Name>
-      <LastWriteTime>2020-10-07T18:35:08.011616Z</LastWriteTime>
+      <LastWriteTime>2020-10-10T00:55:32.9156688Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Meron_Dilnesaw_UberWriter.dtsx</Name>
-      <LastWriteTime>2020-10-08T21:05:03.2678753Z</LastWriteTime>
+      <LastWriteTime>2020-10-10T00:55:32.9252108Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Meron_Dilnesaw_Lending_Pad.dtsx</Name>
-      <LastWriteTime>2020-10-08T21:05:03.6388849Z</LastWriteTime>
+      <LastWriteTime>2020-10-10T05:13:13.9877483Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Meron_Dilnesaw_Simple_Nexus.dtsx</Name>
-      <LastWriteTime>2020-10-09T18:49:09.8003906Z</LastWriteTime>
+      <LastWriteTime>2020-10-10T04:54:39.2734364Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Meron_Dilnesaw_Quicken_Loan_Master.dtsx</Name>
-      <LastWriteTime>2020-10-08T21:05:03.2269848Z</LastWriteTime>
+      <LastWriteTime>2020-10-10T06:05:41.2304462Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

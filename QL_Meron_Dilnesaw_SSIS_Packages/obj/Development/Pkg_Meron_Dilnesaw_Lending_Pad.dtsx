@@ -12,8 +12,8 @@
   DTS:ObjectName="Pkg_Meron_Dilnesaw_Lending_Pad"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="258"
-  DTS:VersionGUID="{FBEE089F-3CA7-44A0-BDD9-09AD738EBE77}">
+  DTS:VersionBuild="266"
+  DTS:VersionGUID="{712D0278-C18C-4870-B520-7FC96DA6E13C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -26,7 +26,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varArchivedFolder">
       <DTS:VariableValue
-        DTS:DataType="8">C:\QuckienLoans\ArchivedFolder\LendingPad_2020-10-08-17-05.zip</DTS:VariableValue>
+        DTS:DataType="8">C:\QuckienLoans\ArchivedFolder\LendingPad_2020-10-10-01-13.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -91,7 +91,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="varLoadDate">
       <DTS:VariableValue
-        DTS:DataType="7">10/8/2020 5:05:06 PM</DTS:VariableValue>
+        DTS:DataType="7">10/10/2020 1:13:15 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -247,7 +247,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task 1_ETLLOG"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -336,26 +336,26 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute Process Task_To unzip LendingPad"
           DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:PropertyExpression
-            DTS:Name="Arguments">"x "+@[User::varZipedFile]+ " -o"+  @[User::varDest]</DTS:PropertyExpression>
+            DTS:Name="Arguments">"x "+@[User::varZipedFile]+ @[User::varZipedFileName]+ " -o"+ @[User::varDest]</DTS:PropertyExpression>
           <DTS:ObjectData>
             <ExecuteProcessData
               Executable="C:\Program Files\7-Zip\7z.exe"
-              Arguments="x C:\QuckienLoans\ZipedFtpFile\ -oC:\QuckienLoans\UnZipedFtpFile\" />
+              Arguments="x C:\QuckienLoans\ZipedFtpFile\LendingPad.zip -oC:\QuckienLoans\UnZipedFtpFile\" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Foreach Loop Container\File System Task_ToMoveTheZipedFileAndtogiveit timestame"
+          DTS:refId="Package\Foreach Loop Container\File System Task_ToMoveTheZipedFileAndtogiveit timestamp"
           DTS:CreationName="Microsoft.FileSystemTask"
           DTS:Description="File System Task"
           DTS:DTSID="{0cce7819-dbce-447f-a681-5de28cd7eff8}"
           DTS:ExecutableType="Microsoft.FileSystemTask"
           DTS:LocaleID="-1"
-          DTS:ObjectName="File System Task_ToMoveTheZipedFileAndtogiveit timestame"
+          DTS:ObjectName="File System Task_ToMoveTheZipedFileAndtogiveit timestamp"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
@@ -374,13 +374,13 @@
           DTS:From="Package\Foreach Loop Container\Execute Process Task_To unzip LendingPad"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
-          DTS:To="Package\Foreach Loop Container\File System Task_ToMoveTheZipedFileAndtogiveit timestame" />
+          DTS:To="Package\Foreach Loop Container\File System Task_ToMoveTheZipedFileAndtogiveit timestamp" />
       </DTS:PrecedenceConstraints>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{71D6D928-5B0A-47E0-923D-0DB90970FC6E}"
-          DTS:ObjectName="{71D6D928-5B0A-47E0-923D-0DB90970FC6E}"
+          DTS:DTSID="{755CD4A3-7AB2-4137-9D49-9A56252C8706}"
+          DTS:ObjectName="{755CD4A3-7AB2-4137-9D49-9A56252C8706}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::varZipedFileName" />
       </DTS:ForEachVariableMappings>
@@ -1045,7 +1045,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:ExecutableType="Microsoft.ScriptTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Script Task 1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <ScriptProject
@@ -14054,7 +14054,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task 1_DeletingLendingPad"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -14071,7 +14071,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task_MaxLastModifieddate_IncrimentalLoad"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -14093,7 +14093,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task_TakingcareofNullAndRHS"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -14110,7 +14110,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="File System Task_DeletingJsonFile"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
@@ -15016,7 +15016,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           TopLeft="67.8888834665219,7.09162063822211" />
         <NodeLayout
           Size="373.333333333334,42.6666666666667"
-          Id="Package\Foreach Loop Container\File System Task_ToMoveTheZipedFileAndtogiveit timestame"
+          Id="Package\Foreach Loop Container\File System Task_ToMoveTheZipedFileAndtogiveit timestamp"
           TopLeft="34.5312434256388,116.297760610255" />
         <EdgeLayout
           Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
@@ -15024,14 +15024,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,66.539473305366"
+              EndConnector="0,66.5394733053662"
               Start="0,0"
-              End="0,59.039473305366">
+              End="0,59.0394733053662">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,59.039473305366" />
+                    End="0,59.0394733053662" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15043,8 +15043,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="462,241.333333333334"
-          Size="462,284"
+          PanelSize="462,242"
+          Size="462,284.666666666667"
           Id="Package\Foreach Loop Container"
           TopLeft="18.4027775035561,295.233922677651" />
         <NodeLayout
@@ -15521,9 +15521,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15737,9 +15735,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15773,9 +15769,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15809,9 +15803,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

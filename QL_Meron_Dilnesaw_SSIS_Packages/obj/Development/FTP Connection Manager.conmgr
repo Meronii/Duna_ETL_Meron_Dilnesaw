@@ -6,6 +6,8 @@
   <DTS:PropertyExpression
     DTS:Name="ChunkSize">1000</DTS:PropertyExpression>
   <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::FTPConnectionManager_ConnectionString]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
     DTS:Name="ServerName">"ftp.drivehq.com"</DTS:PropertyExpression>
   <DTS:PropertyExpression
     DTS:Name="ServerPassword">"m96t4VvhetYuck5"</DTS:PropertyExpression>

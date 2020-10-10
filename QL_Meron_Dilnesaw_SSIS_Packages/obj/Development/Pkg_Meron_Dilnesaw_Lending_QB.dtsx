@@ -12,8 +12,8 @@
   DTS:ObjectName="P"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="207"
-  DTS:VersionGUID="{721DEE7E-4BDC-460A-9F10-BF18EE769EFA}">
+  DTS:VersionBuild="209"
+  DTS:VersionGUID="{EEE98D1E-AD15-4C5C-9CFB-B366AC55D2EF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>
@@ -183,7 +183,7 @@ SELECT
       DTS:Namespace="User"
       DTS:ObjectName="varRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">10/7/2020 4:46:50 PM</DTS:VariableValue>
+        DTS:DataType="7">10/10/2020 12:54:41 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -230,7 +230,7 @@ SELECT
       DTS:Namespace="User"
       DTS:ObjectName="varTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">10/7/2020 4:46:50 PM</DTS:VariableValue>
+        DTS:DataType="7">10/10/2020 12:54:41 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -17245,17 +17245,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\Data Flow Task\OLE DB Destination"
           TopLeft="102.678569898541,67.8345877429829" />
         <NodeLayout
-          Size="184,42.6666666666667"
-          Id="Package\Data Flow Task\OLE DB Destination 1"
-          TopLeft="1139.58331635222,432.690064532458" />
-        <NodeLayout
           Size="270.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\Derived Column_ForInsuranceCompany"
           TopLeft="258.749996144325,331.052637734902" />
         <NodeLayout
-          Size="146.666666666667,42.6666666666667"
-          Id="Package\Data Flow Task\OData Source"
-          TopLeft="458.249993201345,5.47368431355484" />
+          Size="173.333333333334,42.6666666666667"
+          Id="Package\Data Flow Task\Derived Column 1 1"
+          TopLeft="713.541656034067,283.274858652096" />
+        <NodeLayout
+          Size="256,42.6666666666667"
+          Id="Package\Data Flow Task\Conditional Split_BorrowerFirstName"
+          TopLeft="379.504864474806,245.287085843699" />
         <NodeLayout
           Size="186.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\Lookup 1_LeadSource"
@@ -17265,25 +17265,25 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           Id="Package\Data Flow Task\Conditional Splt_MaxModifieddate"
           TopLeft="449.916659992188,121.789475976595" />
         <NodeLayout
-          Size="141.333333333334,42.6666666666667"
-          Id="Package\Data Flow Task\Row Count 1"
-          TopLeft="151.785712023931,237.774440189289" />
-        <NodeLayout
           Size="160,42.6666666666667"
           Id="Package\Data Flow Task\Lookup_Channal"
           TopLeft="974.999985471369,369.883047374956" />
         <NodeLayout
-          Size="256,42.6666666666667"
-          Id="Package\Data Flow Task\Conditional Split_BorrowerFirstName"
-          TopLeft="379.504864474806,245.287085843699" />
+          Size="146.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task\OData Source"
+          TopLeft="458.249993201345,5.47368431355484" />
+        <NodeLayout
+          Size="184,42.6666666666667"
+          Id="Package\Data Flow Task\OLE DB Destination 1"
+          TopLeft="1139.58331635222,432.690064532458" />
         <NodeLayout
           Size="145.333333333334,42.6666666666667"
           Id="Package\Data Flow Task\Fuzzy Lookup"
           TopLeft="258.333329483867,416.491233650887" />
         <NodeLayout
-          Size="173.333333333334,42.6666666666667"
-          Id="Package\Data Flow Task\Derived Column 1 1"
-          TopLeft="713.541656034067,283.274858652096" />
+          Size="141.333333333334,42.6666666666667"
+          Id="Package\Data Flow Task\Row Count 1"
+          TopLeft="151.785712023931,237.774440189289" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Keep]"
           TopLeft="635.504864474806,266.620419177032">
